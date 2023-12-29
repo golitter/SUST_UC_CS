@@ -1,0 +1,41 @@
+@startuml
+
+class PetManage {
+    - Clinic clinic
+    - Scanner sc
+    + main(String[] args) throws IOException
+    + PetManage()
+    + MainMenu() throws IOException
+    - getValidAge(): int
+    - getValidWeight(): double
+    - getPet(String operationName): Pet
+    - addPetToClinic()
+    - removePetFromClinic()
+    - displayMenu()
+    - displayStatisticsByColor()
+    - displayStatisticsByBreed()
+    - displayDefaultAllPets()
+    - searchPetMenu()
+    - displayClinicsDetails()
+}
+
+class Clinic {
+
+}
+
+class Pet {
+
+}
+
+class Dog {
+}
+
+class Cat {
+}
+
+Clinic -right-|> Pet
+Dog -up-|> Pet
+Cat -up-|> Pet
+PetManage -right-> Clinic
+
+@enduml

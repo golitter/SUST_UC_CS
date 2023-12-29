@@ -1,0 +1,48 @@
+
+# demo.dot
+digraph {
+    node[fontname="SimSun"];
+    start [shape="box", style=rounded, label ="开始"];
+    end [shape="box", style=rounded, label = "结束"];
+
+    mainScreen[shape="box", label="主界面"];
+    inpOpt1[shape="diamond", label="选择模块"];
+    busScreen[shape="box", label="公交信息模块"];
+    CCScreen[shape="box", label="密接人员查询模块"];
+    exit[shape="box", label="退出系统"];
+    sub1Screen[shape="box", label="公交信息界面"];
+    sub2Screen[shape="box", label="密接人员界面"];
+    inpCho1[shape="diamond", label="选择功能"];
+    inpCho2[shape="diamond", label="选择功能"];
+    busInfo1[shape="box", label="公交车驾驶信息"];
+    busInfo2[shape="box", label="公交车路线信息"];
+    quit[shape="box", label="退出界面"];
+    sap1[shape="box", label="样例1"];
+    sap2[shape="box", label="样例2"];
+    sap3[shape="box", label="样例3"];
+
+    // start -> is_in_list;
+    // is_in_list -> visit_url [label="Yes"];
+    // is_in_list -> visit_via_proxy [label="No"];
+    // visit_url -> end;
+    // visit_via_proxy -> end;
+    start -> mainScreen;
+    mainScreen -> inpOpt1;
+    inpOpt1 -> busScreen[label = "1"];
+    inpOpt1 -> CCScreen[label = "2"];
+    inpOpt1 -> exit[label = "3"];
+    busScreen -> sub1Screen;
+    CCScreen ->sub2Screen;
+    sub1Screen -> inpCho1;
+    sub2Screen -> inpCho2;
+    inpCho1 -> busInfo1[label = "1"];
+    inpCho1 -> busInfo2[label = "2"];
+    inpCho1 -> quit[label = "3"];
+    inpCho2 -> sap1[label = "1"];
+    inpCho2 -> sap2[label = "2"];
+    inpCho2 -> sap3[label = "3"];
+    inpCho2 -> quit[label = "4"];
+    quit -> mainScreen;
+    exit -> end;
+
+}

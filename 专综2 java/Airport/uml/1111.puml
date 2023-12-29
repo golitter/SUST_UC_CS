@@ -1,0 +1,25 @@
+@startuml
+entity Customer {
+  + CustomerID [PK]
+  --
+  CustomerName
+  ContactInfo
+}
+
+entity Order {
+  + OrderID [PK]
+  --
+  OrderDate
+  TotalAmount
+}
+
+entity Product {
+  + ProductID [PK]
+  --
+  ProductName
+  Price
+}
+
+Customer -- Order
+Order -- Product: Contains
+@enduml

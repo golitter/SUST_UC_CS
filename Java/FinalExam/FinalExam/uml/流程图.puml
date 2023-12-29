@@ -1,0 +1,30 @@
+@startuml
+
+start
+
+:Display Clinic Details;
+:Welcome Message;
+:Display Menu Options;
+
+while (choice != 6) is (true)
+    :Get user input for choice;
+    if (choice == 1)
+        :Add Pet to Clinic;
+    elseif (choice == 2)
+        :Remove Pet from Clinic;
+    elseif (choice == 3)
+        :Display Menu;
+    elseif (choice == 4)
+        :Search for Pet;
+    elseif (choice == 5)
+        :Display Clinic Information;
+    elseif (choice == 6)
+        :Exit;
+    else
+        :Error Message;
+    endif
+endwhile
+
+stop
+
+@enduml

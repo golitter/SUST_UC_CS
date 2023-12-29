@@ -1,0 +1,6 @@
+<map id="PublicTransport" name="PublicTransport">
+<area shape="rect" id="node1" title=" " alt="" coords="5,313,117,339"/>
+<area shape="rect" id="node2" title=" " alt="" coords="34,5,89,31"/>
+<area shape="rect" id="node4" href="$class_pass_info.html" title=" " alt="" coords="119,108,191,133"/>
+<area shape="rect" id="node3" href="$class_p_i_loop.html" title=" " alt="" coords="123,211,186,236"/>
+</map>

@@ -1,0 +1,31 @@
+\hypertarget{_p_i_loop_8h_source}{}\doxysection{PILoop.\+h}
+\mbox{\hyperlink{_p_i_loop_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_pass_info_8h}{PassInfo.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_p_i_loop}{PILoop}}\ :}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_pass_info}{PassInfo}}}
+\DoxyCodeLine{00005\ \{}
+\DoxyCodeLine{00006\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_p_i_loop_af0535f4ab93bbd5403d4d5f26bf10a95}{RouteLoopRe}};}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_public_transport}{PublicTransport}};}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_tool}{Tool}};}
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{class_p_i_loop_adfa990bea588bda0d518a70e2ea48cf6}{PILoop}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{class_p_i_loop_a05ab3504d2146e5a7c60f58dd618a55a}{\string~PILoop}}()\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_p_i_loop_ab24f38918960a6f7191ae7e5a547926e}{\_head}}\ =\ \mbox{\hyperlink{class_p_i_loop_ab24f38918960a6f7191ae7e5a547926e}{\_head}};\textcolor{comment}{//\ -\/>m\_next;}}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (\mbox{\hyperlink{class_p_i_loop_ab24f38918960a6f7191ae7e5a547926e}{\_head}})\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_pass_info}{PassInfo}}*\ \_p\ =\ \mbox{\hyperlink{class_p_i_loop_ab24f38918960a6f7191ae7e5a547926e}{\_head}};}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_p_i_loop_ab24f38918960a6f7191ae7e5a547926e}{\_head}}\ =\ \mbox{\hyperlink{class_p_i_loop_ab24f38918960a6f7191ae7e5a547926e}{\_head}}-\/>\mbox{\hyperlink{class_pass_info_a589db3e69fbc60e92aa98fad9ccc0ee3}{m\_next}};}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ \_p;}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00018\ \ \ \ \ \}}
+\DoxyCodeLine{00019\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_pass_info}{PassInfo}}*\ \mbox{\hyperlink{class_p_i_loop_ab24f38918960a6f7191ae7e5a547926e}{\_head}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_pass_info}{PassInfo}}*\ \mbox{\hyperlink{class_p_i_loop_aa6ebe184a5e1abf6132177ec08f8a8d1}{\_tail}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_p_i_loop_a3d9e52894fb8a3ad084ee0821dc31363}{m\_runNum}};}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_p_i_loop}{PILoop}}*\ \mbox{\hyperlink{class_p_i_loop_af293f5bfa04f4444b637633672265b3d}{m\_runNext}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \};}
+\DoxyCodeLine{00026\ }
+
+\end{DoxyCode}

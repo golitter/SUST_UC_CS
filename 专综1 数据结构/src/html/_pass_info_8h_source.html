@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: PassInfo.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">PassInfo.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_pass_info_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;iomanip&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">using </span>std::istream;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">using </span>std::cout;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">using </span>std::string;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_pass_info.html">   10</a></span><span class="keyword">class </span><a class="code hl_class" href="class_pass_info.html">PassInfo</a></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_pass_info.html#acbdc718c1d7d5a9d5253ea3d078271f6">   13</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_p_i_loop.html">PILoop</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_pass_info.html#a802a3082ae9f848a0b22b9dffda194a1">   14</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_public_transport.html">PublicTransport</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_pass_info.html#a76e9adf1d0321729d4b28ce85a6825fd">   15</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_tool.html">Tool</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">friend</span> istream&amp; <a class="code hl_friend" href="class_pass_info.html#ac08fdbc28b890a5cf6f179d9ea225329">operator&gt;&gt; </a>(istream &amp;in, <a class="code hl_class" href="class_pass_info.html">PassInfo</a>&amp; P);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_pass_info.html#a7391ed62876f3165dd034a4ef7ea2e8f">   17</a></span>    <a class="code hl_function" href="class_pass_info.html#a7391ed62876f3165dd034a4ef7ea2e8f">PassInfo</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_pass_info.html#a9223156da3341f5f0e2982a51d9e4e07">Info</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_pass_info.html#a56ceb8a46863a0615a3a63a76dd45494">setOrder</a>(<span class="keywordtype">int</span> order);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_pass_info.html#a1f404fb3d2bd446e74dd8756b34588c5">   21</a></span>    <span class="keywordtype">string</span> <a class="code hl_variable" href="class_pass_info.html#a1f404fb3d2bd446e74dd8756b34588c5">m_name</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_pass_info.html#ab0d3b61141b5568be1c2a340ccc9b1c7">   22</a></span>    <span class="keywordtype">string</span> <a class="code hl_variable" href="class_pass_info.html#ab0d3b61141b5568be1c2a340ccc9b1c7">m_phone</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_pass_info.html#ad9a58d3be9ba37bd5329acb3fc891a15">   23</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_pass_info.html#ad9a58d3be9ba37bd5329acb3fc891a15">m_getOnNum</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_pass_info.html#a6534f2ce270a0604f565350318243b8f">   24</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_pass_info.html#a6534f2ce270a0604f565350318243b8f">m_getOffNum</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_pass_info.html#a4c7c2eb1898159c2d9cefa89955e2476">   25</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_pass_info.html#a4c7c2eb1898159c2d9cefa89955e2476">m_order</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_pass_info.html#a589db3e69fbc60e92aa98fad9ccc0ee3">   26</a></span>    <a class="code hl_class" href="class_pass_info.html">PassInfo</a>* <a class="code hl_variable" href="class_pass_info.html#a589db3e69fbc60e92aa98fad9ccc0ee3">m_next</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="ttc" id="aclass_p_i_loop_html"><div class="ttname"><a href="class_p_i_loop.html">PILoop</a></div><div class="ttdef"><b>Definition:</b> PILoop.h:5</div></div>
+<div class="ttc" id="aclass_pass_info_html"><div class="ttname"><a href="class_pass_info.html">PassInfo</a></div><div class="ttdef"><b>Definition:</b> PassInfo.h:11</div></div>
+<div class="ttc" id="aclass_pass_info_html_a1f404fb3d2bd446e74dd8756b34588c5"><div class="ttname"><a href="class_pass_info.html#a1f404fb3d2bd446e74dd8756b34588c5">PassInfo::m_name</a></div><div class="ttdeci">string m_name</div><div class="ttdef"><b>Definition:</b> PassInfo.h:21</div></div>
+<div class="ttc" id="aclass_pass_info_html_a4c7c2eb1898159c2d9cefa89955e2476"><div class="ttname"><a href="class_pass_info.html#a4c7c2eb1898159c2d9cefa89955e2476">PassInfo::m_order</a></div><div class="ttdeci">int m_order</div><div class="ttdef"><b>Definition:</b> PassInfo.h:25</div></div>
+<div class="ttc" id="aclass_pass_info_html_a56ceb8a46863a0615a3a63a76dd45494"><div class="ttname"><a href="class_pass_info.html#a56ceb8a46863a0615a3a63a76dd45494">PassInfo::setOrder</a></div><div class="ttdeci">void setOrder(int order)</div><div class="ttdef"><b>Definition:</b> PassInfo.cpp:9</div></div>
+<div class="ttc" id="aclass_pass_info_html_a589db3e69fbc60e92aa98fad9ccc0ee3"><div class="ttname"><a href="class_pass_info.html#a589db3e69fbc60e92aa98fad9ccc0ee3">PassInfo::m_next</a></div><div class="ttdeci">PassInfo * m_next</div><div class="ttdef"><b>Definition:</b> PassInfo.h:26</div></div>
+<div class="ttc" id="aclass_pass_info_html_a6534f2ce270a0604f565350318243b8f"><div class="ttname"><a href="class_pass_info.html#a6534f2ce270a0604f565350318243b8f">PassInfo::m_getOffNum</a></div><div class="ttdeci">int m_getOffNum</div><div class="ttdef"><b>Definition:</b> PassInfo.h:24</div></div>
+<div class="ttc" id="aclass_pass_info_html_a7391ed62876f3165dd034a4ef7ea2e8f"><div class="ttname"><a href="class_pass_info.html#a7391ed62876f3165dd034a4ef7ea2e8f">PassInfo::PassInfo</a></div><div class="ttdeci">PassInfo()=default</div></div>
+<div class="ttc" id="aclass_pass_info_html_a9223156da3341f5f0e2982a51d9e4e07"><div class="ttname"><a href="class_pass_info.html#a9223156da3341f5f0e2982a51d9e4e07">PassInfo::Info</a></div><div class="ttdeci">void Info() const</div><div class="ttdef"><b>Definition:</b> PassInfo.cpp:13</div></div>
+<div class="ttc" id="aclass_pass_info_html_ab0d3b61141b5568be1c2a340ccc9b1c7"><div class="ttname"><a href="class_pass_info.html#ab0d3b61141b5568be1c2a340ccc9b1c7">PassInfo::m_phone</a></div><div class="ttdeci">string m_phone</div><div class="ttdef"><b>Definition:</b> PassInfo.h:22</div></div>
+<div class="ttc" id="aclass_pass_info_html_ac08fdbc28b890a5cf6f179d9ea225329"><div class="ttname"><a href="class_pass_info.html#ac08fdbc28b890a5cf6f179d9ea225329">PassInfo::operator&gt;&gt;</a></div><div class="ttdeci">friend istream &amp; operator&gt;&gt;(istream &amp;in, PassInfo &amp;P)</div><div class="ttdef"><b>Definition:</b> PassInfo.cpp:4</div></div>
+<div class="ttc" id="aclass_pass_info_html_ad9a58d3be9ba37bd5329acb3fc891a15"><div class="ttname"><a href="class_pass_info.html#ad9a58d3be9ba37bd5329acb3fc891a15">PassInfo::m_getOnNum</a></div><div class="ttdeci">int m_getOnNum</div><div class="ttdef"><b>Definition:</b> PassInfo.h:23</div></div>
+<div class="ttc" id="aclass_public_transport_html"><div class="ttname"><a href="class_public_transport.html">PublicTransport</a></div><div class="ttdef"><b>Definition:</b> PublicTransport.h:9</div></div>
+<div class="ttc" id="aclass_tool_html"><div class="ttname"><a href="class_tool.html">Tool</a></div><div class="ttdef"><b>Definition:</b> Tool.h:8</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

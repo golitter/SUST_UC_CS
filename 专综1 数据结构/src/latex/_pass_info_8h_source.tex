@@ -1,0 +1,34 @@
+\hypertarget{_pass_info_8h_source}{}\doxysection{Pass\+Info.\+h}
+\mbox{\hyperlink{_pass_info_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iomanip>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{using\ }std::istream;}
+\DoxyCodeLine{00007\ \textcolor{keyword}{using\ }std::cout;}
+\DoxyCodeLine{00008\ \textcolor{keyword}{using\ }std::string;}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pass_info}{PassInfo}}}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_p_i_loop}{PILoop}};}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_public_transport}{PublicTransport}};}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_tool}{Tool}};}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{friend}\ istream\&\ \mbox{\hyperlink{class_pass_info_ac08fdbc28b890a5cf6f179d9ea225329}{operator>>\ }}(istream\ \&in,\ \mbox{\hyperlink{class_pass_info}{PassInfo}}\&\ P);}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_pass_info_a7391ed62876f3165dd034a4ef7ea2e8f}{PassInfo}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pass_info_a9223156da3341f5f0e2982a51d9e4e07}{Info}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pass_info_a56ceb8a46863a0615a3a63a76dd45494}{setOrder}}(\textcolor{keywordtype}{int}\ order);}
+\DoxyCodeLine{00020\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_pass_info_a1f404fb3d2bd446e74dd8756b34588c5}{m\_name}};}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_pass_info_ab0d3b61141b5568be1c2a340ccc9b1c7}{m\_phone}};}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_pass_info_ad9a58d3be9ba37bd5329acb3fc891a15}{m\_getOnNum}};}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_pass_info_a6534f2ce270a0604f565350318243b8f}{m\_getOffNum}};}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_pass_info_a4c7c2eb1898159c2d9cefa89955e2476}{m\_order}};}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_pass_info}{PassInfo}}*\ \mbox{\hyperlink{class_pass_info_a589db3e69fbc60e92aa98fad9ccc0ee3}{m\_next}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \};}
+\DoxyCodeLine{00029\ }
+
+\end{DoxyCode}

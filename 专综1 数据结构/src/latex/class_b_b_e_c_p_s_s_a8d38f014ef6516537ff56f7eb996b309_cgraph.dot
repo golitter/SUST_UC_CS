@@ -1,0 +1,20 @@
+digraph "BBECPSS::subBusFunc"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="BBECPSS::subBusFunc",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="BBECPSS::loadingEffect",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_b_b_e_c_p_s_s.html#ae129be5558914aab849f3f5dc0bb86c0",tooltip=" "];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="Tool::otherBus",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_tool.html#ac7b209dc86c941d0d1c4e4c5bdd763c2",tooltip=" "];
+  Node3 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="PublicTransport::Info",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_public_transport.html#a6c5d4e433a06219fa7947fab8dd088e6",tooltip=" "];
+  Node1 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="Tool::routeInfo",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_tool.html#af5d9375dbde114d55131ef6fb4633436",tooltip=" "];
+  Node5 -> Node5 [color="steelblue1",style="solid"];
+  Node1 -> Node6 [color="steelblue1",style="solid"];
+  Node6 [label="BBECPSS::subContentScreen",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_b_b_e_c_p_s_s.html#a40b0104203523df2b1af8448c8bf0724",tooltip=" "];
+}

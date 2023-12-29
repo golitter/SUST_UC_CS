@@ -1,0 +1,24 @@
+@startuml
+
+start
+
+:Display Menu Options;
+
+while (choice != 4) is (true)
+    :Get user input for choice;
+    if (choice == 1)
+        :Display Pet by Color;
+    elseif (choice == 2)
+        :Display Pet by Type;
+    elseif (choice == 3)
+        :Display Default Pet;
+    elseif (choice == 4)
+        :Exit;
+    else
+        :Error Message;
+    endif
+endwhile
+
+stop
+
+@enduml

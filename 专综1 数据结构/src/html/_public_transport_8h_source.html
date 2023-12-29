@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: PublicTransport.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">PublicTransport.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_public_transport_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="_graph_8h.html">Graph.h</a>&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="_p_i_loop_8h.html">PILoop.h</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="_public_transport_8h.html#a27908ee2348059d7032cbc9912804674">    5</a></span><span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="_public_transport_8h.html#a27908ee2348059d7032cbc9912804674">MAX_NUMBER_of_PASSENGER</a> = 16;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_public_transport.html">    8</a></span><span class="keyword">class </span><a class="code hl_class" href="class_public_transport.html">PublicTransport</a></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_public_transport.html#a76e9adf1d0321729d4b28ce85a6825fd">   11</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_tool.html">Tool</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_public_transport.html#a9f0f499787be68176da4499798709ecb">   12</a></span>    <a class="code hl_function" href="class_public_transport.html#a9f0f499787be68176da4499798709ecb">PublicTransport</a>() {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <a class="code hl_variable" href="class_public_transport.html#a9391b1c2c1e6fd9ac54f00f7d2f5bc2b">m_lineNumber</a> = -1;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <a class="code hl_variable" href="class_public_transport.html#aebed2d3e87908caeb68d38a0be8cae30">_reHead</a> = <span class="keyword">new</span> <a class="code hl_class" href="class_p_i_loop.html">PILoop</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <a class="code hl_variable" href="class_public_transport.html#aebed2d3e87908caeb68d38a0be8cae30">_reHead</a>-&gt;<a class="code hl_variable" href="class_p_i_loop.html#af293f5bfa04f4444b637633672265b3d">m_runNext</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <a class="code hl_variable" href="class_public_transport.html#aacc666bf1e68b93f24224e290d43a161">_reTail</a> = <a class="code hl_variable" href="class_public_transport.html#aebed2d3e87908caeb68d38a0be8cae30">_reHead</a>; <span class="comment">// cout &lt;&lt; bus[i]._reHead &lt;&lt; &quot;test add \n&quot;;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <a class="code hl_variable" href="class_public_transport.html#aacc666bf1e68b93f24224e290d43a161">_reTail</a>-&gt;<a class="code hl_variable" href="class_p_i_loop.html#ab24f38918960a6f7191ae7e5a547926e">_head</a> = <span class="keyword">new</span> <a class="code hl_class" href="class_pass_info.html">PassInfo</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <a class="code hl_variable" href="class_public_transport.html#aacc666bf1e68b93f24224e290d43a161">_reTail</a>-&gt;<a class="code hl_variable" href="class_p_i_loop.html#ab24f38918960a6f7191ae7e5a547926e">_head</a>-&gt;<a class="code hl_variable" href="class_pass_info.html#a589db3e69fbc60e92aa98fad9ccc0ee3">m_next</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <a class="code hl_variable" href="class_public_transport.html#aacc666bf1e68b93f24224e290d43a161">_reTail</a>-&gt;<a class="code hl_variable" href="class_p_i_loop.html#aa6ebe184a5e1abf6132177ec08f8a8d1">_tail</a> = <a class="code hl_variable" href="class_public_transport.html#aacc666bf1e68b93f24224e290d43a161">_reTail</a>-&gt;<a class="code hl_variable" href="class_p_i_loop.html#ab24f38918960a6f7191ae7e5a547926e">_head</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <a class="code hl_variable" href="class_public_transport.html#aacc666bf1e68b93f24224e290d43a161">_reTail</a>-&gt;<a class="code hl_variable" href="class_p_i_loop.html#a3d9e52894fb8a3ad084ee0821dc31363">m_runNum</a> = 1;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    }</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_public_transport.html#a84c6f84ec1531a111d3fd4c133f5cae2">init</a>();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_public_transport.html#abf7a24ee4a9cc7252351ab92255a913e">   23</a></span>    <a class="code hl_function" href="class_public_transport.html#abf7a24ee4a9cc7252351ab92255a913e">PublicTransport</a>(<span class="keywordtype">string</span> driver, <span class="keywordtype">string</span> serialnumber, <span class="keywordtype">int</span> lineNum): <a class="code hl_variable" href="class_public_transport.html#a86b06d4ccfbdc9fe4fe0322472ae0381">m_busDriver</a>(driver), <a class="code hl_variable" href="class_public_transport.html#a83e5753023c3297bbe8b7b81ed171972">m_serialNumber</a>(serialnumber),<a class="code hl_variable" href="class_public_transport.html#a9391b1c2c1e6fd9ac54f00f7d2f5bc2b">m_lineNumber</a>(lineNum) {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <a class="code hl_function" href="class_public_transport.html#a2581aa812dc0e266a11df4ee35d1fc10">setStart_End</a>();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <a class="code hl_variable" href="class_public_transport.html#a842e8a66a9a874f558058d3e658708f6">m_passengers</a>[0] = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <a class="code hl_variable" href="class_public_transport.html#ac1e690a203a92888df7aaccdcedb7bc1">m_nowNum</a> = 1;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <a class="code hl_function" href="class_public_transport.html#a9f0f499787be68176da4499798709ecb">PublicTransport</a>();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt;= <a class="code hl_variable" href="_public_transport_8h.html#a27908ee2348059d7032cbc9912804674">MAX_NUMBER_of_PASSENGER</a>; ++i) <a class="code hl_variable" href="class_public_transport.html#a842e8a66a9a874f558058d3e658708f6">m_passengers</a>[i] = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_public_transport.html#aa8468bb3e9a726a2ff03ac62c3c3be58">setInfo</a>(<span class="keywordtype">string</span> driver, <span class="keywordtype">string</span> serialnumber, <span class="keywordtype">int</span> lineNum);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_public_transport.html#a2581aa812dc0e266a11df4ee35d1fc10">setStart_End</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_public_transport.html#a6c5d4e433a06219fa7947fab8dd088e6">Info</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_public_transport.html#a65ca3c9ddd51fab3d74be9e319a905fd">   33</a></span>    <a class="code hl_function" href="class_public_transport.html#a65ca3c9ddd51fab3d74be9e319a905fd">~PublicTransport</a>() {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_variable" href="class_public_transport.html#aebed2d3e87908caeb68d38a0be8cae30">_reHead</a> = <a class="code hl_variable" href="class_public_transport.html#aebed2d3e87908caeb68d38a0be8cae30">_reHead</a>; <span class="comment">// -&gt;m_runNext;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keywordflow">while</span> (<a class="code hl_variable" href="class_public_transport.html#aebed2d3e87908caeb68d38a0be8cae30">_reHead</a>) {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <a class="code hl_class" href="class_p_i_loop.html">PILoop</a>* _p = <a class="code hl_variable" href="class_public_transport.html#aebed2d3e87908caeb68d38a0be8cae30">_reHead</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <a class="code hl_variable" href="class_public_transport.html#aebed2d3e87908caeb68d38a0be8cae30">_reHead</a> = <a class="code hl_variable" href="class_public_transport.html#aebed2d3e87908caeb68d38a0be8cae30">_reHead</a>-&gt;<a class="code hl_variable" href="class_p_i_loop.html#af293f5bfa04f4444b637633672265b3d">m_runNext</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="keyword">delete</span> _p;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_public_transport.html#a83e5753023c3297bbe8b7b81ed171972">   42</a></span>    <span class="keywordtype">string</span> <a class="code hl_variable" href="class_public_transport.html#a83e5753023c3297bbe8b7b81ed171972">m_serialNumber</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_public_transport.html#a86b06d4ccfbdc9fe4fe0322472ae0381">   43</a></span>    <span class="keywordtype">string</span> <a class="code hl_variable" href="class_public_transport.html#a86b06d4ccfbdc9fe4fe0322472ae0381">m_busDriver</a>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_public_transport.html#a9391b1c2c1e6fd9ac54f00f7d2f5bc2b">   44</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_public_transport.html#a9391b1c2c1e6fd9ac54f00f7d2f5bc2b">m_lineNumber</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_public_transport.html#a4e84c27a72407ffc62969428df2d1d58">   45</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_public_transport.html#aa39872a27d51874cfd9360459e95cf49">m_stNumber</a>, <a class="code hl_variable" href="class_public_transport.html#a4e84c27a72407ffc62969428df2d1d58">m_edNumber</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_public_transport.html#ab4677dfd858ca82238b9e3ce04e245cd">   46</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_public_transport.html#ab4677dfd858ca82238b9e3ce04e245cd">m_loopNum</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_public_transport.html#a842e8a66a9a874f558058d3e658708f6">   47</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_public_transport.html#a842e8a66a9a874f558058d3e658708f6">m_passengers</a>[<a class="code hl_variable" href="_public_transport_8h.html#a27908ee2348059d7032cbc9912804674">MAX_NUMBER_of_PASSENGER</a> + 1];</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_public_transport.html#ac1e690a203a92888df7aaccdcedb7bc1">   48</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_public_transport.html#ac1e690a203a92888df7aaccdcedb7bc1">m_nowNum</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_public_transport.html#aebed2d3e87908caeb68d38a0be8cae30">   49</a></span>    <a class="code hl_class" href="class_p_i_loop.html">PILoop</a>* <a class="code hl_variable" href="class_public_transport.html#aebed2d3e87908caeb68d38a0be8cae30">_reHead</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_public_transport.html#aacc666bf1e68b93f24224e290d43a161">   50</a></span>    <a class="code hl_class" href="class_p_i_loop.html">PILoop</a>* <a class="code hl_variable" href="class_public_transport.html#aacc666bf1e68b93f24224e290d43a161">_reTail</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>};</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="ttc" id="a_graph_8h_html"><div class="ttname"><a href="_graph_8h.html">Graph.h</a></div></div>
+<div class="ttc" id="a_p_i_loop_8h_html"><div class="ttname"><a href="_p_i_loop_8h.html">PILoop.h</a></div></div>
+<div class="ttc" id="a_public_transport_8h_html_a27908ee2348059d7032cbc9912804674"><div class="ttname"><a href="_public_transport_8h.html#a27908ee2348059d7032cbc9912804674">MAX_NUMBER_of_PASSENGER</a></div><div class="ttdeci">const int MAX_NUMBER_of_PASSENGER</div><div class="ttdef"><b>Definition:</b> PublicTransport.h:5</div></div>
+<div class="ttc" id="aclass_p_i_loop_html"><div class="ttname"><a href="class_p_i_loop.html">PILoop</a></div><div class="ttdef"><b>Definition:</b> PILoop.h:5</div></div>
+<div class="ttc" id="aclass_p_i_loop_html_a3d9e52894fb8a3ad084ee0821dc31363"><div class="ttname"><a href="class_p_i_loop.html#a3d9e52894fb8a3ad084ee0821dc31363">PILoop::m_runNum</a></div><div class="ttdeci">int m_runNum</div><div class="ttdef"><b>Definition:</b> PILoop.h:22</div></div>
+<div class="ttc" id="aclass_p_i_loop_html_aa6ebe184a5e1abf6132177ec08f8a8d1"><div class="ttname"><a href="class_p_i_loop.html#aa6ebe184a5e1abf6132177ec08f8a8d1">PILoop::_tail</a></div><div class="ttdeci">PassInfo * _tail</div><div class="ttdef"><b>Definition:</b> PILoop.h:21</div></div>
+<div class="ttc" id="aclass_p_i_loop_html_ab24f38918960a6f7191ae7e5a547926e"><div class="ttname"><a href="class_p_i_loop.html#ab24f38918960a6f7191ae7e5a547926e">PILoop::_head</a></div><div class="ttdeci">PassInfo * _head</div><div class="ttdef"><b>Definition:</b> PILoop.h:20</div></div>
+<div class="ttc" id="aclass_p_i_loop_html_af293f5bfa04f4444b637633672265b3d"><div class="ttname"><a href="class_p_i_loop.html#af293f5bfa04f4444b637633672265b3d">PILoop::m_runNext</a></div><div class="ttdeci">PILoop * m_runNext</div><div class="ttdef"><b>Definition:</b> PILoop.h:23</div></div>
+<div class="ttc" id="aclass_pass_info_html"><div class="ttname"><a href="class_pass_info.html">PassInfo</a></div><div class="ttdef"><b>Definition:</b> PassInfo.h:11</div></div>
+<div class="ttc" id="aclass_pass_info_html_a589db3e69fbc60e92aa98fad9ccc0ee3"><div class="ttname"><a href="class_pass_info.html#a589db3e69fbc60e92aa98fad9ccc0ee3">PassInfo::m_next</a></div><div class="ttdeci">PassInfo * m_next</div><div class="ttdef"><b>Definition:</b> PassInfo.h:26</div></div>
+<div class="ttc" id="aclass_public_transport_html"><div class="ttname"><a href="class_public_transport.html">PublicTransport</a></div><div class="ttdef"><b>Definition:</b> PublicTransport.h:9</div></div>
+<div class="ttc" id="aclass_public_transport_html_a2581aa812dc0e266a11df4ee35d1fc10"><div class="ttname"><a href="class_public_transport.html#a2581aa812dc0e266a11df4ee35d1fc10">PublicTransport::setStart_End</a></div><div class="ttdeci">void setStart_End()</div><div class="ttdef"><b>Definition:</b> PublicTransport.cpp:30</div></div>
+<div class="ttc" id="aclass_public_transport_html_a4e84c27a72407ffc62969428df2d1d58"><div class="ttname"><a href="class_public_transport.html#a4e84c27a72407ffc62969428df2d1d58">PublicTransport::m_edNumber</a></div><div class="ttdeci">int m_edNumber</div><div class="ttdef"><b>Definition:</b> PublicTransport.h:45</div></div>
+<div class="ttc" id="aclass_public_transport_html_a65ca3c9ddd51fab3d74be9e319a905fd"><div class="ttname"><a href="class_public_transport.html#a65ca3c9ddd51fab3d74be9e319a905fd">PublicTransport::~PublicTransport</a></div><div class="ttdeci">~PublicTransport()</div><div class="ttdef"><b>Definition:</b> PublicTransport.h:33</div></div>
+<div class="ttc" id="aclass_public_transport_html_a6c5d4e433a06219fa7947fab8dd088e6"><div class="ttname"><a href="class_public_transport.html#a6c5d4e433a06219fa7947fab8dd088e6">PublicTransport::Info</a></div><div class="ttdeci">void Info() const</div><div class="ttdef"><b>Definition:</b> PublicTransport.cpp:6</div></div>
+<div class="ttc" id="aclass_public_transport_html_a83e5753023c3297bbe8b7b81ed171972"><div class="ttname"><a href="class_public_transport.html#a83e5753023c3297bbe8b7b81ed171972">PublicTransport::m_serialNumber</a></div><div class="ttdeci">string m_serialNumber</div><div class="ttdef"><b>Definition:</b> PublicTransport.h:42</div></div>
+<div class="ttc" id="aclass_public_transport_html_a842e8a66a9a874f558058d3e658708f6"><div class="ttname"><a href="class_public_transport.html#a842e8a66a9a874f558058d3e658708f6">PublicTransport::m_passengers</a></div><div class="ttdeci">bool m_passengers[MAX_NUMBER_of_PASSENGER+1]</div><div class="ttdef"><b>Definition:</b> PublicTransport.h:47</div></div>
+<div class="ttc" id="aclass_public_transport_html_a84c6f84ec1531a111d3fd4c133f5cae2"><div class="ttname"><a href="class_public_transport.html#a84c6f84ec1531a111d3fd4c133f5cae2">PublicTransport::init</a></div><div class="ttdeci">void init()</div><div class="ttdef"><b>Definition:</b> PublicTransport.cpp:25</div></div>
+<div class="ttc" id="aclass_public_transport_html_a86b06d4ccfbdc9fe4fe0322472ae0381"><div class="ttname"><a href="class_public_transport.html#a86b06d4ccfbdc9fe4fe0322472ae0381">PublicTransport::m_busDriver</a></div><div class="ttdeci">string m_busDriver</div><div class="ttdef"><b>Definition:</b> PublicTransport.h:43</div></div>
+<div class="ttc" id="aclass_public_transport_html_a9391b1c2c1e6fd9ac54f00f7d2f5bc2b"><div class="ttname"><a href="class_public_transport.html#a9391b1c2c1e6fd9ac54f00f7d2f5bc2b">PublicTransport::m_lineNumber</a></div><div class="ttdeci">int m_lineNumber</div><div class="ttdef"><b>Definition:</b> PublicTransport.h:44</div></div>
+<div class="ttc" id="aclass_public_transport_html_a9f0f499787be68176da4499798709ecb"><div class="ttname"><a href="class_public_transport.html#a9f0f499787be68176da4499798709ecb">PublicTransport::PublicTransport</a></div><div class="ttdeci">PublicTransport()</div><div class="ttdef"><b>Definition:</b> PublicTransport.h:12</div></div>
+<div class="ttc" id="aclass_public_transport_html_aa39872a27d51874cfd9360459e95cf49"><div class="ttname"><a href="class_public_transport.html#aa39872a27d51874cfd9360459e95cf49">PublicTransport::m_stNumber</a></div><div class="ttdeci">int m_stNumber</div><div class="ttdef"><b>Definition:</b> PublicTransport.h:45</div></div>
+<div class="ttc" id="aclass_public_transport_html_aa8468bb3e9a726a2ff03ac62c3c3be58"><div class="ttname"><a href="class_public_transport.html#aa8468bb3e9a726a2ff03ac62c3c3be58">PublicTransport::setInfo</a></div><div class="ttdeci">void setInfo(string driver, string serialnumber, int lineNum)</div><div class="ttdef"><b>Definition:</b> PublicTransport.cpp:13</div></div>
+<div class="ttc" id="aclass_public_transport_html_aacc666bf1e68b93f24224e290d43a161"><div class="ttname"><a href="class_public_transport.html#aacc666bf1e68b93f24224e290d43a161">PublicTransport::_reTail</a></div><div class="ttdeci">PILoop * _reTail</div><div class="ttdef"><b>Definition:</b> PublicTransport.h:50</div></div>
+<div class="ttc" id="aclass_public_transport_html_ab4677dfd858ca82238b9e3ce04e245cd"><div class="ttname"><a href="class_public_transport.html#ab4677dfd858ca82238b9e3ce04e245cd">PublicTransport::m_loopNum</a></div><div class="ttdeci">int m_loopNum</div><div class="ttdef"><b>Definition:</b> PublicTransport.h:46</div></div>
+<div class="ttc" id="aclass_public_transport_html_abf7a24ee4a9cc7252351ab92255a913e"><div class="ttname"><a href="class_public_transport.html#abf7a24ee4a9cc7252351ab92255a913e">PublicTransport::PublicTransport</a></div><div class="ttdeci">PublicTransport(string driver, string serialnumber, int lineNum)</div><div class="ttdef"><b>Definition:</b> PublicTransport.h:23</div></div>
+<div class="ttc" id="aclass_public_transport_html_ac1e690a203a92888df7aaccdcedb7bc1"><div class="ttname"><a href="class_public_transport.html#ac1e690a203a92888df7aaccdcedb7bc1">PublicTransport::m_nowNum</a></div><div class="ttdeci">int m_nowNum</div><div class="ttdef"><b>Definition:</b> PublicTransport.h:48</div></div>
+<div class="ttc" id="aclass_public_transport_html_aebed2d3e87908caeb68d38a0be8cae30"><div class="ttname"><a href="class_public_transport.html#aebed2d3e87908caeb68d38a0be8cae30">PublicTransport::_reHead</a></div><div class="ttdeci">PILoop * _reHead</div><div class="ttdef"><b>Definition:</b> PublicTransport.h:49</div></div>
+<div class="ttc" id="aclass_tool_html"><div class="ttname"><a href="class_tool.html">Tool</a></div><div class="ttdef"><b>Definition:</b> Tool.h:8</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

@@ -1,0 +1,144 @@
+\hypertarget{class_graph}{}\doxysection{Graph类 参考}
+\label{class_graph}\index{Graph@{Graph}}
+
+
+{\ttfamily \#include $<$Graph.\+h$>$}
+
+
+
+Graph 的协作图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{class_graph__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_graph_ae4c72b8ac4d693c49800a4c7e273654f}{Graph}} ()
+\item 
+\mbox{\hyperlink{class_graph_a7e963f57fa2c368e79db1562112aed54}{Graph}} (int size)
+\item 
+void \mbox{\hyperlink{class_graph_a326632bf48221a9621c057b6a2a4f388}{set\+Station\+Name}} ()
+\item 
+void \mbox{\hyperlink{class_graph_a906e9062d91eed9e1bb5747a842721c9}{set\+Route}} ()
+\item 
+void \mbox{\hyperlink{class_graph_a3f02a61f0a0d70911667f1df4966b28a}{set\+Size}} (int size)
+\item 
+void \mbox{\hyperlink{class_graph_ab2241b137b28314469c206032f38f234}{Info}} () const
+\item 
+\mbox{\hyperlink{class_graph_a902c5b3eacb66d60752525ab23297a95}{$\sim$\+Graph}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_station}{Station}} $\ast$ \mbox{\hyperlink{class_graph_a91df41750598ce2710ca6759bb4070b7}{m\+\_\+set}}
+\item 
+int \mbox{\hyperlink{class_graph_a50870857a6cdfc2ae5febca1596847ae}{m\+\_\+length}}
+\item 
+int \mbox{\hyperlink{class_graph_ad12828e8332a63b9cd214a37e95592cb}{m\+\_\+now\+Length}}
+\end{DoxyCompactItemize}
+\doxysubsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_graph_a76e9adf1d0321729d4b28ce85a6825fd}{Tool}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{class_graph_ae4c72b8ac4d693c49800a4c7e273654f}\label{class_graph_ae4c72b8ac4d693c49800a4c7e273654f}} 
+\index{Graph@{Graph}!Graph@{Graph}}
+\index{Graph@{Graph}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{Graph()}{Graph()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Graph\+::\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_graph_a7e963f57fa2c368e79db1562112aed54}\label{class_graph_a7e963f57fa2c368e79db1562112aed54}} 
+\index{Graph@{Graph}!Graph@{Graph}}
+\index{Graph@{Graph}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{Graph()}{Graph()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Graph\+::\+Graph (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_graph_a902c5b3eacb66d60752525ab23297a95}\label{class_graph_a902c5b3eacb66d60752525ab23297a95}} 
+\index{Graph@{Graph}!````~Graph@{$\sim$Graph}}
+\index{````~Graph@{$\sim$Graph}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{$\sim$Graph()}{~Graph()}}
+{\footnotesize\ttfamily Graph\+::$\sim$\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{class_graph_ab2241b137b28314469c206032f38f234}\label{class_graph_ab2241b137b28314469c206032f38f234}} 
+\index{Graph@{Graph}!Info@{Info}}
+\index{Info@{Info}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{Info()}{Info()}}
+{\footnotesize\ttfamily void Graph\+::\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{class_graph_ab2241b137b28314469c206032f38f234_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_graph_a906e9062d91eed9e1bb5747a842721c9}\label{class_graph_a906e9062d91eed9e1bb5747a842721c9}} 
+\index{Graph@{Graph}!setRoute@{setRoute}}
+\index{setRoute@{setRoute}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{setRoute()}{setRoute()}}
+{\footnotesize\ttfamily void Graph\+::set\+Route (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_graph_a3f02a61f0a0d70911667f1df4966b28a}\label{class_graph_a3f02a61f0a0d70911667f1df4966b28a}} 
+\index{Graph@{Graph}!setSize@{setSize}}
+\index{setSize@{setSize}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{setSize()}{setSize()}}
+{\footnotesize\ttfamily void Graph\+::set\+Size (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_graph_a326632bf48221a9621c057b6a2a4f388}\label{class_graph_a326632bf48221a9621c057b6a2a4f388}} 
+\index{Graph@{Graph}!setStationName@{setStationName}}
+\index{setStationName@{setStationName}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{setStationName()}{setStationName()}}
+{\footnotesize\ttfamily void Graph\+::set\+Station\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_graph_a326632bf48221a9621c057b6a2a4f388_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{友元及相关函数文档}
+\mbox{\Hypertarget{class_graph_a76e9adf1d0321729d4b28ce85a6825fd}\label{class_graph_a76e9adf1d0321729d4b28ce85a6825fd}} 
+\index{Graph@{Graph}!Tool@{Tool}}
+\index{Tool@{Tool}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{Tool}{Tool}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_tool}{Tool}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{class_graph_a50870857a6cdfc2ae5febca1596847ae}\label{class_graph_a50870857a6cdfc2ae5febca1596847ae}} 
+\index{Graph@{Graph}!m\_length@{m\_length}}
+\index{m\_length@{m\_length}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{m\_length}{m\_length}}
+{\footnotesize\ttfamily int Graph\+::m\+\_\+length\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_graph_ad12828e8332a63b9cd214a37e95592cb}\label{class_graph_ad12828e8332a63b9cd214a37e95592cb}} 
+\index{Graph@{Graph}!m\_nowLength@{m\_nowLength}}
+\index{m\_nowLength@{m\_nowLength}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{m\_nowLength}{m\_nowLength}}
+{\footnotesize\ttfamily int Graph\+::m\+\_\+now\+Length\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_graph_a91df41750598ce2710ca6759bb4070b7}\label{class_graph_a91df41750598ce2710ca6759bb4070b7}} 
+\index{Graph@{Graph}!m\_set@{m\_set}}
+\index{m\_set@{m\_set}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{m\_set}{m\_set}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_station}{Station}}$\ast$ Graph\+::m\+\_\+set\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_graph_8h}{Graph.\+h}}\item 
+\mbox{\hyperlink{_graph_8cpp}{Graph.\+cpp}}\end{DoxyCompactItemize}

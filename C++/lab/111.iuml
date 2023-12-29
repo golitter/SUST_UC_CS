@@ -1,0 +1,14 @@
+@startuml
+
+class FileObject {
+    -fileptr: char*
+    -fo: ofstream
+    +FileObject(filename: const char*)
+    +open(): void
+    +write(content: const char*): void
+    +append(content: const char*): void
+    +close(): void
+    ~FileObject()
+}
+
+@enduml

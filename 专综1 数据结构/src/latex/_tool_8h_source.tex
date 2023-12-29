@@ -1,0 +1,38 @@
+\hypertarget{_tool_8h_source}{}\doxysection{Tool.\+h}
+\mbox{\hyperlink{_tool_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_graph_8h}{Graph.h}}"{}}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_public_transport_8h}{PublicTransport.h}}"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_tool}{Tool}}}
+\DoxyCodeLine{00008\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tool_af5d9375dbde114d55131ef6fb4633436}{routeInfo}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_graph}{Graph}}\ \&\ \_grp);}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tool_af5d9375dbde114d55131ef6fb4633436}{routeInfo}}();}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tool_a4a290820906f312d0987c49c50878da6}{disinfect}}(\mbox{\hyperlink{class_public_transport}{PublicTransport}}\&\ \_ptpt);}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tool_a6840d3b123c12e7169cee7319db8bc79}{initBus}}();}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tool_ac7b209dc86c941d0d1c4e4c5bdd763c2}{otherBus}}();}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tool_a4d0c0bde0308c1fe932253b7ac22a7ae}{initGraph}}();}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tool_a2df453b2252b92e8cf837a33c0799d4d}{initAllDev}}();}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tool_a620c05779a2f83ca0cf8c06494dcbb4d}{clearBus}}();}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tool_a92bd5a4e3fe5524520d10b9bc5c6eb73}{readData}}();}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tool_a92bd5a4e3fe5524520d10b9bc5c6eb73}{readData}}(\textcolor{keywordtype}{string}\ \_fileName);}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tool_ad5e0411a61f42a5b6b6693eb29a509f1}{insertPI}}(\mbox{\hyperlink{class_pass_info}{PassInfo}}*\&\ pi,\ \textcolor{keywordtype}{int}\ line,\ \textcolor{keywordtype}{int}\ order);}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tool_aee17eedf7ae25d97ced516a7f556b0ac}{busPassInfo}}();}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tool_a3b52d9a5cfb1c0ebe8096dc9db796aa1}{findCloseContact}}(\textcolor{keywordtype}{int}\ \_stRoute,\ \textcolor{keywordtype}{int}\ \_edRoute,\textcolor{keywordtype}{int}\ \_site,\ \textcolor{keywordtype}{int}\ \_line,\ \textcolor{keywordtype}{int}\ \_loopNum);}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_tool_a6eedae1e44e1938b0bf0813c422f34f2}{isCC}}(\mbox{\hyperlink{class_pass_info}{PassInfo}}\&\ \_pi,\ \textcolor{keywordtype}{int}\ \_site);}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_tool_adf29537c8c743fb3a899b653850e3f3a}{isSameTime}}(\textcolor{keywordtype}{int}\ \_st,\ \textcolor{keywordtype}{int}\ \_ed,\ \textcolor{keywordtype}{int}\ \_otherSt,\ \textcolor{keywordtype}{int}\ \_otherEd,\ \textcolor{keywordtype}{int}\ \_line);}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tool_a2a58212183a529ec0f6e6bfa07ba890c}{SearchPositivePatients}}();}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tool_a2a58212183a529ec0f6e6bfa07ba890c}{SearchPositivePatients}}(\textcolor{keywordtype}{string}\ \_fileName);}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tool_a27f5df74441a7b721ce2efe2ab93247d}{inpFileCon}}(\textcolor{keywordtype}{string}\ \_dataFile,\ \textcolor{keywordtype}{string}\ \_ppFile);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tool_aa1b42f59ce28eb5e2b31cb3f018b445f}{clearSizeNum}}(\textcolor{keywordtype}{int}\ \_line);}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_tool_a33159fc2caa88be64cac05a1d1f033b9}{getSite}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \_line,\ \mbox{\hyperlink{class_pass_info}{PassInfo}}\ \&\_pi);}
+\DoxyCodeLine{00032\ \};}
+\DoxyCodeLine{00033\ }
+
+\end{DoxyCode}

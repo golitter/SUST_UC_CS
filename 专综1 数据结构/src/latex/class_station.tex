@@ -1,0 +1,177 @@
+\hypertarget{class_station}{}\doxysection{Station类 参考}
+\label{class_station}\index{Station@{Station}}
+
+
+{\ttfamily \#include $<$Station.\+h$>$}
+
+
+
+Station 的协作图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{class_station__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_station_ae106e27379a6ad6e1e23b8e017115b5a}{Station}} ()=default
+\item 
+\mbox{\hyperlink{class_station_a4b937c439de7119d26c00f1be7f5fd2e}{Station}} (string name, int number, string other)
+\item 
+void \mbox{\hyperlink{class_station_ad9fdabf7c7726195e85682ab0f7d49f5}{set\+Name\+\_\+\+Number}} (string name, int number)
+\item 
+void \mbox{\hyperlink{class_station_a6e41c9f0a2a6f702d2323fd9a7a8acdf}{set\+Name}} (string name)
+\item 
+string \mbox{\hyperlink{class_station_ac823ae175ec0e2baff462ed9612c7bae}{get\+Name}} () const
+\item 
+void \mbox{\hyperlink{class_station_a0d2374779a2da2bbb34f447853ebbb1a}{set\+Serial\+Number}} (int number)
+\item 
+int \mbox{\hyperlink{class_station_a009fa2d60f4fe4ac2bc68ab0b44e78a5}{get\+Serial\+Number}} () const
+\item 
+void \mbox{\hyperlink{class_station_a1d9d1d10c1562e455b32360299b78736}{set\+Other\+Info}} (string other)
+\item 
+string \mbox{\hyperlink{class_station_a248b53b2fd1cd1e97dd264e8fd57e02b}{get\+Other\+Info}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_station_a6e8027f489af59f5cee9ab55bedea76c}{m\+\_\+name}}
+\item 
+int \mbox{\hyperlink{class_station_a2489b3430a76ce20cde89f9d467cca4f}{m\+\_\+serial\+Number}}
+\item 
+string \mbox{\hyperlink{class_station_ab6ee8f0cba87094adc67709a06dda5f0}{m\+\_\+other\+Info}}
+\item 
+int \mbox{\hyperlink{class_station_a58b601ed7cecab2d4044f7651d3b40de}{m\+\_\+next}} \mbox{[}4\mbox{]}
+\item 
+int \mbox{\hyperlink{class_station_a990d341533b8fd9f67286ad44324380c}{m\+\_\+prev}} \mbox{[}4\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_station_a76e9adf1d0321729d4b28ce85a6825fd}{Tool}}
+\item 
+class \mbox{\hyperlink{class_station_afab89afd724f1b07b1aaad6bdc61c47a}{Graph}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{class_station_ae106e27379a6ad6e1e23b8e017115b5a}\label{class_station_ae106e27379a6ad6e1e23b8e017115b5a}} 
+\index{Station@{Station}!Station@{Station}}
+\index{Station@{Station}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{Station()}{Station()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Station\+::\+Station (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{class_station_a4b937c439de7119d26c00f1be7f5fd2e}\label{class_station_a4b937c439de7119d26c00f1be7f5fd2e}} 
+\index{Station@{Station}!Station@{Station}}
+\index{Station@{Station}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{Station()}{Station()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Station\+::\+Station (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{int}]{number,  }\item[{string}]{other }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{class_station_ac823ae175ec0e2baff462ed9612c7bae}\label{class_station_ac823ae175ec0e2baff462ed9612c7bae}} 
+\index{Station@{Station}!getName@{getName}}
+\index{getName@{getName}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Station\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_station_a248b53b2fd1cd1e97dd264e8fd57e02b}\label{class_station_a248b53b2fd1cd1e97dd264e8fd57e02b}} 
+\index{Station@{Station}!getOtherInfo@{getOtherInfo}}
+\index{getOtherInfo@{getOtherInfo}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{getOtherInfo()}{getOtherInfo()}}
+{\footnotesize\ttfamily string Station\+::get\+Other\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_station_a009fa2d60f4fe4ac2bc68ab0b44e78a5}\label{class_station_a009fa2d60f4fe4ac2bc68ab0b44e78a5}} 
+\index{Station@{Station}!getSerialNumber@{getSerialNumber}}
+\index{getSerialNumber@{getSerialNumber}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{getSerialNumber()}{getSerialNumber()}}
+{\footnotesize\ttfamily int Station\+::get\+Serial\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_station_a6e41c9f0a2a6f702d2323fd9a7a8acdf}\label{class_station_a6e41c9f0a2a6f702d2323fd9a7a8acdf}} 
+\index{Station@{Station}!setName@{setName}}
+\index{setName@{setName}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Station\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_station_ad9fdabf7c7726195e85682ab0f7d49f5}\label{class_station_ad9fdabf7c7726195e85682ab0f7d49f5}} 
+\index{Station@{Station}!setName\_Number@{setName\_Number}}
+\index{setName\_Number@{setName\_Number}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{setName\_Number()}{setName\_Number()}}
+{\footnotesize\ttfamily void Station\+::set\+Name\+\_\+\+Number (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{int}]{number }\end{DoxyParamCaption})}
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_station_ad9fdabf7c7726195e85682ab0f7d49f5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_station_a1d9d1d10c1562e455b32360299b78736}\label{class_station_a1d9d1d10c1562e455b32360299b78736}} 
+\index{Station@{Station}!setOtherInfo@{setOtherInfo}}
+\index{setOtherInfo@{setOtherInfo}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{setOtherInfo()}{setOtherInfo()}}
+{\footnotesize\ttfamily void Station\+::set\+Other\+Info (\begin{DoxyParamCaption}\item[{string}]{other }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_station_a0d2374779a2da2bbb34f447853ebbb1a}\label{class_station_a0d2374779a2da2bbb34f447853ebbb1a}} 
+\index{Station@{Station}!setSerialNumber@{setSerialNumber}}
+\index{setSerialNumber@{setSerialNumber}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{setSerialNumber()}{setSerialNumber()}}
+{\footnotesize\ttfamily void Station\+::set\+Serial\+Number (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{友元及相关函数文档}
+\mbox{\Hypertarget{class_station_afab89afd724f1b07b1aaad6bdc61c47a}\label{class_station_afab89afd724f1b07b1aaad6bdc61c47a}} 
+\index{Station@{Station}!Graph@{Graph}}
+\index{Graph@{Graph}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{Graph}{Graph}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_graph}{Graph}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{class_station_a76e9adf1d0321729d4b28ce85a6825fd}\label{class_station_a76e9adf1d0321729d4b28ce85a6825fd}} 
+\index{Station@{Station}!Tool@{Tool}}
+\index{Tool@{Tool}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{Tool}{Tool}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_tool}{Tool}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{class_station_a6e8027f489af59f5cee9ab55bedea76c}\label{class_station_a6e8027f489af59f5cee9ab55bedea76c}} 
+\index{Station@{Station}!m\_name@{m\_name}}
+\index{m\_name@{m\_name}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{m\_name}{m\_name}}
+{\footnotesize\ttfamily string Station\+::m\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_station_a58b601ed7cecab2d4044f7651d3b40de}\label{class_station_a58b601ed7cecab2d4044f7651d3b40de}} 
+\index{Station@{Station}!m\_next@{m\_next}}
+\index{m\_next@{m\_next}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{m\_next}{m\_next}}
+{\footnotesize\ttfamily int Station\+::m\+\_\+next\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_station_ab6ee8f0cba87094adc67709a06dda5f0}\label{class_station_ab6ee8f0cba87094adc67709a06dda5f0}} 
+\index{Station@{Station}!m\_otherInfo@{m\_otherInfo}}
+\index{m\_otherInfo@{m\_otherInfo}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{m\_otherInfo}{m\_otherInfo}}
+{\footnotesize\ttfamily string Station\+::m\+\_\+other\+Info\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_station_a990d341533b8fd9f67286ad44324380c}\label{class_station_a990d341533b8fd9f67286ad44324380c}} 
+\index{Station@{Station}!m\_prev@{m\_prev}}
+\index{m\_prev@{m\_prev}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{m\_prev}{m\_prev}}
+{\footnotesize\ttfamily int Station\+::m\+\_\+prev\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_station_a2489b3430a76ce20cde89f9d467cca4f}\label{class_station_a2489b3430a76ce20cde89f9d467cca4f}} 
+\index{Station@{Station}!m\_serialNumber@{m\_serialNumber}}
+\index{m\_serialNumber@{m\_serialNumber}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{m\_serialNumber}{m\_serialNumber}}
+{\footnotesize\ttfamily int Station\+::m\+\_\+serial\+Number\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_station_8h}{Station.\+h}}\item 
+\mbox{\hyperlink{_station_8cpp}{Station.\+cpp}}\end{DoxyCompactItemize}

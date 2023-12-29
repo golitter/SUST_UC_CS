@@ -1,0 +1,49 @@
+@startuml
+
+class Pet {
+    -String name
+    -int age
+    -String color
+    -double weight
+    -int type
+    -String breed
+    +Pet()
+    +Pet(String name, int age, String color, double weight)
+    +void speak()
+    +String getName()
+    +void setName(String name)
+    +int getAge()
+    +void setAge(int age)
+    +String getColor()
+    +void setColor(String color)
+    +double getWeight()
+    +void setWeight(double weight)
+    +int getType()
+    +void setType(int type)
+    +String getBreed()
+    +void setBreed(String breed)
+    +String toString()
+    +String toWriteInfo()
+    +boolean equals(Object obj)
+}
+
+class Cat {
+    +Cat(name: String, age: int, color: String, weight: double, breed: String)
+    +speak(): void
+    +toString(): String
+    +toWriteInfo(): String
+    +equals(obj: Object): boolean
+}
+
+class Dog {
+    +Dog(name: String, age: int, color: String, weight: double, breed: String)
+    +speak(): void
+    +toString(): String
+    +toWriteInfo(): String
+    +equals(obj: Object): boolean
+}
+
+Pet <|-- Cat
+Pet <|-- Dog
+
+@enduml

@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Station.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Station.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_station_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span>std::string;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_station.html">    5</a></span><span class="keyword">class </span><a class="code hl_class" href="class_station.html">Station</a></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_station.html#a76e9adf1d0321729d4b28ce85a6825fd">    8</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_tool.html">Tool</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_station.html#afab89afd724f1b07b1aaad6bdc61c47a">    9</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_graph.html">Graph</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_station.html#ae106e27379a6ad6e1e23b8e017115b5a">   10</a></span>    <a class="code hl_function" href="class_station.html#ae106e27379a6ad6e1e23b8e017115b5a">Station</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <a class="code hl_function" href="class_station.html#ae106e27379a6ad6e1e23b8e017115b5a">Station</a>(<span class="keywordtype">string</span> name, <span class="keywordtype">int</span> number, <span class="keywordtype">string</span> other);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_station.html#ad9fdabf7c7726195e85682ab0f7d49f5">setName_Number</a>(<span class="keywordtype">string</span> name, <span class="keywordtype">int</span> number);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_station.html#a6e41c9f0a2a6f702d2323fd9a7a8acdf">setName</a>(<span class="keywordtype">string</span> name);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="class_station.html#ac823ae175ec0e2baff462ed9612c7bae">getName</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_station.html#a0d2374779a2da2bbb34f447853ebbb1a">setSerialNumber</a>(<span class="keywordtype">int</span> number);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_station.html#a009fa2d60f4fe4ac2bc68ab0b44e78a5">getSerialNumber</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_station.html#a1d9d1d10c1562e455b32360299b78736">setOtherInfo</a>(<span class="keywordtype">string</span> other);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="class_station.html#a248b53b2fd1cd1e97dd264e8fd57e02b">getOtherInfo</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_station.html#a6e8027f489af59f5cee9ab55bedea76c">   21</a></span>    <span class="keywordtype">string</span> <a class="code hl_variable" href="class_station.html#a6e8027f489af59f5cee9ab55bedea76c">m_name</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_station.html#a2489b3430a76ce20cde89f9d467cca4f">   22</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_station.html#a2489b3430a76ce20cde89f9d467cca4f">m_serialNumber</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_station.html#ab6ee8f0cba87094adc67709a06dda5f0">   23</a></span>    <span class="keywordtype">string</span> <a class="code hl_variable" href="class_station.html#ab6ee8f0cba87094adc67709a06dda5f0">m_otherInfo</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_station.html#a58b601ed7cecab2d4044f7651d3b40de">   24</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_station.html#a58b601ed7cecab2d4044f7651d3b40de">m_next</a>[4];</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_station.html#a990d341533b8fd9f67286ad44324380c">   25</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_station.html#a990d341533b8fd9f67286ad44324380c">m_prev</a>[4];</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>};</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="ttc" id="aclass_graph_html"><div class="ttname"><a href="class_graph.html">Graph</a></div><div class="ttdef"><b>Definition:</b> Graph.h:6</div></div>
+<div class="ttc" id="aclass_station_html"><div class="ttname"><a href="class_station.html">Station</a></div><div class="ttdef"><b>Definition:</b> Station.h:6</div></div>
+<div class="ttc" id="aclass_station_html_a009fa2d60f4fe4ac2bc68ab0b44e78a5"><div class="ttname"><a href="class_station.html#a009fa2d60f4fe4ac2bc68ab0b44e78a5">Station::getSerialNumber</a></div><div class="ttdeci">int getSerialNumber() const</div><div class="ttdef"><b>Definition:</b> Station.cpp:12</div></div>
+<div class="ttc" id="aclass_station_html_a0d2374779a2da2bbb34f447853ebbb1a"><div class="ttname"><a href="class_station.html#a0d2374779a2da2bbb34f447853ebbb1a">Station::setSerialNumber</a></div><div class="ttdeci">void setSerialNumber(int number)</div><div class="ttdef"><b>Definition:</b> Station.cpp:9</div></div>
+<div class="ttc" id="aclass_station_html_a1d9d1d10c1562e455b32360299b78736"><div class="ttname"><a href="class_station.html#a1d9d1d10c1562e455b32360299b78736">Station::setOtherInfo</a></div><div class="ttdeci">void setOtherInfo(string other)</div><div class="ttdef"><b>Definition:</b> Station.cpp:13</div></div>
+<div class="ttc" id="aclass_station_html_a2489b3430a76ce20cde89f9d467cca4f"><div class="ttname"><a href="class_station.html#a2489b3430a76ce20cde89f9d467cca4f">Station::m_serialNumber</a></div><div class="ttdeci">int m_serialNumber</div><div class="ttdef"><b>Definition:</b> Station.h:22</div></div>
+<div class="ttc" id="aclass_station_html_a248b53b2fd1cd1e97dd264e8fd57e02b"><div class="ttname"><a href="class_station.html#a248b53b2fd1cd1e97dd264e8fd57e02b">Station::getOtherInfo</a></div><div class="ttdeci">string getOtherInfo() const</div><div class="ttdef"><b>Definition:</b> Station.cpp:16</div></div>
+<div class="ttc" id="aclass_station_html_a58b601ed7cecab2d4044f7651d3b40de"><div class="ttname"><a href="class_station.html#a58b601ed7cecab2d4044f7651d3b40de">Station::m_next</a></div><div class="ttdeci">int m_next[4]</div><div class="ttdef"><b>Definition:</b> Station.h:24</div></div>
+<div class="ttc" id="aclass_station_html_a6e41c9f0a2a6f702d2323fd9a7a8acdf"><div class="ttname"><a href="class_station.html#a6e41c9f0a2a6f702d2323fd9a7a8acdf">Station::setName</a></div><div class="ttdeci">void setName(string name)</div><div class="ttdef"><b>Definition:</b> Station.cpp:5</div></div>
+<div class="ttc" id="aclass_station_html_a6e8027f489af59f5cee9ab55bedea76c"><div class="ttname"><a href="class_station.html#a6e8027f489af59f5cee9ab55bedea76c">Station::m_name</a></div><div class="ttdeci">string m_name</div><div class="ttdef"><b>Definition:</b> Station.h:21</div></div>
+<div class="ttc" id="aclass_station_html_a990d341533b8fd9f67286ad44324380c"><div class="ttname"><a href="class_station.html#a990d341533b8fd9f67286ad44324380c">Station::m_prev</a></div><div class="ttdeci">int m_prev[4]</div><div class="ttdef"><b>Definition:</b> Station.h:25</div></div>
+<div class="ttc" id="aclass_station_html_ab6ee8f0cba87094adc67709a06dda5f0"><div class="ttname"><a href="class_station.html#ab6ee8f0cba87094adc67709a06dda5f0">Station::m_otherInfo</a></div><div class="ttdeci">string m_otherInfo</div><div class="ttdef"><b>Definition:</b> Station.h:23</div></div>
+<div class="ttc" id="aclass_station_html_ac823ae175ec0e2baff462ed9612c7bae"><div class="ttname"><a href="class_station.html#ac823ae175ec0e2baff462ed9612c7bae">Station::getName</a></div><div class="ttdeci">string getName() const</div><div class="ttdef"><b>Definition:</b> Station.cpp:8</div></div>
+<div class="ttc" id="aclass_station_html_ad9fdabf7c7726195e85682ab0f7d49f5"><div class="ttname"><a href="class_station.html#ad9fdabf7c7726195e85682ab0f7d49f5">Station::setName_Number</a></div><div class="ttdeci">void setName_Number(string name, int number)</div><div class="ttdef"><b>Definition:</b> Station.cpp:18</div></div>
+<div class="ttc" id="aclass_station_html_ae106e27379a6ad6e1e23b8e017115b5a"><div class="ttname"><a href="class_station.html#ae106e27379a6ad6e1e23b8e017115b5a">Station::Station</a></div><div class="ttdeci">Station()=default</div></div>
+<div class="ttc" id="aclass_tool_html"><div class="ttname"><a href="class_tool.html">Tool</a></div><div class="ttdef"><b>Definition:</b> Tool.h:8</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

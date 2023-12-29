@@ -1,0 +1,38 @@
+digraph {
+    //rankdir="RL"
+    node[fontname="SimSun"];
+    start [shape="box", style=rounded, label ="开始"];
+    end [shape="box", style=rounded, label = "结束"];
+    ab[shape="box", label="获取上车下车信息；b1,b2 为 false"];
+    //insert[shape="box", label="插入数据"];
+    link[shape="box", label="i = m_next"];
+    null[shape="box", label="查找该乘客乘车信息"];
+    //ak[shape="box", label="为乘客分配座次号"];
+    judge[shape="diamond",label = "路线是否遍历结束"];
+    judge2[shape="diamond",label = "第一个信息是否在区间内"];
+    judge3[shape="diamond",label = "第二个信息是否在区间内"];
+    judge4[shape="diamond",label = "b1 b2 均为 true"];
+
+    tf01[shape="box", label="b1 = true"];
+    tf02[shape="box", label="b1 = false"];
+    tf11[shape="box", label="b2 = true"];
+    tf12[shape="box", label="b2 = false"];
+    
+    start -> ab;
+    ab  -> judge;
+    judge -> judge2[label = "否"];
+    judge -> judge3[label = "否"];
+    judge -> end[label = "是"];
+    judge2 -> tf01[label = "是"];
+    judge2 -> tf02[label = "否"];
+    judge3 -> tf11[label = "是"];
+    judge3 -> tf12[label = "否"];
+    tf01 -> link;
+    tf02 -> link;
+    tf11 -> link;
+    tf12 -> link;
+    link -> judge4;
+    judge4 -> end[label = "是"];
+    judge4 -> judge[label = "否"];
+
+}

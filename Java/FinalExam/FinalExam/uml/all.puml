@@ -1,0 +1,46 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+participant "User" as User
+participant "PetManage" as PM
+participant "Clinic" as Clinic
+participant "Pet" as Pet
+participant "Cat" as Cat
+participant "Dog" as Dog
+
+User -> PM: Start
+PM -> Clinic: Create Clinic instance
+PM -> Clinic: Display clinic details
+PM -> User: Display clinic details
+
+User -> PM: Selects option 1 (Add Pet)
+PM -> PM: addPetToClinic()
+PM -> User: Input pet details
+PM -> Clinic: Add pet
+PM -> Clinic: Update clinic details
+PM -> User: Success message
+
+User -> PM: Selects option 2 (Remove Pet)
+PM -> PM: removePetFromClinic()
+PM -> User: Input pet details to remove
+PM -> Clinic: Remove pet
+PM -> Clinic: Update clinic details
+PM -> User: Success or failure message
+
+User -> PM: Selects option 3 (Showcase)
+PM -> PM: displayMenu()
+PM -> User: Show options for display
+User -> PM: Selects display type
+PM -> Clinic: Display pets based on selected type
+
+User -> PM: Selects option 4 (Search)
+PM -> PM: searchPetMenu()
+PM -> User: Input pet name to search
+PM -> Clinic: Search for pet by name
+
+User -> PM: Selects option 5 (Exit)
+PM -> Clinic: fromExeAppForWrite()
+Clinic -> Clinic: Write pet details to file
+Clinic -> Clinic: Write clinic details to file
+
+
+@enduml

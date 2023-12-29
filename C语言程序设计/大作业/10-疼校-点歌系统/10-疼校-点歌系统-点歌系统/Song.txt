@@ -1,0 +1,64 @@
+遇见(钢琴版)
+无
+纯音乐
+musiclib\\1.mp3
+打上花火(钢琴版)
+无
+纯音乐
+musiclib\\2.mp3
+One Summer's Day
+龙猫乐队
+纯音乐
+musiclib\\3.mp3
+Wake
+9K peace_Hillsong Young & Free
+电音
+musiclib\\4.mp3
+Something Just Like This
+AndyWuMusicland
+抒情
+musiclib\\5.mp3
+My Songs Know what You Did In The Dark
+Fall Out Boy
+抒情
+musiclib\\6.mp3
+I Say Yeah
+Vanni G
+摇滚
+musiclib\\7.mp3
+她说
+林俊杰
+抒情
+musiclib\\8.mp3
+背对背拥抱
+林俊杰
+抒情
+musiclib\\9.mp3
+美人鱼
+林俊杰
+抒情
+musiclib\\10.mp3
+刚刚好
+薛之谦
+抒情
+musiclib\\11.mp3
+绅士
+薛之谦
+抒情
+musiclib\\12.mp3
+演员
+薛之谦
+流行
+musiclib\\13.mp3
+告白气球
+周杰伦
+流行
+musiclib\\14.mp3
+稻香
+周杰伦
+流行
+musiclib\\15.mp3
+晴天
+周杰伦
+流行
+musiclib\\16.mp3

@@ -1,0 +1,207 @@
+\hypertarget{class_public_transport}{}\doxysection{Public\+Transport类 参考}
+\label{class_public_transport}\index{PublicTransport@{PublicTransport}}
+
+
+{\ttfamily \#include $<$Public\+Transport.\+h$>$}
+
+
+
+Public\+Transport 的协作图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{class_public_transport__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_public_transport_a9f0f499787be68176da4499798709ecb}{Public\+Transport}} ()
+\item 
+void \mbox{\hyperlink{class_public_transport_a84c6f84ec1531a111d3fd4c133f5cae2}{init}} ()
+\item 
+\mbox{\hyperlink{class_public_transport_abf7a24ee4a9cc7252351ab92255a913e}{Public\+Transport}} (string driver, string serialnumber, int line\+Num)
+\item 
+void \mbox{\hyperlink{class_public_transport_aa8468bb3e9a726a2ff03ac62c3c3be58}{set\+Info}} (string driver, string serialnumber, int line\+Num)
+\item 
+void \mbox{\hyperlink{class_public_transport_a2581aa812dc0e266a11df4ee35d1fc10}{set\+Start\+\_\+\+End}} ()
+\item 
+void \mbox{\hyperlink{class_public_transport_a6c5d4e433a06219fa7947fab8dd088e6}{Info}} () const
+\item 
+\mbox{\hyperlink{class_public_transport_a65ca3c9ddd51fab3d74be9e319a905fd}{$\sim$\+Public\+Transport}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_public_transport_a83e5753023c3297bbe8b7b81ed171972}{m\+\_\+serial\+Number}}
+\item 
+string \mbox{\hyperlink{class_public_transport_a86b06d4ccfbdc9fe4fe0322472ae0381}{m\+\_\+bus\+Driver}}
+\item 
+int \mbox{\hyperlink{class_public_transport_a9391b1c2c1e6fd9ac54f00f7d2f5bc2b}{m\+\_\+line\+Number}}
+\item 
+int \mbox{\hyperlink{class_public_transport_aa39872a27d51874cfd9360459e95cf49}{m\+\_\+st\+Number}}
+\item 
+int \mbox{\hyperlink{class_public_transport_a4e84c27a72407ffc62969428df2d1d58}{m\+\_\+ed\+Number}}
+\item 
+int \mbox{\hyperlink{class_public_transport_ab4677dfd858ca82238b9e3ce04e245cd}{m\+\_\+loop\+Num}}
+\item 
+bool \mbox{\hyperlink{class_public_transport_a842e8a66a9a874f558058d3e658708f6}{m\+\_\+passengers}} \mbox{[}\mbox{\hyperlink{_public_transport_8h_a27908ee2348059d7032cbc9912804674}{MAX\+\_\+\+NUMBER\+\_\+of\+\_\+\+PASSENGER}}+1\mbox{]}
+\item 
+int \mbox{\hyperlink{class_public_transport_ac1e690a203a92888df7aaccdcedb7bc1}{m\+\_\+now\+Num}}
+\item 
+\mbox{\hyperlink{class_p_i_loop}{PILoop}} $\ast$ \mbox{\hyperlink{class_public_transport_aebed2d3e87908caeb68d38a0be8cae30}{\+\_\+re\+Head}} = nullptr
+\item 
+\mbox{\hyperlink{class_p_i_loop}{PILoop}} $\ast$ \mbox{\hyperlink{class_public_transport_aacc666bf1e68b93f24224e290d43a161}{\+\_\+re\+Tail}} = nullptr
+\end{DoxyCompactItemize}
+\doxysubsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_public_transport_a76e9adf1d0321729d4b28ce85a6825fd}{Tool}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{class_public_transport_a9f0f499787be68176da4499798709ecb}\label{class_public_transport_a9f0f499787be68176da4499798709ecb}} 
+\index{PublicTransport@{PublicTransport}!PublicTransport@{PublicTransport}}
+\index{PublicTransport@{PublicTransport}!PublicTransport@{PublicTransport}}
+\doxysubsubsection{\texorpdfstring{PublicTransport()}{PublicTransport()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Public\+Transport\+::\+Public\+Transport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_public_transport_abf7a24ee4a9cc7252351ab92255a913e}\label{class_public_transport_abf7a24ee4a9cc7252351ab92255a913e}} 
+\index{PublicTransport@{PublicTransport}!PublicTransport@{PublicTransport}}
+\index{PublicTransport@{PublicTransport}!PublicTransport@{PublicTransport}}
+\doxysubsubsection{\texorpdfstring{PublicTransport()}{PublicTransport()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Public\+Transport\+::\+Public\+Transport (\begin{DoxyParamCaption}\item[{string}]{driver,  }\item[{string}]{serialnumber,  }\item[{int}]{line\+Num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_public_transport_abf7a24ee4a9cc7252351ab92255a913e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_public_transport_a65ca3c9ddd51fab3d74be9e319a905fd}\label{class_public_transport_a65ca3c9ddd51fab3d74be9e319a905fd}} 
+\index{PublicTransport@{PublicTransport}!````~PublicTransport@{$\sim$PublicTransport}}
+\index{````~PublicTransport@{$\sim$PublicTransport}!PublicTransport@{PublicTransport}}
+\doxysubsubsection{\texorpdfstring{$\sim$PublicTransport()}{~PublicTransport()}}
+{\footnotesize\ttfamily Public\+Transport\+::$\sim$\+Public\+Transport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{class_public_transport_a6c5d4e433a06219fa7947fab8dd088e6}\label{class_public_transport_a6c5d4e433a06219fa7947fab8dd088e6}} 
+\index{PublicTransport@{PublicTransport}!Info@{Info}}
+\index{Info@{Info}!PublicTransport@{PublicTransport}}
+\doxysubsubsection{\texorpdfstring{Info()}{Info()}}
+{\footnotesize\ttfamily void Public\+Transport\+::\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_public_transport_a84c6f84ec1531a111d3fd4c133f5cae2}\label{class_public_transport_a84c6f84ec1531a111d3fd4c133f5cae2}} 
+\index{PublicTransport@{PublicTransport}!init@{init}}
+\index{init@{init}!PublicTransport@{PublicTransport}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Public\+Transport\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_public_transport_a84c6f84ec1531a111d3fd4c133f5cae2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_public_transport_aa8468bb3e9a726a2ff03ac62c3c3be58}\label{class_public_transport_aa8468bb3e9a726a2ff03ac62c3c3be58}} 
+\index{PublicTransport@{PublicTransport}!setInfo@{setInfo}}
+\index{setInfo@{setInfo}!PublicTransport@{PublicTransport}}
+\doxysubsubsection{\texorpdfstring{setInfo()}{setInfo()}}
+{\footnotesize\ttfamily void Public\+Transport\+::set\+Info (\begin{DoxyParamCaption}\item[{string}]{driver,  }\item[{string}]{serialnumber,  }\item[{int}]{line\+Num }\end{DoxyParamCaption})}
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_public_transport_aa8468bb3e9a726a2ff03ac62c3c3be58_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_public_transport_a2581aa812dc0e266a11df4ee35d1fc10}\label{class_public_transport_a2581aa812dc0e266a11df4ee35d1fc10}} 
+\index{PublicTransport@{PublicTransport}!setStart\_End@{setStart\_End}}
+\index{setStart\_End@{setStart\_End}!PublicTransport@{PublicTransport}}
+\doxysubsubsection{\texorpdfstring{setStart\_End()}{setStart\_End()}}
+{\footnotesize\ttfamily void Public\+Transport\+::set\+Start\+\_\+\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{友元及相关函数文档}
+\mbox{\Hypertarget{class_public_transport_a76e9adf1d0321729d4b28ce85a6825fd}\label{class_public_transport_a76e9adf1d0321729d4b28ce85a6825fd}} 
+\index{PublicTransport@{PublicTransport}!Tool@{Tool}}
+\index{Tool@{Tool}!PublicTransport@{PublicTransport}}
+\doxysubsubsection{\texorpdfstring{Tool}{Tool}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_tool}{Tool}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{class_public_transport_aebed2d3e87908caeb68d38a0be8cae30}\label{class_public_transport_aebed2d3e87908caeb68d38a0be8cae30}} 
+\index{PublicTransport@{PublicTransport}!\_reHead@{\_reHead}}
+\index{\_reHead@{\_reHead}!PublicTransport@{PublicTransport}}
+\doxysubsubsection{\texorpdfstring{\_reHead}{\_reHead}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_p_i_loop}{PILoop}}$\ast$ Public\+Transport\+::\+\_\+re\+Head = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_public_transport_aacc666bf1e68b93f24224e290d43a161}\label{class_public_transport_aacc666bf1e68b93f24224e290d43a161}} 
+\index{PublicTransport@{PublicTransport}!\_reTail@{\_reTail}}
+\index{\_reTail@{\_reTail}!PublicTransport@{PublicTransport}}
+\doxysubsubsection{\texorpdfstring{\_reTail}{\_reTail}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_p_i_loop}{PILoop}}$\ast$ Public\+Transport\+::\+\_\+re\+Tail = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_public_transport_a86b06d4ccfbdc9fe4fe0322472ae0381}\label{class_public_transport_a86b06d4ccfbdc9fe4fe0322472ae0381}} 
+\index{PublicTransport@{PublicTransport}!m\_busDriver@{m\_busDriver}}
+\index{m\_busDriver@{m\_busDriver}!PublicTransport@{PublicTransport}}
+\doxysubsubsection{\texorpdfstring{m\_busDriver}{m\_busDriver}}
+{\footnotesize\ttfamily string Public\+Transport\+::m\+\_\+bus\+Driver\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_public_transport_a4e84c27a72407ffc62969428df2d1d58}\label{class_public_transport_a4e84c27a72407ffc62969428df2d1d58}} 
+\index{PublicTransport@{PublicTransport}!m\_edNumber@{m\_edNumber}}
+\index{m\_edNumber@{m\_edNumber}!PublicTransport@{PublicTransport}}
+\doxysubsubsection{\texorpdfstring{m\_edNumber}{m\_edNumber}}
+{\footnotesize\ttfamily int Public\+Transport\+::m\+\_\+ed\+Number\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_public_transport_a9391b1c2c1e6fd9ac54f00f7d2f5bc2b}\label{class_public_transport_a9391b1c2c1e6fd9ac54f00f7d2f5bc2b}} 
+\index{PublicTransport@{PublicTransport}!m\_lineNumber@{m\_lineNumber}}
+\index{m\_lineNumber@{m\_lineNumber}!PublicTransport@{PublicTransport}}
+\doxysubsubsection{\texorpdfstring{m\_lineNumber}{m\_lineNumber}}
+{\footnotesize\ttfamily int Public\+Transport\+::m\+\_\+line\+Number\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_public_transport_ab4677dfd858ca82238b9e3ce04e245cd}\label{class_public_transport_ab4677dfd858ca82238b9e3ce04e245cd}} 
+\index{PublicTransport@{PublicTransport}!m\_loopNum@{m\_loopNum}}
+\index{m\_loopNum@{m\_loopNum}!PublicTransport@{PublicTransport}}
+\doxysubsubsection{\texorpdfstring{m\_loopNum}{m\_loopNum}}
+{\footnotesize\ttfamily int Public\+Transport\+::m\+\_\+loop\+Num\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_public_transport_ac1e690a203a92888df7aaccdcedb7bc1}\label{class_public_transport_ac1e690a203a92888df7aaccdcedb7bc1}} 
+\index{PublicTransport@{PublicTransport}!m\_nowNum@{m\_nowNum}}
+\index{m\_nowNum@{m\_nowNum}!PublicTransport@{PublicTransport}}
+\doxysubsubsection{\texorpdfstring{m\_nowNum}{m\_nowNum}}
+{\footnotesize\ttfamily int Public\+Transport\+::m\+\_\+now\+Num\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_public_transport_a842e8a66a9a874f558058d3e658708f6}\label{class_public_transport_a842e8a66a9a874f558058d3e658708f6}} 
+\index{PublicTransport@{PublicTransport}!m\_passengers@{m\_passengers}}
+\index{m\_passengers@{m\_passengers}!PublicTransport@{PublicTransport}}
+\doxysubsubsection{\texorpdfstring{m\_passengers}{m\_passengers}}
+{\footnotesize\ttfamily bool Public\+Transport\+::m\+\_\+passengers\mbox{[}\mbox{\hyperlink{_public_transport_8h_a27908ee2348059d7032cbc9912804674}{MAX\+\_\+\+NUMBER\+\_\+of\+\_\+\+PASSENGER}}+1\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_public_transport_a83e5753023c3297bbe8b7b81ed171972}\label{class_public_transport_a83e5753023c3297bbe8b7b81ed171972}} 
+\index{PublicTransport@{PublicTransport}!m\_serialNumber@{m\_serialNumber}}
+\index{m\_serialNumber@{m\_serialNumber}!PublicTransport@{PublicTransport}}
+\doxysubsubsection{\texorpdfstring{m\_serialNumber}{m\_serialNumber}}
+{\footnotesize\ttfamily string Public\+Transport\+::m\+\_\+serial\+Number\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_public_transport_aa39872a27d51874cfd9360459e95cf49}\label{class_public_transport_aa39872a27d51874cfd9360459e95cf49}} 
+\index{PublicTransport@{PublicTransport}!m\_stNumber@{m\_stNumber}}
+\index{m\_stNumber@{m\_stNumber}!PublicTransport@{PublicTransport}}
+\doxysubsubsection{\texorpdfstring{m\_stNumber}{m\_stNumber}}
+{\footnotesize\ttfamily int Public\+Transport\+::m\+\_\+st\+Number\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_public_transport_8h}{Public\+Transport.\+h}}\item 
+\mbox{\hyperlink{_public_transport_8cpp}{Public\+Transport.\+cpp}}\end{DoxyCompactItemize}

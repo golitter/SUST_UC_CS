@@ -1,0 +1,16 @@
+digraph {
+    node [shape=record, fontname="Consolas", fontsize=10, penwidth=0.5]
+
+    Account [label="{
+BBECPSS
+|
+	+  mainFunc() const: void\l
+	+  homeScreen() const: void\l
+	+  loadingEffect() const: void\l
+	+  subContentScreen() const: void\l
+	+  subBusFunc() const: void\l
+	+  subCCScreen() const: void\l
+	+  subCCFunc() const: void\l
+}"]
+
+}

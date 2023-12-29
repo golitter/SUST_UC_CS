@@ -1,0 +1,42 @@
+@startuml
+!define PUBLIC_COLOR #00FF00
+!define PRIVATE_COLOR #FF0000
+
+class Clinic {
+     ArrayList<Pet> pets
+     String name = "YH"
+    -[[$PRIVATE_COLOR]]- Clinic()
+    -[[$PRIVATE_COLOR]]- String getName()
+    -[[$PRIVATE_COLOR]]- void writeToClinicsDetails()
+    -[[$PRIVATE_COLOR]]- void readFromClinicsDetails()
+    -[[$PRIVATE_COLOR]]- void writePetDetails()
+    -[[$PRIVATE_COLOR]]- void readFromPetDetails()
+    +[[$PUBLIC_COLOR]]+ void fromExeAppForWrite()
+    -[[$PRIVATE_COLOR]]- int findCountOfCat()
+    -[[$PRIVATE_COLOR]]- int findCountOfDog()
+    -[[$PRIVATE_COLOR]]- String findMoreColor()
+    +[[$PUBLIC_COLOR]]+ void displayClinicsDetails()
+    +[[$PUBLIC_COLOR]]+ void addPet(Pet pet)
+    +[[$PUBLIC_COLOR]]+ boolean removePet(Pet pet)
+    +[[$PUBLIC_COLOR]]+ void displayPetByColor()
+    +[[$PUBLIC_COLOR]]+ void displayPetByBreed()
+    +[[$PUBLIC_COLOR]]+ void displayDefaultAllPets()
+    +[[$PUBLIC_COLOR]]+ void searchPetByName(String name)
+    +[[$PUBLIC_COLOR]]+ void searchPetByColor(String color)
+}
+
+
+class Pet {
+}
+
+class Dog {
+}
+
+class Cat {
+}
+
+Clinic -right-|> Pet
+Dog -up-|> Pet
+Cat -up-|> Pet
+
+@enduml

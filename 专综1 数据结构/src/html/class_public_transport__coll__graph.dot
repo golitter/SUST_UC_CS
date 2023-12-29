@@ -1,0 +1,18 @@
+digraph "PublicTransport"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="PublicTransport",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" m_busDriver\nm_serialNumber" ];
+  Node2 [label="string",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" _reHead\n_reTail" ];
+  Node3 [label="PILoop",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$class_p_i_loop.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="PassInfo",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$class_pass_info.html",tooltip=" "];
+  Node2 -> Node4 [dir="back",color="darkorchid3",style="dashed",label=" m_name\nm_phone" ];
+  Node4 -> Node4 [dir="back",color="darkorchid3",style="dashed",label=" m_next" ];
+  Node4 -> Node3 [dir="back",color="darkorchid3",style="dashed",label=" _head\n_tail" ];
+  Node3 -> Node3 [dir="back",color="darkorchid3",style="dashed",label=" m_runNext" ];
+}

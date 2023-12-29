@@ -1,0 +1,155 @@
+\hypertarget{class_pass_info}{}\doxysection{Pass\+Info类 参考}
+\label{class_pass_info}\index{PassInfo@{PassInfo}}
+
+
+{\ttfamily \#include $<$Pass\+Info.\+h$>$}
+
+
+
+类 Pass\+Info 继承关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=134pt]{class_pass_info__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Pass\+Info 的协作图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{class_pass_info__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pass_info_a7391ed62876f3165dd034a4ef7ea2e8f}{Pass\+Info}} ()=default
+\item 
+void \mbox{\hyperlink{class_pass_info_a9223156da3341f5f0e2982a51d9e4e07}{Info}} () const
+\item 
+void \mbox{\hyperlink{class_pass_info_a56ceb8a46863a0615a3a63a76dd45494}{set\+Order}} (int order)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_pass_info_a1f404fb3d2bd446e74dd8756b34588c5}{m\+\_\+name}}
+\item 
+string \mbox{\hyperlink{class_pass_info_ab0d3b61141b5568be1c2a340ccc9b1c7}{m\+\_\+phone}}
+\item 
+int \mbox{\hyperlink{class_pass_info_ad9a58d3be9ba37bd5329acb3fc891a15}{m\+\_\+get\+On\+Num}}
+\item 
+int \mbox{\hyperlink{class_pass_info_a6534f2ce270a0604f565350318243b8f}{m\+\_\+get\+Off\+Num}}
+\item 
+int \mbox{\hyperlink{class_pass_info_a4c7c2eb1898159c2d9cefa89955e2476}{m\+\_\+order}}
+\item 
+\mbox{\hyperlink{class_pass_info}{Pass\+Info}} $\ast$ \mbox{\hyperlink{class_pass_info_a589db3e69fbc60e92aa98fad9ccc0ee3}{m\+\_\+next}} = nullptr
+\end{DoxyCompactItemize}
+\doxysubsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_pass_info_acbdc718c1d7d5a9d5253ea3d078271f6}{PILoop}}
+\item 
+class \mbox{\hyperlink{class_pass_info_a802a3082ae9f848a0b22b9dffda194a1}{Public\+Transport}}
+\item 
+class \mbox{\hyperlink{class_pass_info_a76e9adf1d0321729d4b28ce85a6825fd}{Tool}}
+\item 
+istream \& \mbox{\hyperlink{class_pass_info_ac08fdbc28b890a5cf6f179d9ea225329}{operator$>$$>$}} (istream \&in, \mbox{\hyperlink{class_pass_info}{Pass\+Info}} \&P)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{class_pass_info_a7391ed62876f3165dd034a4ef7ea2e8f}\label{class_pass_info_a7391ed62876f3165dd034a4ef7ea2e8f}} 
+\index{PassInfo@{PassInfo}!PassInfo@{PassInfo}}
+\index{PassInfo@{PassInfo}!PassInfo@{PassInfo}}
+\doxysubsubsection{\texorpdfstring{PassInfo()}{PassInfo()}}
+{\footnotesize\ttfamily Pass\+Info\+::\+Pass\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{class_pass_info_a9223156da3341f5f0e2982a51d9e4e07}\label{class_pass_info_a9223156da3341f5f0e2982a51d9e4e07}} 
+\index{PassInfo@{PassInfo}!Info@{Info}}
+\index{Info@{Info}!PassInfo@{PassInfo}}
+\doxysubsubsection{\texorpdfstring{Info()}{Info()}}
+{\footnotesize\ttfamily void Pass\+Info\+::\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_pass_info_a56ceb8a46863a0615a3a63a76dd45494}\label{class_pass_info_a56ceb8a46863a0615a3a63a76dd45494}} 
+\index{PassInfo@{PassInfo}!setOrder@{setOrder}}
+\index{setOrder@{setOrder}!PassInfo@{PassInfo}}
+\doxysubsubsection{\texorpdfstring{setOrder()}{setOrder()}}
+{\footnotesize\ttfamily void Pass\+Info\+::set\+Order (\begin{DoxyParamCaption}\item[{int}]{order }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{友元及相关函数文档}
+\mbox{\Hypertarget{class_pass_info_ac08fdbc28b890a5cf6f179d9ea225329}\label{class_pass_info_ac08fdbc28b890a5cf6f179d9ea225329}} 
+\index{PassInfo@{PassInfo}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!PassInfo@{PassInfo}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{in,  }\item[{\mbox{\hyperlink{class_pass_info}{Pass\+Info}} \&}]{P }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{class_pass_info_acbdc718c1d7d5a9d5253ea3d078271f6}\label{class_pass_info_acbdc718c1d7d5a9d5253ea3d078271f6}} 
+\index{PassInfo@{PassInfo}!PILoop@{PILoop}}
+\index{PILoop@{PILoop}!PassInfo@{PassInfo}}
+\doxysubsubsection{\texorpdfstring{PILoop}{PILoop}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_p_i_loop}{PILoop}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{class_pass_info_a802a3082ae9f848a0b22b9dffda194a1}\label{class_pass_info_a802a3082ae9f848a0b22b9dffda194a1}} 
+\index{PassInfo@{PassInfo}!PublicTransport@{PublicTransport}}
+\index{PublicTransport@{PublicTransport}!PassInfo@{PassInfo}}
+\doxysubsubsection{\texorpdfstring{PublicTransport}{PublicTransport}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_public_transport}{Public\+Transport}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{class_pass_info_a76e9adf1d0321729d4b28ce85a6825fd}\label{class_pass_info_a76e9adf1d0321729d4b28ce85a6825fd}} 
+\index{PassInfo@{PassInfo}!Tool@{Tool}}
+\index{Tool@{Tool}!PassInfo@{PassInfo}}
+\doxysubsubsection{\texorpdfstring{Tool}{Tool}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_tool}{Tool}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{class_pass_info_a6534f2ce270a0604f565350318243b8f}\label{class_pass_info_a6534f2ce270a0604f565350318243b8f}} 
+\index{PassInfo@{PassInfo}!m\_getOffNum@{m\_getOffNum}}
+\index{m\_getOffNum@{m\_getOffNum}!PassInfo@{PassInfo}}
+\doxysubsubsection{\texorpdfstring{m\_getOffNum}{m\_getOffNum}}
+{\footnotesize\ttfamily int Pass\+Info\+::m\+\_\+get\+Off\+Num\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_pass_info_ad9a58d3be9ba37bd5329acb3fc891a15}\label{class_pass_info_ad9a58d3be9ba37bd5329acb3fc891a15}} 
+\index{PassInfo@{PassInfo}!m\_getOnNum@{m\_getOnNum}}
+\index{m\_getOnNum@{m\_getOnNum}!PassInfo@{PassInfo}}
+\doxysubsubsection{\texorpdfstring{m\_getOnNum}{m\_getOnNum}}
+{\footnotesize\ttfamily int Pass\+Info\+::m\+\_\+get\+On\+Num\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_pass_info_a1f404fb3d2bd446e74dd8756b34588c5}\label{class_pass_info_a1f404fb3d2bd446e74dd8756b34588c5}} 
+\index{PassInfo@{PassInfo}!m\_name@{m\_name}}
+\index{m\_name@{m\_name}!PassInfo@{PassInfo}}
+\doxysubsubsection{\texorpdfstring{m\_name}{m\_name}}
+{\footnotesize\ttfamily string Pass\+Info\+::m\+\_\+name\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_pass_info_a589db3e69fbc60e92aa98fad9ccc0ee3}\label{class_pass_info_a589db3e69fbc60e92aa98fad9ccc0ee3}} 
+\index{PassInfo@{PassInfo}!m\_next@{m\_next}}
+\index{m\_next@{m\_next}!PassInfo@{PassInfo}}
+\doxysubsubsection{\texorpdfstring{m\_next}{m\_next}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pass_info}{Pass\+Info}}$\ast$ Pass\+Info\+::m\+\_\+next = nullptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_pass_info_a4c7c2eb1898159c2d9cefa89955e2476}\label{class_pass_info_a4c7c2eb1898159c2d9cefa89955e2476}} 
+\index{PassInfo@{PassInfo}!m\_order@{m\_order}}
+\index{m\_order@{m\_order}!PassInfo@{PassInfo}}
+\doxysubsubsection{\texorpdfstring{m\_order}{m\_order}}
+{\footnotesize\ttfamily int Pass\+Info\+::m\+\_\+order\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_pass_info_ab0d3b61141b5568be1c2a340ccc9b1c7}\label{class_pass_info_ab0d3b61141b5568be1c2a340ccc9b1c7}} 
+\index{PassInfo@{PassInfo}!m\_phone@{m\_phone}}
+\index{m\_phone@{m\_phone}!PassInfo@{PassInfo}}
+\doxysubsubsection{\texorpdfstring{m\_phone}{m\_phone}}
+{\footnotesize\ttfamily string Pass\+Info\+::m\+\_\+phone\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_pass_info_8h}{Pass\+Info.\+h}}\item 
+\mbox{\hyperlink{_pass_info_8cpp}{Pass\+Info.\+cpp}}\end{DoxyCompactItemize}

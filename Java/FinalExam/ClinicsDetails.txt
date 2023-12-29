@@ -1,0 +1,5 @@
+Clinic Information: 
+Clinic Name: YH
+Number of cats: 2
+Number of dogs: 1
+Colors that make up the largest percentage of pets:  [ Black , Gray , black and white ]

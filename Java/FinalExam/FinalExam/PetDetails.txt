@@ -1,0 +1,4 @@
+Pet Information
+Pet type (1 dog, 2 cats)        Name              Age          Color        Weight       Breed      
+2                              | Whiskers        | 3          | Gray       | 8.00       | British Shorthair
+1                              | Rocky           | 4          | Black      | 45.00      | German Shepherd

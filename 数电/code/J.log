@@ -1,0 +1,3616 @@
+Instrument operation performed   (2023, June 21, Wednesday, 23:24:20) 
+|   Instrument Analysis:Transient Analysis  
+|   |   Plot title: 
+|   |   Analysis settings 
+|   |   |   Initial Conditions:Automatically generate initial conditions
+|   |   |   Starting time (TSTART):0
+|   |   |   Stop time (TSTOP):1e+030
+|   |   |   Plotting increment (TSTEP):automatically calculated (less than:1e+030)  
+|   |   |   Maximum time step (TMAX):automatically calculated (less than:1e+030)
+|   |   Perform consistency check 
+|   |   Variables from analysis   
+|   |   |   Show device values at the end of the simulation   
+|   |   Representation as SPICE commands
+|   |   |   begin-scope page
+|   |   |   checknodes 3
+|   |   |   save all
+|   |   |   iplot all 
+|   |   |   set trtol = 7 
+|   |   |   set itl4 = 100  
+|   |   |   set convlimit 
+|   |   |   set rshunt = 1e+012   
+|   |   |   -param hrange 0 1e+030  
+|   |   |   save
+|   |   |   tran  -env-options 1e-005 1e+030 0 1e-005 auto_ic auto_tstep auto_tmax  
+|   |   |   if-error end-scope audit-log-show 
+|   |   |   show all
+|   |   |   showmod all   
+|   |   |   end-scope 
+|   |   Multisim Default Analysis Options 
+|   |   |   Truncation error overestimation factor: 7 
+|   |   |   Upper transient iteration limit: 100
+|   |   |   Enable convergence assistance for code models 
+|   |   |   Shunt resistance from analog nodes to ground: 1e+012
+|   Output from instrument analysis   
+|   |    Vsource: Independent voltage source
+|   |    device           veevee
+|   |             dc          -5
+|   |          acmag           0
+|   |              i      5e-012
+|   |              p    2.5e-011
+|   |   
+|   |   No matching models  
+Instrument operation performed   (2023, June 21, Wednesday, 23:52:47) 
+|   Instrument Analysis:Transient Analysis  
+|   |   Plot title: 
+|   |   Analysis settings 
+|   |   |   Initial Conditions:Automatically generate initial conditions
+|   |   |   Starting time (TSTART):0
+|   |   |   Stop time (TSTOP):1e+030
+|   |   |   Plotting increment (TSTEP):1e-005 
+|   |   |   Maximum time step (TMAX):1e-005   
+|   |   Perform consistency check 
+|   |   Variables from analysis   
+|   |   |   Show device values at the end of the simulation   
+|   |   Representation as SPICE commands
+|   |   |   begin-scope page
+|   |   |   checknodes 3
+|   |   |   save all
+|   |   |   iplot all 
+|   |   |   set trtol = 7 
+|   |   |   set itl4 = 100  
+|   |   |   set convlimit 
+|   |   |   set rshunt = 1e+012   
+|   |   |   -param hrange 0 1e+030  
+|   |   |   save
+|   |   |   tran  -env-options 1e-005 1e+030 0 1e-005 auto_ic 
+|   |   |   if-error end-scope audit-log-show 
+|   |   |   show all
+|   |   |   showmod all   
+|   |   |   end-scope 
+|   |   Multisim Default Analysis Options 
+|   |   |   Truncation error overestimation factor: 7 
+|   |   |   Upper transient iteration limit: 100
+|   |   |   Enable convergence assistance for code models 
+|   |   |   Shunt resistance from analog nodes to ground: 1e+012
+|   Output from instrument analysis   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r4:xu3      r3:xu3      r2:xu3      r1:xu3      r4:xu4      r3:xu4
+|   |    model                R           R           R           R           R           R   
+|   |     resistance         500         500         500         500         500         500
+|   |              i           0        0.01           0        0.01           0           0
+|   |              p           0        0.05           0        0.05           0           0
+|   |   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r2:xu4      r1:xu4
+|   |    model                R           R   
+|   |     resistance         500         500
+|   |              i           0           0
+|   |              p           0           0
+|   |   
+|   |    Vsource: Independent voltage source
+|   |    device      vfgen_src_n vfgen_src_p      vccvcc
+|   |             dc           0           0           5
+|   |          acmag           1           1           0
+|   |              i  -6.91e-012   6.91e-012     -5e-012
+|   |              p   4.77e-011   4.77e-011    2.5e-011
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1
+|   |    model      adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2
+|   |    model       adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu2 aadc1in:xu6 aadc1in:xu6 aadc1in:xu6
+|   |    model       adc1:xu2.a adc1:xu6_a. adc1:xu6_a. adc1:xu6_a.   
+|   |   
+|   |    d_and: digital n-input and gate
+|   |    device            au6_a
+|   |    model      74hc08_4__7   
+|   |   
+|   |    d_inverter: digital one-bit-wide inverter  
+|   |    device            au5_a
+|   |    model      74hc04_2__7   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu2.qb dac1:xu2.qa   
+|   |   
+|   |    d_chip: digital chip 
+|   |    device              au1         au2
+|   |    model      74ls163__74 74ls163__74   
+|   |   
+|   |    Resistor models (Simple linear resistor) 
+|   |    model                 R
+|   |   
+|   |            rsh           0
+|   |         narrow           0
+|   |            tc1           0
+|   |            tc2           0
+|   |           defw      1e-005
+|   |           tnom          27
+|   |            tce           0
+|   |          rmult           1
+|   |          t_abs        -273
+|   |   t_rel_global        -273
+|   |    t_rel_local        -273
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model       adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu2.a adc1:xu6_a. adc1:xu6_a. adc1:xu6_a.
+|   |   
+|   |         in_low         2.5           2           2           2
+|   |        in_high         2.5           2           2           2
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    d_and models (digital n-input and gate)
+|   |    model       74hc08_4__7
+|   |   
+|   |     rise_delay    2.5e-008
+|   |     fall_delay    2.5e-008
+|   |     input_load      1e-012
+|   |   
+|   |    d_inverter models (digital one-bit-wide inverter)  
+|   |    model       74hc04_2__7
+|   |   
+|   |     rise_delay    1.2e-007
+|   |     fall_delay    1.2e-007
+|   |     input_load      1e-012
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc
+|   |   
+|   |        out_low           5           5           5           5           5           5
+|   |       out_high           0           0           0           0           0           0
+|   |      out_undef           0           0           0           0           0           0
+|   |     input_load      1e-012      1e-012      1e-012      1e-012      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu2.qb dac1:xu2.qa
+|   |   
+|   |        out_low           5           5
+|   |       out_high           0           0
+|   |      out_undef           0           0
+|   |     input_load      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009
+|   |   
+|   |    d_chip models (digital chip) 
+|   |    model       74ls163__74
+|   |   
+|   |      behaviour  
+|   |   ; 74ls163   
+|   |   
+Instrument operation performed   (2023, June 22, Thursday, 00:01:00)
+|   Instrument Analysis:Transient Analysis  
+|   |   Plot title: 
+|   |   Analysis settings 
+|   |   |   Initial Conditions:Automatically generate initial conditions
+|   |   |   Starting time (TSTART):0
+|   |   |   Stop time (TSTOP):1e+030
+|   |   |   Plotting increment (TSTEP):1e-005 
+|   |   |   Maximum time step (TMAX):1e-005   
+|   |   Perform consistency check 
+|   |   Variables from analysis   
+|   |   |   Show device values at the end of the simulation   
+|   |   Representation as SPICE commands
+|   |   |   begin-scope page
+|   |   |   checknodes 3
+|   |   |   save all
+|   |   |   iplot all 
+|   |   |   set trtol = 7 
+|   |   |   set itl4 = 100  
+|   |   |   set convlimit 
+|   |   |   set rshunt = 1e+012   
+|   |   |   -param hrange 0 1e+030  
+|   |   |   save
+|   |   |   tran  -env-options 1e-005 1e+030 0 1e-005 auto_ic 
+|   |   |   if-error end-scope audit-log-show 
+|   |   |   show all
+|   |   |   showmod all   
+|   |   |   end-scope 
+|   |   Multisim Default Analysis Options 
+|   |   |   Truncation error overestimation factor: 7 
+|   |   |   Upper transient iteration limit: 100
+|   |   |   Enable convergence assistance for code models 
+|   |   |   Shunt resistance from analog nodes to ground: 1e+012
+|   Output from instrument analysis   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r4:xu3      r3:xu3      r2:xu3      r1:xu3      r4:xu4      r3:xu4
+|   |    model                R           R           R           R           R           R   
+|   |     resistance         500         500         500         500         500         500
+|   |              i           0           0           0           0           0           0
+|   |              p           0           0           0           0           0           0
+|   |   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r2:xu4      r1:xu4
+|   |    model                R           R   
+|   |     resistance         500         500
+|   |              i           0           0
+|   |              p           0           0
+|   |   
+|   |    Vsource: Independent voltage source
+|   |    device      vfgen_src_n vfgen_src_p      vccvcc
+|   |             dc           0           0           5
+|   |          acmag           1           1           0
+|   |              i  -8.12e-012   8.12e-012     -5e-012
+|   |              p    6.6e-011    6.6e-011    2.5e-011
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1
+|   |    model      adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2
+|   |    model       adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu2 aadc1in:xu6 aadc1in:xu6 aadc1in:xu6
+|   |    model       adc1:xu2.a adc1:xu6_a. adc1:xu6_a. adc1:xu6_a.   
+|   |   
+|   |    d_and: digital n-input and gate
+|   |    device            au6_a
+|   |    model      74hc08_4__7   
+|   |   
+|   |    d_inverter: digital one-bit-wide inverter  
+|   |    device            au5_a
+|   |    model      74hc04_2__7   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qc dac1:xu2.qb   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu2
+|   |    model      dac1:xu2.qa   
+|   |   
+|   |    d_chip: digital chip 
+|   |    device              au1         au2
+|   |    model      74ls163__74 74ls163__74   
+|   |   
+|   |    Resistor models (Simple linear resistor) 
+|   |    model                 R
+|   |   
+|   |            rsh           0
+|   |         narrow           0
+|   |            tc1           0
+|   |            tc2           0
+|   |           defw      1e-005
+|   |           tnom          27
+|   |            tce           0
+|   |          rmult           1
+|   |          t_abs        -273
+|   |   t_rel_global        -273
+|   |    t_rel_local        -273
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model       adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu2.a adc1:xu6_a. adc1:xu6_a. adc1:xu6_a.
+|   |   
+|   |         in_low         2.5           2           2           2
+|   |        in_high         2.5           2           2           2
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    d_and models (digital n-input and gate)
+|   |    model       74hc08_4__7
+|   |   
+|   |     rise_delay    2.5e-008
+|   |     fall_delay    2.5e-008
+|   |     input_load      1e-012
+|   |   
+|   |    d_inverter models (digital one-bit-wide inverter)  
+|   |    model       74hc04_2__7
+|   |   
+|   |     rise_delay    1.2e-007
+|   |     fall_delay    1.2e-007
+|   |     input_load      1e-012
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qc dac1:xu2.qb
+|   |   
+|   |        out_low           5           5           5           5           5           5
+|   |       out_high           0           0           0           0           0           0
+|   |      out_undef           0           0           0           0           0           0
+|   |     input_load      1e-012      1e-012      1e-012      1e-012      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu2.qa
+|   |   
+|   |        out_low           5
+|   |       out_high           0
+|   |      out_undef           0
+|   |     input_load      1e-012
+|   |         t_rise      1e-009
+|   |         t_fall      1e-009
+|   |   
+|   |    d_chip models (digital chip) 
+|   |    model       74ls163__74
+|   |   
+|   |      behaviour  
+|   |   ; 74ls163   
+|   |   
+Instrument operation performed   (2023, June 22, Thursday, 00:01:02)
+|   Instrument Analysis:Transient Analysis  
+|   |   Plot title: 
+|   |   Analysis settings 
+|   |   |   Initial Conditions:Automatically generate initial conditions
+|   |   |   Starting time (TSTART):0
+|   |   |   Stop time (TSTOP):1e+030
+|   |   |   Plotting increment (TSTEP):1e-005 
+|   |   |   Maximum time step (TMAX):1e-005   
+|   |   Perform consistency check 
+|   |   Variables from analysis   
+|   |   |   Show device values at the end of the simulation   
+|   |   Representation as SPICE commands
+|   |   |   begin-scope page
+|   |   |   checknodes 3
+|   |   |   save all
+|   |   |   iplot all 
+|   |   |   set trtol = 7 
+|   |   |   set itl4 = 100  
+|   |   |   set convlimit 
+|   |   |   set rshunt = 1e+012   
+|   |   |   -param hrange 0 1e+030  
+|   |   |   save
+|   |   |   tran  -env-options 1e-005 1e+030 0 1e-005 auto_ic 
+|   |   |   if-error end-scope audit-log-show 
+|   |   |   show all
+|   |   |   showmod all   
+|   |   |   end-scope 
+|   |   Multisim Default Analysis Options 
+|   |   |   Truncation error overestimation factor: 7 
+|   |   |   Upper transient iteration limit: 100
+|   |   |   Enable convergence assistance for code models 
+|   |   |   Shunt resistance from analog nodes to ground: 1e+012
+|   Output from instrument analysis   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r4:xu3      r3:xu3      r2:xu3      r1:xu3      r4:xu4      r3:xu4
+|   |    model                R           R           R           R           R           R   
+|   |     resistance         500         500         500         500         500         500
+|   |              i           0           0           0           0           0           0
+|   |              p           0           0           0           0           0           0
+|   |   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r2:xu4      r1:xu4
+|   |    model                R           R   
+|   |     resistance         500         500
+|   |              i           0        0.01
+|   |              p           0        0.05
+|   |   
+|   |    Vsource: Independent voltage source
+|   |    device      vfgen_src_n vfgen_src_p      vccvcc
+|   |             dc           0           0           5
+|   |          acmag           1           1           0
+|   |              i     -1e-011      1e-011     -5e-012
+|   |              p      1e-010      1e-010    2.5e-011
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1
+|   |    model      adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2
+|   |    model       adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu2 aadc1in:xu6 aadc1in:xu6 aadc1in:xu6
+|   |    model       adc1:xu2.a adc1:xu6_a. adc1:xu6_a. adc1:xu6_a.   
+|   |   
+|   |    d_and: digital n-input and gate
+|   |    device            au6_a
+|   |    model      74hc08_4__7   
+|   |   
+|   |    d_inverter: digital one-bit-wide inverter  
+|   |    device            au5_a
+|   |    model      74hc04_2__7   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qc dac1:xu2.qb   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu2
+|   |    model      dac1:xu2.qa   
+|   |   
+|   |    d_chip: digital chip 
+|   |    device              au1         au2
+|   |    model      74ls163__74 74ls163__74   
+|   |   
+|   |    Resistor models (Simple linear resistor) 
+|   |    model                 R
+|   |   
+|   |            rsh           0
+|   |         narrow           0
+|   |            tc1           0
+|   |            tc2           0
+|   |           defw      1e-005
+|   |           tnom          27
+|   |            tce           0
+|   |          rmult           1
+|   |          t_abs        -273
+|   |   t_rel_global        -273
+|   |    t_rel_local        -273
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model       adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu2.a adc1:xu6_a. adc1:xu6_a. adc1:xu6_a.
+|   |   
+|   |         in_low         2.5           2           2           2
+|   |        in_high         2.5           2           2           2
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    d_and models (digital n-input and gate)
+|   |    model       74hc08_4__7
+|   |   
+|   |     rise_delay    2.5e-008
+|   |     fall_delay    2.5e-008
+|   |     input_load      1e-012
+|   |   
+|   |    d_inverter models (digital one-bit-wide inverter)  
+|   |    model       74hc04_2__7
+|   |   
+|   |     rise_delay    1.2e-007
+|   |     fall_delay    1.2e-007
+|   |     input_load      1e-012
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qc dac1:xu2.qb
+|   |   
+|   |        out_low           5           5           5           5           5           5
+|   |       out_high           0           0           0           0           0           0
+|   |      out_undef           0           0           0           0           0           0
+|   |     input_load      1e-012      1e-012      1e-012      1e-012      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu2.qa
+|   |   
+|   |        out_low           5
+|   |       out_high           0
+|   |      out_undef           0
+|   |     input_load      1e-012
+|   |         t_rise      1e-009
+|   |         t_fall      1e-009
+|   |   
+|   |    d_chip models (digital chip) 
+|   |    model       74ls163__74
+|   |   
+|   |      behaviour  
+|   |   ; 74ls163   
+|   |   
+Instrument operation performed   (2023, June 22, Thursday, 00:13:14)
+|   Instrument Analysis:Transient Analysis  
+|   |   Plot title: 
+|   |   Analysis settings 
+|   |   |   Initial Conditions:Automatically generate initial conditions
+|   |   |   Starting time (TSTART):0
+|   |   |   Stop time (TSTOP):1e+030
+|   |   |   Plotting increment (TSTEP):automatically calculated (less than:1e+030)  
+|   |   |   Maximum time step (TMAX):automatically calculated (less than:1e+030)
+|   |   Perform consistency check 
+|   |   Variables from analysis   
+|   |   |   Show device values at the end of the simulation   
+|   |   Representation as SPICE commands
+|   |   |   begin-scope page
+|   |   |   checknodes 3
+|   |   |   save all
+|   |   |   iplot all 
+|   |   |   set trtol = 7 
+|   |   |   set itl4 = 100  
+|   |   |   set convlimit 
+|   |   |   set rshunt = 1e+012   
+|   |   |   -param hrange 0 1e+030  
+|   |   |   save
+|   |   |   tran  -env-options 1e-005 1e+030 0 1e-005 auto_ic auto_tstep auto_tmax  
+|   |   |   if-error end-scope audit-log-show 
+|   |   |   show all
+|   |   |   showmod all   
+|   |   |   end-scope 
+|   |   Multisim Default Analysis Options 
+|   |   |   Truncation error overestimation factor: 7 
+|   |   |   Upper transient iteration limit: 100
+|   |   |   Enable convergence assistance for code models 
+|   |   |   Shunt resistance from analog nodes to ground: 1e+012
+|   Output from instrument analysis   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r4:xu3      r3:xu3      r2:xu3      r1:xu3      r4:xu4      r3:xu4
+|   |    model                R           R           R           R           R           R   
+|   |     resistance         500         500         500         500         500         500
+|   |              i           0           0           0           0           0           0
+|   |              p           0           0           0           0           0           0
+|   |   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r2:xu4      r1:xu4
+|   |    model                R           R   
+|   |     resistance         500         500
+|   |              i           0           0
+|   |              p           0           0
+|   |   
+|   |    Vsource: Independent voltage source
+|   |    device              vv1      vccvcc
+|   |             dc           0           5
+|   |          acmag           1           0
+|   |              i   3.01e-013     -5e-012
+|   |              p   1.81e-013    2.5e-011
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1
+|   |    model      adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2
+|   |    model       adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu2 aadc1in:xu5 aadc1in:xu5 aadc1in:xu5
+|   |    model       adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.   
+|   |   
+|   |    d_nand: digital n-input nand gate  
+|   |    device            au5_a
+|   |    model      74hc00_6__7   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu2.qb dac1:xu2.qa   
+|   |   
+|   |    d_chip: digital chip 
+|   |    device              au1         au2
+|   |    model      74ls163__74 74ls163__74   
+|   |   
+|   |    Resistor models (Simple linear resistor) 
+|   |    model                 R
+|   |   
+|   |            rsh           0
+|   |         narrow           0
+|   |            tc1           0
+|   |            tc2           0
+|   |           defw      1e-005
+|   |           tnom          27
+|   |            tce           0
+|   |          rmult           1
+|   |          t_abs        -273
+|   |   t_rel_global        -273
+|   |    t_rel_local        -273
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model       adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.
+|   |   
+|   |         in_low         2.5           3           3           3
+|   |        in_high         2.5           3           3           3
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    d_nand models (digital n-input nand gate)  
+|   |    model       74hc00_6__7
+|   |   
+|   |     rise_delay      2e-008
+|   |     fall_delay      2e-008
+|   |     input_load      1e-012
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc
+|   |   
+|   |        out_low           5           5           5           5           5           5
+|   |       out_high           0           0           0           0           0           0
+|   |      out_undef           0           0           0           0           0           0
+|   |     input_load      1e-012      1e-012      1e-012      1e-012      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu2.qb dac1:xu2.qa
+|   |   
+|   |        out_low           5           5
+|   |       out_high           0           0
+|   |      out_undef           0           0
+|   |     input_load      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009
+|   |   
+|   |    d_chip models (digital chip) 
+|   |    model       74ls163__74
+|   |   
+|   |      behaviour  
+|   |   ; 74ls163   
+|   |   
+Instrument operation performed   (2023, June 22, Thursday, 00:13:51)
+|   Instrument Analysis:Transient Analysis  
+|   |   Plot title: 
+|   |   Analysis settings 
+|   |   |   Initial Conditions:Automatically generate initial conditions
+|   |   |   Starting time (TSTART):0
+|   |   |   Stop time (TSTOP):1e+030
+|   |   |   Plotting increment (TSTEP):automatically calculated (less than:1e+030)  
+|   |   |   Maximum time step (TMAX):automatically calculated (less than:1e+030)
+|   |   Perform consistency check 
+|   |   Variables from analysis   
+|   |   |   Show device values at the end of the simulation   
+|   |   Representation as SPICE commands
+|   |   |   begin-scope page
+|   |   |   checknodes 3
+|   |   |   save all
+|   |   |   iplot all 
+|   |   |   set trtol = 7 
+|   |   |   set itl4 = 100  
+|   |   |   set convlimit 
+|   |   |   set rshunt = 1e+012   
+|   |   |   -param hrange 0 1e+030  
+|   |   |   save
+|   |   |   tran  -env-options 1e-005 1e+030 0 1e-005 auto_ic auto_tstep auto_tmax  
+|   |   |   if-error end-scope audit-log-show 
+|   |   |   show all
+|   |   |   showmod all   
+|   |   |   end-scope 
+|   |   Multisim Default Analysis Options 
+|   |   |   Truncation error overestimation factor: 7 
+|   |   |   Upper transient iteration limit: 100
+|   |   |   Enable convergence assistance for code models 
+|   |   |   Shunt resistance from analog nodes to ground: 1e+012
+|   Output from instrument analysis   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r4:xu3      r3:xu3      r2:xu3      r1:xu3      r4:xu4      r3:xu4
+|   |    model                R           R           R           R           R           R   
+|   |     resistance         500         500         500         500         500         500
+|   |              i        0.01        0.01           0           0        0.01        0.01
+|   |              p        0.05        0.05           0           0        0.05        0.05
+|   |   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r2:xu4      r1:xu4
+|   |    model                R           R   
+|   |     resistance         500         500
+|   |              i           0           0
+|   |              p           0           0
+|   |   
+|   |    Vsource: Independent voltage source
+|   |    device              vv1      vccvcc
+|   |             dc           0           5
+|   |          acmag           1           0
+|   |              i   4.88e-013     -5e-012
+|   |              p   4.75e-013    2.5e-011
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1
+|   |    model      adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2
+|   |    model       adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu2 aadc1in:xu5 aadc1in:xu5 aadc1in:xu5
+|   |    model       adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.   
+|   |   
+|   |    d_nand: digital n-input nand gate  
+|   |    device            au5_a
+|   |    model      74hc00_6__7   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu2.qb dac1:xu2.qa   
+|   |   
+|   |    d_chip: digital chip 
+|   |    device              au1         au2
+|   |    model      74ls163__74 74ls163__74   
+|   |   
+|   |    Resistor models (Simple linear resistor) 
+|   |    model                 R
+|   |   
+|   |            rsh           0
+|   |         narrow           0
+|   |            tc1           0
+|   |            tc2           0
+|   |           defw      1e-005
+|   |           tnom          27
+|   |            tce           0
+|   |          rmult           1
+|   |          t_abs        -273
+|   |   t_rel_global        -273
+|   |    t_rel_local        -273
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model       adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.
+|   |   
+|   |         in_low         2.5           3           3           3
+|   |        in_high         2.5           3           3           3
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    d_nand models (digital n-input nand gate)  
+|   |    model       74hc00_6__7
+|   |   
+|   |     rise_delay      2e-008
+|   |     fall_delay      2e-008
+|   |     input_load      1e-012
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc
+|   |   
+|   |        out_low           5           5           5           5           5           5
+|   |       out_high           0           0           0           0           0           0
+|   |      out_undef           0           0           0           0           0           0
+|   |     input_load      1e-012      1e-012      1e-012      1e-012      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu2.qb dac1:xu2.qa
+|   |   
+|   |        out_low           5           5
+|   |       out_high           0           0
+|   |      out_undef           0           0
+|   |     input_load      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009
+|   |   
+|   |    d_chip models (digital chip) 
+|   |    model       74ls163__74
+|   |   
+|   |      behaviour  
+|   |   ; 74ls163   
+|   |   
+Instrument operation performed   (2023, June 22, Thursday, 00:13:53)
+|   Instrument Analysis:Transient Analysis  
+|   |   Plot title: 
+|   |   Analysis settings 
+|   |   |   Initial Conditions:Automatically generate initial conditions
+|   |   |   Starting time (TSTART):0
+|   |   |   Stop time (TSTOP):1e+030
+|   |   |   Plotting increment (TSTEP):automatically calculated (less than:1e+030)  
+|   |   |   Maximum time step (TMAX):automatically calculated (less than:1e+030)
+|   |   Perform consistency check 
+|   |   Variables from analysis   
+|   |   |   Show device values at the end of the simulation   
+|   |   Representation as SPICE commands
+|   |   |   begin-scope page
+|   |   |   checknodes 3
+|   |   |   save all
+|   |   |   iplot all 
+|   |   |   set trtol = 7 
+|   |   |   set itl4 = 100  
+|   |   |   set convlimit 
+|   |   |   set rshunt = 1e+012   
+|   |   |   -param hrange 0 1e+030  
+|   |   |   save
+|   |   |   tran  -env-options 1e-005 1e+030 0 1e-005 auto_ic auto_tstep auto_tmax  
+|   |   |   if-error end-scope audit-log-show 
+|   |   |   show all
+|   |   |   showmod all   
+|   |   |   end-scope 
+|   |   Multisim Default Analysis Options 
+|   |   |   Truncation error overestimation factor: 7 
+|   |   |   Upper transient iteration limit: 100
+|   |   |   Enable convergence assistance for code models 
+|   |   |   Shunt resistance from analog nodes to ground: 1e+012
+|   Output from instrument analysis   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r4:xu3      r3:xu3      r2:xu3      r1:xu3      r4:xu4      r3:xu4
+|   |    model                R           R           R           R           R           R   
+|   |     resistance         500         500         500         500         500         500
+|   |              i           0           0           0           0           0           0
+|   |              p           0           0           0           0           0           0
+|   |   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r2:xu4      r1:xu4
+|   |    model                R           R   
+|   |     resistance         500         500
+|   |              i           0           0
+|   |              p           0           0
+|   |   
+|   |    Vsource: Independent voltage source
+|   |    device              vv1      vccvcc
+|   |             dc           0           5
+|   |          acmag           1           0
+|   |              i  -4.86e-013     -5e-012
+|   |              p   4.73e-013    2.5e-011
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1
+|   |    model      adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2
+|   |    model       adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu2 aadc1in:xu5 aadc1in:xu5 aadc1in:xu5
+|   |    model       adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.   
+|   |   
+|   |    d_nand: digital n-input nand gate  
+|   |    device            au5_a
+|   |    model      74hc00_6__7   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu2.qb dac1:xu2.qa   
+|   |   
+|   |    d_chip: digital chip 
+|   |    device              au1         au2
+|   |    model      74ls163__74 74ls163__74   
+|   |   
+|   |    Resistor models (Simple linear resistor) 
+|   |    model                 R
+|   |   
+|   |            rsh           0
+|   |         narrow           0
+|   |            tc1           0
+|   |            tc2           0
+|   |           defw      1e-005
+|   |           tnom          27
+|   |            tce           0
+|   |          rmult           1
+|   |          t_abs        -273
+|   |   t_rel_global        -273
+|   |    t_rel_local        -273
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model       adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.
+|   |   
+|   |         in_low         2.5           3           3           3
+|   |        in_high         2.5           3           3           3
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    d_nand models (digital n-input nand gate)  
+|   |    model       74hc00_6__7
+|   |   
+|   |     rise_delay      2e-008
+|   |     fall_delay      2e-008
+|   |     input_load      1e-012
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc
+|   |   
+|   |        out_low           5           5           5           5           5           5
+|   |       out_high           0           0           0           0           0           0
+|   |      out_undef           0           0           0           0           0           0
+|   |     input_load      1e-012      1e-012      1e-012      1e-012      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu2.qb dac1:xu2.qa
+|   |   
+|   |        out_low           5           5
+|   |       out_high           0           0
+|   |      out_undef           0           0
+|   |     input_load      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009
+|   |   
+|   |    d_chip models (digital chip) 
+|   |    model       74ls163__74
+|   |   
+|   |      behaviour  
+|   |   ; 74ls163   
+|   |   
+Instrument operation performed   (2023, June 22, Thursday, 00:14:18)
+|   Instrument Analysis:Transient Analysis  
+|   |   Plot title: 
+|   |   Analysis settings 
+|   |   |   Initial Conditions:Automatically generate initial conditions
+|   |   |   Starting time (TSTART):0
+|   |   |   Stop time (TSTOP):1e+030
+|   |   |   Plotting increment (TSTEP):automatically calculated (less than:1e+030)  
+|   |   |   Maximum time step (TMAX):automatically calculated (less than:1e+030)
+|   |   Perform consistency check 
+|   |   Variables from analysis   
+|   |   |   Show device values at the end of the simulation   
+|   |   Representation as SPICE commands
+|   |   |   begin-scope page
+|   |   |   checknodes 3
+|   |   |   save all
+|   |   |   iplot all 
+|   |   |   set trtol = 7 
+|   |   |   set itl4 = 100  
+|   |   |   set convlimit 
+|   |   |   set rshunt = 1e+012   
+|   |   |   -param hrange 0 1e+030  
+|   |   |   save
+|   |   |   tran  -env-options 1e-005 1e+030 0 1e-005 auto_ic auto_tstep auto_tmax  
+|   |   |   if-error end-scope audit-log-show 
+|   |   |   show all
+|   |   |   showmod all   
+|   |   |   end-scope 
+|   |   Multisim Default Analysis Options 
+|   |   |   Truncation error overestimation factor: 7 
+|   |   |   Upper transient iteration limit: 100
+|   |   |   Enable convergence assistance for code models 
+|   |   |   Shunt resistance from analog nodes to ground: 1e+012
+|   Output from instrument analysis   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r4:xu3      r3:xu3      r2:xu3      r1:xu3      r4:xu4      r3:xu4
+|   |    model                R           R           R           R           R           R   
+|   |     resistance         500         500         500         500         500         500
+|   |              i           0           0           0           0           0           0
+|   |              p           0           0           0           0           0           0
+|   |   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r2:xu4      r1:xu4
+|   |    model                R           R   
+|   |     resistance         500         500
+|   |              i           0           0
+|   |              p           0           0
+|   |   
+|   |    Vsource: Independent voltage source
+|   |    device              vv1      vccvcc
+|   |             dc           0           5
+|   |          acmag           1           0
+|   |              i  -3.33e-013     -5e-012
+|   |              p   2.21e-013    2.5e-011
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1
+|   |    model      adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2
+|   |    model       adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu2 aadc1in:xu5 aadc1in:xu5 aadc1in:xu5
+|   |    model       adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.   
+|   |   
+|   |    d_nand: digital n-input nand gate  
+|   |    device            au5_a
+|   |    model      74hc00_6__7   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu2.qb dac1:xu2.qa   
+|   |   
+|   |    d_chip: digital chip 
+|   |    device              au1         au2
+|   |    model      74ls163__74 74ls163__74   
+|   |   
+|   |    Resistor models (Simple linear resistor) 
+|   |    model                 R
+|   |   
+|   |            rsh           0
+|   |         narrow           0
+|   |            tc1           0
+|   |            tc2           0
+|   |           defw      1e-005
+|   |           tnom          27
+|   |            tce           0
+|   |          rmult           1
+|   |          t_abs        -273
+|   |   t_rel_global        -273
+|   |    t_rel_local        -273
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model       adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.
+|   |   
+|   |         in_low         2.5           3           3           3
+|   |        in_high         2.5           3           3           3
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    d_nand models (digital n-input nand gate)  
+|   |    model       74hc00_6__7
+|   |   
+|   |     rise_delay      2e-008
+|   |     fall_delay      2e-008
+|   |     input_load      1e-012
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc
+|   |   
+|   |        out_low           5           5           5           5           5           5
+|   |       out_high           0           0           0           0           0           0
+|   |      out_undef           0           0           0           0           0           0
+|   |     input_load      1e-012      1e-012      1e-012      1e-012      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu2.qb dac1:xu2.qa
+|   |   
+|   |        out_low           5           5
+|   |       out_high           0           0
+|   |      out_undef           0           0
+|   |     input_load      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009
+|   |   
+|   |    d_chip models (digital chip) 
+|   |    model       74ls163__74
+|   |   
+|   |      behaviour  
+|   |   ; 74ls163   
+|   |   
+Instrument operation performed   (2023, June 22, Thursday, 00:14:35)
+|   Instrument Analysis:Transient Analysis  
+|   |   Plot title: 
+|   |   Analysis settings 
+|   |   |   Initial Conditions:Automatically generate initial conditions
+|   |   |   Starting time (TSTART):0
+|   |   |   Stop time (TSTOP):1e+030
+|   |   |   Plotting increment (TSTEP):automatically calculated (less than:1e+030)  
+|   |   |   Maximum time step (TMAX):automatically calculated (less than:1e+030)
+|   |   Perform consistency check 
+|   |   Variables from analysis   
+|   |   |   Show device values at the end of the simulation   
+|   |   Representation as SPICE commands
+|   |   |   begin-scope page
+|   |   |   checknodes 3
+|   |   |   save all
+|   |   |   iplot all 
+|   |   |   set trtol = 7 
+|   |   |   set itl4 = 100  
+|   |   |   set convlimit 
+|   |   |   set rshunt = 1e+012   
+|   |   |   -param hrange 0 1e+030  
+|   |   |   save
+|   |   |   tran  -env-options 1e-005 1e+030 0 1e-005 auto_ic auto_tstep auto_tmax  
+|   |   |   if-error end-scope audit-log-show 
+|   |   |   show all
+|   |   |   showmod all   
+|   |   |   end-scope 
+|   |   Multisim Default Analysis Options 
+|   |   |   Truncation error overestimation factor: 7 
+|   |   |   Upper transient iteration limit: 100
+|   |   |   Enable convergence assistance for code models 
+|   |   |   Shunt resistance from analog nodes to ground: 1e+012
+|   Output from instrument analysis   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r4:xu3      r3:xu3      r2:xu3      r1:xu3      r4:xu4      r3:xu4
+|   |    model                R           R           R           R           R           R   
+|   |     resistance         500         500         500         500         500         500
+|   |              i        0.01           0           0        0.01        0.01           0
+|   |              p        0.05           0           0        0.05        0.05           0
+|   |   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r2:xu4      r1:xu4
+|   |    model                R           R   
+|   |     resistance         500         500
+|   |              i           0        0.01
+|   |              p           0        0.05
+|   |   
+|   |    Vsource: Independent voltage source
+|   |    device              vv1      vccvcc
+|   |             dc           0           5
+|   |          acmag           1           0
+|   |              i  -9.76e-013     -5e-012
+|   |              p   9.53e-013    2.5e-011
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1
+|   |    model      adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2
+|   |    model       adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu2 aadc1in:xu5 aadc1in:xu5 aadc1in:xu5
+|   |    model       adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.   
+|   |   
+|   |    d_nand: digital n-input nand gate  
+|   |    device            au5_a
+|   |    model      74hc00_6__7   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu2.qb dac1:xu2.qa   
+|   |   
+|   |    d_chip: digital chip 
+|   |    device              au1         au2
+|   |    model      74ls163__74 74ls163__74   
+|   |   
+|   |    Resistor models (Simple linear resistor) 
+|   |    model                 R
+|   |   
+|   |            rsh           0
+|   |         narrow           0
+|   |            tc1           0
+|   |            tc2           0
+|   |           defw      1e-005
+|   |           tnom          27
+|   |            tce           0
+|   |          rmult           1
+|   |          t_abs        -273
+|   |   t_rel_global        -273
+|   |    t_rel_local        -273
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model       adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.
+|   |   
+|   |         in_low         2.5           3           3           3
+|   |        in_high         2.5           3           3           3
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    d_nand models (digital n-input nand gate)  
+|   |    model       74hc00_6__7
+|   |   
+|   |     rise_delay      2e-008
+|   |     fall_delay      2e-008
+|   |     input_load      1e-012
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc
+|   |   
+|   |        out_low           5           5           5           5           5           5
+|   |       out_high           0           0           0           0           0           0
+|   |      out_undef           0           0           0           0           0           0
+|   |     input_load      1e-012      1e-012      1e-012      1e-012      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu2.qb dac1:xu2.qa
+|   |   
+|   |        out_low           5           5
+|   |       out_high           0           0
+|   |      out_undef           0           0
+|   |     input_load      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009
+|   |   
+|   |    d_chip models (digital chip) 
+|   |    model       74ls163__74
+|   |   
+|   |      behaviour  
+|   |   ; 74ls163   
+|   |   
+Instrument operation performed   (2023, June 22, Thursday, 00:14:37)
+|   Instrument Analysis:Transient Analysis  
+|   |   Plot title: 
+|   |   Analysis settings 
+|   |   |   Initial Conditions:Automatically generate initial conditions
+|   |   |   Starting time (TSTART):0
+|   |   |   Stop time (TSTOP):1e+030
+|   |   |   Plotting increment (TSTEP):automatically calculated (less than:1e+030)  
+|   |   |   Maximum time step (TMAX):automatically calculated (less than:1e+030)
+|   |   Perform consistency check 
+|   |   Variables from analysis   
+|   |   |   Show device values at the end of the simulation   
+|   |   Representation as SPICE commands
+|   |   |   begin-scope page
+|   |   |   checknodes 3
+|   |   |   save all
+|   |   |   iplot all 
+|   |   |   set trtol = 7 
+|   |   |   set itl4 = 100  
+|   |   |   set convlimit 
+|   |   |   set rshunt = 1e+012   
+|   |   |   -param hrange 0 1e+030  
+|   |   |   save
+|   |   |   tran  -env-options 1e-005 1e+030 0 1e-005 auto_ic auto_tstep auto_tmax  
+|   |   |   if-error end-scope audit-log-show 
+|   |   |   show all
+|   |   |   showmod all   
+|   |   |   end-scope 
+|   |   Multisim Default Analysis Options 
+|   |   |   Truncation error overestimation factor: 7 
+|   |   |   Upper transient iteration limit: 100
+|   |   |   Enable convergence assistance for code models 
+|   |   |   Shunt resistance from analog nodes to ground: 1e+012
+|   Output from instrument analysis   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r4:xu3      r3:xu3      r2:xu3      r1:xu3      r4:xu4      r3:xu4
+|   |    model                R           R           R           R           R           R   
+|   |     resistance         500         500         500         500         500         500
+|   |              i           0           0        0.01        0.01           0           0
+|   |              p           0           0        0.05        0.05           0           0
+|   |   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r2:xu4      r1:xu4
+|   |    model                R           R   
+|   |     resistance         500         500
+|   |              i        0.01        0.01
+|   |              p        0.05        0.05
+|   |   
+|   |    Vsource: Independent voltage source
+|   |    device              vv1      vccvcc
+|   |             dc           0           5
+|   |          acmag           1           0
+|   |              i   4.33e-013     -5e-012
+|   |              p   1.87e-013    2.5e-011
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1
+|   |    model      adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2
+|   |    model       adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu2 aadc1in:xu5 aadc1in:xu5 aadc1in:xu5
+|   |    model       adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.   
+|   |   
+|   |    d_nand: digital n-input nand gate  
+|   |    device            au5_a
+|   |    model      74hc00_6__7   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu2.qb dac1:xu2.qa   
+|   |   
+|   |    d_chip: digital chip 
+|   |    device              au1         au2
+|   |    model      74ls163__74 74ls163__74   
+|   |   
+|   |    Resistor models (Simple linear resistor) 
+|   |    model                 R
+|   |   
+|   |            rsh           0
+|   |         narrow           0
+|   |            tc1           0
+|   |            tc2           0
+|   |           defw      1e-005
+|   |           tnom          27
+|   |            tce           0
+|   |          rmult           1
+|   |          t_abs        -273
+|   |   t_rel_global        -273
+|   |    t_rel_local        -273
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model       adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.
+|   |   
+|   |         in_low         2.5           3           3           3
+|   |        in_high         2.5           3           3           3
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    d_nand models (digital n-input nand gate)  
+|   |    model       74hc00_6__7
+|   |   
+|   |     rise_delay      2e-008
+|   |     fall_delay      2e-008
+|   |     input_load      1e-012
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc
+|   |   
+|   |        out_low           5           5           5           5           5           5
+|   |       out_high           0           0           0           0           0           0
+|   |      out_undef           0           0           0           0           0           0
+|   |     input_load      1e-012      1e-012      1e-012      1e-012      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu2.qb dac1:xu2.qa
+|   |   
+|   |        out_low           5           5
+|   |       out_high           0           0
+|   |      out_undef           0           0
+|   |     input_load      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009
+|   |   
+|   |    d_chip models (digital chip) 
+|   |    model       74ls163__74
+|   |   
+|   |      behaviour  
+|   |   ; 74ls163   
+|   |   
+Instrument operation performed   (2023, June 22, Thursday, 00:14:39)
+|   Instrument Analysis:Transient Analysis  
+|   |   Plot title: 
+|   |   Analysis settings 
+|   |   |   Initial Conditions:Automatically generate initial conditions
+|   |   |   Starting time (TSTART):0
+|   |   |   Stop time (TSTOP):1e+030
+|   |   |   Plotting increment (TSTEP):automatically calculated (less than:1e+030)  
+|   |   |   Maximum time step (TMAX):automatically calculated (less than:1e+030)
+|   |   Perform consistency check 
+|   |   Variables from analysis   
+|   |   |   Show device values at the end of the simulation   
+|   |   Representation as SPICE commands
+|   |   |   begin-scope page
+|   |   |   checknodes 3
+|   |   |   save all
+|   |   |   iplot all 
+|   |   |   set trtol = 7 
+|   |   |   set itl4 = 100  
+|   |   |   set convlimit 
+|   |   |   set rshunt = 1e+012   
+|   |   |   -param hrange 0 1e+030  
+|   |   |   save
+|   |   |   tran  -env-options 1e-005 1e+030 0 1e-005 auto_ic auto_tstep auto_tmax  
+|   |   |   if-error end-scope audit-log-show 
+|   |   |   show all
+|   |   |   showmod all   
+|   |   |   end-scope 
+|   |   Multisim Default Analysis Options 
+|   |   |   Truncation error overestimation factor: 7 
+|   |   |   Upper transient iteration limit: 100
+|   |   |   Enable convergence assistance for code models 
+|   |   |   Shunt resistance from analog nodes to ground: 1e+012
+|   Output from instrument analysis   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r4:xu3      r3:xu3      r2:xu3      r1:xu3      r4:xu4      r3:xu4
+|   |    model                R           R           R           R           R           R   
+|   |     resistance         500         500         500         500         500         500
+|   |              i           0           0           0           0           0           0
+|   |              p           0           0           0           0           0           0
+|   |   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r2:xu4      r1:xu4
+|   |    model                R           R   
+|   |     resistance         500         500
+|   |              i           0           0
+|   |              p           0           0
+|   |   
+|   |    Vsource: Independent voltage source
+|   |    device              vv1      vccvcc
+|   |             dc           0           5
+|   |          acmag           1           0
+|   |              i   7.37e-013     -5e-012
+|   |              p   5.43e-013    2.5e-011
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1
+|   |    model      adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2
+|   |    model       adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu2 aadc1in:xu5 aadc1in:xu5 aadc1in:xu5
+|   |    model       adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.   
+|   |   
+|   |    d_nand: digital n-input nand gate  
+|   |    device            au5_a
+|   |    model      74hc00_6__7   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu2.qb dac1:xu2.qa   
+|   |   
+|   |    d_chip: digital chip 
+|   |    device              au1         au2
+|   |    model      74ls163__74 74ls163__74   
+|   |   
+|   |    Resistor models (Simple linear resistor) 
+|   |    model                 R
+|   |   
+|   |            rsh           0
+|   |         narrow           0
+|   |            tc1           0
+|   |            tc2           0
+|   |           defw      1e-005
+|   |           tnom          27
+|   |            tce           0
+|   |          rmult           1
+|   |          t_abs        -273
+|   |   t_rel_global        -273
+|   |    t_rel_local        -273
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model       adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.
+|   |   
+|   |         in_low         2.5           3           3           3
+|   |        in_high         2.5           3           3           3
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    d_nand models (digital n-input nand gate)  
+|   |    model       74hc00_6__7
+|   |   
+|   |     rise_delay      2e-008
+|   |     fall_delay      2e-008
+|   |     input_load      1e-012
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc
+|   |   
+|   |        out_low           5           5           5           5           5           5
+|   |       out_high           0           0           0           0           0           0
+|   |      out_undef           0           0           0           0           0           0
+|   |     input_load      1e-012      1e-012      1e-012      1e-012      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu2.qb dac1:xu2.qa
+|   |   
+|   |        out_low           5           5
+|   |       out_high           0           0
+|   |      out_undef           0           0
+|   |     input_load      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009
+|   |   
+|   |    d_chip models (digital chip) 
+|   |    model       74ls163__74
+|   |   
+|   |      behaviour  
+|   |   ; 74ls163   
+|   |   
+Instrument operation performed   (2023, June 22, Thursday, 00:14:41)
+|   Instrument Analysis:Transient Analysis  
+|   |   Plot title: 
+|   |   Analysis settings 
+|   |   |   Initial Conditions:Automatically generate initial conditions
+|   |   |   Starting time (TSTART):0
+|   |   |   Stop time (TSTOP):1e+030
+|   |   |   Plotting increment (TSTEP):automatically calculated (less than:1e+030)  
+|   |   |   Maximum time step (TMAX):automatically calculated (less than:1e+030)
+|   |   Perform consistency check 
+|   |   Variables from analysis   
+|   |   |   Show device values at the end of the simulation   
+|   |   Representation as SPICE commands
+|   |   |   begin-scope page
+|   |   |   checknodes 3
+|   |   |   save all
+|   |   |   iplot all 
+|   |   |   set trtol = 7 
+|   |   |   set itl4 = 100  
+|   |   |   set convlimit 
+|   |   |   set rshunt = 1e+012   
+|   |   |   -param hrange 0 1e+030  
+|   |   |   save
+|   |   |   tran  -env-options 1e-005 1e+030 0 1e-005 auto_ic auto_tstep auto_tmax  
+|   |   |   if-error end-scope audit-log-show 
+|   |   |   show all
+|   |   |   showmod all   
+|   |   |   end-scope 
+|   |   Multisim Default Analysis Options 
+|   |   |   Truncation error overestimation factor: 7 
+|   |   |   Upper transient iteration limit: 100
+|   |   |   Enable convergence assistance for code models 
+|   |   |   Shunt resistance from analog nodes to ground: 1e+012
+|   Output from instrument analysis   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r4:xu3      r3:xu3      r2:xu3      r1:xu3      r4:xu4      r3:xu4
+|   |    model                R           R           R           R           R           R   
+|   |     resistance         500         500         500         500         500         500
+|   |              i           0           0           0           0           0           0
+|   |              p           0           0           0           0           0           0
+|   |   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r2:xu4      r1:xu4
+|   |    model                R           R   
+|   |     resistance         500         500
+|   |              i           0           0
+|   |              p           0           0
+|   |   
+|   |    Vsource: Independent voltage source
+|   |    device              vv1      vccvcc
+|   |             dc           0           5
+|   |          acmag           1           0
+|   |              i  -8.35e-013     -5e-012
+|   |              p   6.98e-013    2.5e-011
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1
+|   |    model      adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2
+|   |    model       adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu2 aadc1in:xu5 aadc1in:xu5 aadc1in:xu5
+|   |    model       adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.   
+|   |   
+|   |    d_nand: digital n-input nand gate  
+|   |    device            au5_a
+|   |    model      74hc00_6__7   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu2.qb dac1:xu2.qa   
+|   |   
+|   |    d_chip: digital chip 
+|   |    device              au1         au2
+|   |    model      74ls163__74 74ls163__74   
+|   |   
+|   |    Resistor models (Simple linear resistor) 
+|   |    model                 R
+|   |   
+|   |            rsh           0
+|   |         narrow           0
+|   |            tc1           0
+|   |            tc2           0
+|   |           defw      1e-005
+|   |           tnom          27
+|   |            tce           0
+|   |          rmult           1
+|   |          t_abs        -273
+|   |   t_rel_global        -273
+|   |    t_rel_local        -273
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model       adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.
+|   |   
+|   |         in_low         2.5           3           3           3
+|   |        in_high         2.5           3           3           3
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    d_nand models (digital n-input nand gate)  
+|   |    model       74hc00_6__7
+|   |   
+|   |     rise_delay      2e-008
+|   |     fall_delay      2e-008
+|   |     input_load      1e-012
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc
+|   |   
+|   |        out_low           5           5           5           5           5           5
+|   |       out_high           0           0           0           0           0           0
+|   |      out_undef           0           0           0           0           0           0
+|   |     input_load      1e-012      1e-012      1e-012      1e-012      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu2.qb dac1:xu2.qa
+|   |   
+|   |        out_low           5           5
+|   |       out_high           0           0
+|   |      out_undef           0           0
+|   |     input_load      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009
+|   |   
+|   |    d_chip models (digital chip) 
+|   |    model       74ls163__74
+|   |   
+|   |      behaviour  
+|   |   ; 74ls163   
+|   |   
+Instrument operation performed   (2023, June 22, Thursday, 00:14:43)
+|   Instrument Analysis:Transient Analysis  
+|   |   Plot title: 
+|   |   Analysis settings 
+|   |   |   Initial Conditions:Automatically generate initial conditions
+|   |   |   Starting time (TSTART):0
+|   |   |   Stop time (TSTOP):1e+030
+|   |   |   Plotting increment (TSTEP):automatically calculated (less than:1e+030)  
+|   |   |   Maximum time step (TMAX):automatically calculated (less than:1e+030)
+|   |   Perform consistency check 
+|   |   Variables from analysis   
+|   |   |   Show device values at the end of the simulation   
+|   |   Representation as SPICE commands
+|   |   |   begin-scope page
+|   |   |   checknodes 3
+|   |   |   save all
+|   |   |   iplot all 
+|   |   |   set trtol = 7 
+|   |   |   set itl4 = 100  
+|   |   |   set convlimit 
+|   |   |   set rshunt = 1e+012   
+|   |   |   -param hrange 0 1e+030  
+|   |   |   save
+|   |   |   tran  -env-options 1e-005 1e+030 0 1e-005 auto_ic auto_tstep auto_tmax  
+|   |   |   if-error end-scope audit-log-show 
+|   |   |   show all
+|   |   |   showmod all   
+|   |   |   end-scope 
+|   |   Multisim Default Analysis Options 
+|   |   |   Truncation error overestimation factor: 7 
+|   |   |   Upper transient iteration limit: 100
+|   |   |   Enable convergence assistance for code models 
+|   |   |   Shunt resistance from analog nodes to ground: 1e+012
+|   Output from instrument analysis   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r4:xu3      r3:xu3      r2:xu3      r1:xu3      r4:xu4      r3:xu4
+|   |    model                R           R           R           R           R           R   
+|   |     resistance         500         500         500         500         500         500
+|   |              i           0           0           0           0           0           0
+|   |              p           0           0           0           0           0           0
+|   |   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r2:xu4      r1:xu4
+|   |    model                R           R   
+|   |     resistance         500         500
+|   |              i           0           0
+|   |              p           0           0
+|   |   
+|   |    Vsource: Independent voltage source
+|   |    device              vv1      vccvcc
+|   |             dc           0           5
+|   |          acmag           1           0
+|   |              i  -3.49e-013     -5e-012
+|   |              p   1.21e-013    2.5e-011
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1
+|   |    model      adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2
+|   |    model       adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu2 aadc1in:xu5 aadc1in:xu5 aadc1in:xu5
+|   |    model       adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.   
+|   |   
+|   |    d_nand: digital n-input nand gate  
+|   |    device            au5_a
+|   |    model      74hc00_6__7   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu2.qb dac1:xu2.qa   
+|   |   
+|   |    d_chip: digital chip 
+|   |    device              au1         au2
+|   |    model      74ls163__74 74ls163__74   
+|   |   
+|   |    Resistor models (Simple linear resistor) 
+|   |    model                 R
+|   |   
+|   |            rsh           0
+|   |         narrow           0
+|   |            tc1           0
+|   |            tc2           0
+|   |           defw      1e-005
+|   |           tnom          27
+|   |            tce           0
+|   |          rmult           1
+|   |          t_abs        -273
+|   |   t_rel_global        -273
+|   |    t_rel_local        -273
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model       adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.
+|   |   
+|   |         in_low         2.5           3           3           3
+|   |        in_high         2.5           3           3           3
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    d_nand models (digital n-input nand gate)  
+|   |    model       74hc00_6__7
+|   |   
+|   |     rise_delay      2e-008
+|   |     fall_delay      2e-008
+|   |     input_load      1e-012
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc
+|   |   
+|   |        out_low           5           5           5           5           5           5
+|   |       out_high           0           0           0           0           0           0
+|   |      out_undef           0           0           0           0           0           0
+|   |     input_load      1e-012      1e-012      1e-012      1e-012      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu2.qb dac1:xu2.qa
+|   |   
+|   |        out_low           5           5
+|   |       out_high           0           0
+|   |      out_undef           0           0
+|   |     input_load      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009
+|   |   
+|   |    d_chip models (digital chip) 
+|   |    model       74ls163__74
+|   |   
+|   |      behaviour  
+|   |   ; 74ls163   
+|   |   
+Instrument operation performed   (2023, June 22, Thursday, 00:15:32)
+|   Instrument Analysis:Transient Analysis  
+|   |   Plot title: 
+|   |   Analysis settings 
+|   |   |   Initial Conditions:Automatically generate initial conditions
+|   |   |   Starting time (TSTART):0
+|   |   |   Stop time (TSTOP):1e+030
+|   |   |   Plotting increment (TSTEP):automatically calculated (less than:1e+030)  
+|   |   |   Maximum time step (TMAX):automatically calculated (less than:1e+030)
+|   |   Perform consistency check 
+|   |   Variables from analysis   
+|   |   |   Show device values at the end of the simulation   
+|   |   Representation as SPICE commands
+|   |   |   begin-scope page
+|   |   |   checknodes 3
+|   |   |   save all
+|   |   |   iplot all 
+|   |   |   set trtol = 7 
+|   |   |   set itl4 = 100  
+|   |   |   set convlimit 
+|   |   |   set rshunt = 1e+012   
+|   |   |   -param hrange 0 1e+030  
+|   |   |   save
+|   |   |   tran  -env-options 1e-005 1e+030 0 1e-005 auto_ic auto_tstep auto_tmax  
+|   |   |   if-error end-scope audit-log-show 
+|   |   |   show all
+|   |   |   showmod all   
+|   |   |   end-scope 
+|   |   Multisim Default Analysis Options 
+|   |   |   Truncation error overestimation factor: 7 
+|   |   |   Upper transient iteration limit: 100
+|   |   |   Enable convergence assistance for code models 
+|   |   |   Shunt resistance from analog nodes to ground: 1e+012
+|   Output from instrument analysis   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r4:xu3      r3:xu3      r2:xu3      r1:xu3      r4:xu4      r3:xu4
+|   |    model                R           R           R           R           R           R   
+|   |     resistance         500         500         500         500         500         500
+|   |              i           0           0           0           0           0           0
+|   |              p           0           0           0           0           0           0
+|   |   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r2:xu4      r1:xu4
+|   |    model                R           R   
+|   |     resistance         500         500
+|   |              i           0           0
+|   |              p           0           0
+|   |   
+|   |    Vsource: Independent voltage source
+|   |    device              vv1      vccvcc
+|   |             dc           0           5
+|   |          acmag           1           0
+|   |              i  -9.15e-013     -5e-012
+|   |              p   8.38e-013    2.5e-011
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1
+|   |    model      adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2
+|   |    model       adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu2 aadc1in:xu5 aadc1in:xu5 aadc1in:xu5
+|   |    model       adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.   
+|   |   
+|   |    d_nand: digital n-input nand gate  
+|   |    device            au5_a
+|   |    model      74hc00_6__7   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu2.qb dac1:xu2.qa   
+|   |   
+|   |    d_chip: digital chip 
+|   |    device              au1         au2
+|   |    model      74ls163__74 74ls163__74   
+|   |   
+|   |    Resistor models (Simple linear resistor) 
+|   |    model                 R
+|   |   
+|   |            rsh           0
+|   |         narrow           0
+|   |            tc1           0
+|   |            tc2           0
+|   |           defw      1e-005
+|   |           tnom          27
+|   |            tce           0
+|   |          rmult           1
+|   |          t_abs        -273
+|   |   t_rel_global        -273
+|   |    t_rel_local        -273
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model       adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.
+|   |   
+|   |         in_low         2.5           3           3           3
+|   |        in_high         2.5           3           3           3
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    d_nand models (digital n-input nand gate)  
+|   |    model       74hc00_6__7
+|   |   
+|   |     rise_delay      2e-008
+|   |     fall_delay      2e-008
+|   |     input_load      1e-012
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc
+|   |   
+|   |        out_low           5           5           5           5           5           5
+|   |       out_high           0           0           0           0           0           0
+|   |      out_undef           0           0           0           0           0           0
+|   |     input_load      1e-012      1e-012      1e-012      1e-012      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu2.qb dac1:xu2.qa
+|   |   
+|   |        out_low           5           5
+|   |       out_high           0           0
+|   |      out_undef           0           0
+|   |     input_load      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009
+|   |   
+|   |    d_chip models (digital chip) 
+|   |    model       74ls163__74
+|   |   
+|   |      behaviour  
+|   |   ; 74ls163   
+|   |   
+Instrument operation performed   (2023, June 22, Thursday, 00:15:34)
+|   Instrument Analysis:Transient Analysis  
+|   |   Plot title: 
+|   |   Analysis settings 
+|   |   |   Initial Conditions:Automatically generate initial conditions
+|   |   |   Starting time (TSTART):0
+|   |   |   Stop time (TSTOP):1e+030
+|   |   |   Plotting increment (TSTEP):automatically calculated (less than:1e+030)  
+|   |   |   Maximum time step (TMAX):automatically calculated (less than:1e+030)
+|   |   Perform consistency check 
+|   |   Variables from analysis   
+|   |   |   Show device values at the end of the simulation   
+|   |   Representation as SPICE commands
+|   |   |   begin-scope page
+|   |   |   checknodes 3
+|   |   |   save all
+|   |   |   iplot all 
+|   |   |   set trtol = 7 
+|   |   |   set itl4 = 100  
+|   |   |   set convlimit 
+|   |   |   set rshunt = 1e+012   
+|   |   |   -param hrange 0 1e+030  
+|   |   |   save
+|   |   |   tran  -env-options 1e-005 1e+030 0 1e-005 auto_ic auto_tstep auto_tmax  
+|   |   |   if-error end-scope audit-log-show 
+|   |   |   show all
+|   |   |   showmod all   
+|   |   |   end-scope 
+|   |   Multisim Default Analysis Options 
+|   |   |   Truncation error overestimation factor: 7 
+|   |   |   Upper transient iteration limit: 100
+|   |   |   Enable convergence assistance for code models 
+|   |   |   Shunt resistance from analog nodes to ground: 1e+012
+|   Output from instrument analysis   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r4:xu3      r3:xu3      r2:xu3      r1:xu3      r4:xu4      r3:xu4
+|   |    model                R           R           R           R           R           R   
+|   |     resistance         500         500         500         500         500         500
+|   |              i           0           0           0           0           0           0
+|   |              p           0           0           0           0           0           0
+|   |   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r2:xu4      r1:xu4
+|   |    model                R           R   
+|   |     resistance         500         500
+|   |              i           0           0
+|   |              p           0           0
+|   |   
+|   |    Vsource: Independent voltage source
+|   |    device              vv1      vccvcc
+|   |             dc           0           5
+|   |          acmag           1           0
+|   |              i   8.32e-013     -5e-012
+|   |              p   6.92e-013    2.5e-011
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1
+|   |    model      adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2
+|   |    model       adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu2 aadc1in:xu5 aadc1in:xu5 aadc1in:xu5
+|   |    model       adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.   
+|   |   
+|   |    d_nand: digital n-input nand gate  
+|   |    device            au5_a
+|   |    model      74hc00_6__7   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu2.qb dac1:xu2.qa   
+|   |   
+|   |    d_chip: digital chip 
+|   |    device              au1         au2
+|   |    model      74ls163__74 74ls163__74   
+|   |   
+|   |    Resistor models (Simple linear resistor) 
+|   |    model                 R
+|   |   
+|   |            rsh           0
+|   |         narrow           0
+|   |            tc1           0
+|   |            tc2           0
+|   |           defw      1e-005
+|   |           tnom          27
+|   |            tce           0
+|   |          rmult           1
+|   |          t_abs        -273
+|   |   t_rel_global        -273
+|   |    t_rel_local        -273
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model       adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.
+|   |   
+|   |         in_low         2.5           3           3           3
+|   |        in_high         2.5           3           3           3
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    d_nand models (digital n-input nand gate)  
+|   |    model       74hc00_6__7
+|   |   
+|   |     rise_delay      2e-008
+|   |     fall_delay      2e-008
+|   |     input_load      1e-012
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc
+|   |   
+|   |        out_low           5           5           5           5           5           5
+|   |       out_high           0           0           0           0           0           0
+|   |      out_undef           0           0           0           0           0           0
+|   |     input_load      1e-012      1e-012      1e-012      1e-012      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu2.qb dac1:xu2.qa
+|   |   
+|   |        out_low           5           5
+|   |       out_high           0           0
+|   |      out_undef           0           0
+|   |     input_load      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009
+|   |   
+|   |    d_chip models (digital chip) 
+|   |    model       74ls163__74
+|   |   
+|   |      behaviour  
+|   |   ; 74ls163   
+|   |   
+Instrument operation performed   (2023, June 22, Thursday, 00:15:36)
+|   Instrument Analysis:Transient Analysis  
+|   |   Plot title: 
+|   |   Analysis settings 
+|   |   |   Initial Conditions:Automatically generate initial conditions
+|   |   |   Starting time (TSTART):0
+|   |   |   Stop time (TSTOP):1e+030
+|   |   |   Plotting increment (TSTEP):automatically calculated (less than:1e+030)  
+|   |   |   Maximum time step (TMAX):automatically calculated (less than:1e+030)
+|   |   Perform consistency check 
+|   |   Variables from analysis   
+|   |   |   Show device values at the end of the simulation   
+|   |   Representation as SPICE commands
+|   |   |   begin-scope page
+|   |   |   checknodes 3
+|   |   |   save all
+|   |   |   iplot all 
+|   |   |   set trtol = 7 
+|   |   |   set itl4 = 100  
+|   |   |   set convlimit 
+|   |   |   set rshunt = 1e+012   
+|   |   |   -param hrange 0 1e+030  
+|   |   |   save
+|   |   |   tran  -env-options 1e-005 1e+030 0 1e-005 auto_ic auto_tstep auto_tmax  
+|   |   |   if-error end-scope audit-log-show 
+|   |   |   show all
+|   |   |   showmod all   
+|   |   |   end-scope 
+|   |   Multisim Default Analysis Options 
+|   |   |   Truncation error overestimation factor: 7 
+|   |   |   Upper transient iteration limit: 100
+|   |   |   Enable convergence assistance for code models 
+|   |   |   Shunt resistance from analog nodes to ground: 1e+012
+|   Output from instrument analysis   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r4:xu3      r3:xu3      r2:xu3      r1:xu3      r4:xu4      r3:xu4
+|   |    model                R           R           R           R           R           R   
+|   |     resistance         500         500         500         500         500         500
+|   |              i           0           0           0           0           0           0
+|   |              p           0           0           0           0           0           0
+|   |   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r2:xu4      r1:xu4
+|   |    model                R           R   
+|   |     resistance         500         500
+|   |              i           0           0
+|   |              p           0           0
+|   |   
+|   |    Vsource: Independent voltage source
+|   |    device              vv1      vccvcc
+|   |             dc           0           5
+|   |          acmag           1           0
+|   |              i   6.42e-013     -5e-012
+|   |              p   4.13e-013    2.5e-011
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1
+|   |    model      adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2
+|   |    model       adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu2 aadc1in:xu5 aadc1in:xu5 aadc1in:xu5
+|   |    model       adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.   
+|   |   
+|   |    d_nand: digital n-input nand gate  
+|   |    device            au5_a
+|   |    model      74hc00_6__7   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu2.qb dac1:xu2.qa   
+|   |   
+|   |    d_chip: digital chip 
+|   |    device              au1         au2
+|   |    model      74ls163__74 74ls163__74   
+|   |   
+|   |    Resistor models (Simple linear resistor) 
+|   |    model                 R
+|   |   
+|   |            rsh           0
+|   |         narrow           0
+|   |            tc1           0
+|   |            tc2           0
+|   |           defw      1e-005
+|   |           tnom          27
+|   |            tce           0
+|   |          rmult           1
+|   |          t_abs        -273
+|   |   t_rel_global        -273
+|   |    t_rel_local        -273
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model       adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.
+|   |   
+|   |         in_low         2.5           3           3           3
+|   |        in_high         2.5           3           3           3
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    d_nand models (digital n-input nand gate)  
+|   |    model       74hc00_6__7
+|   |   
+|   |     rise_delay      2e-008
+|   |     fall_delay      2e-008
+|   |     input_load      1e-012
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc
+|   |   
+|   |        out_low           5           5           5           5           5           5
+|   |       out_high           0           0           0           0           0           0
+|   |      out_undef           0           0           0           0           0           0
+|   |     input_load      1e-012      1e-012      1e-012      1e-012      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu2.qb dac1:xu2.qa
+|   |   
+|   |        out_low           5           5
+|   |       out_high           0           0
+|   |      out_undef           0           0
+|   |     input_load      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009
+|   |   
+|   |    d_chip models (digital chip) 
+|   |    model       74ls163__74
+|   |   
+|   |      behaviour  
+|   |   ; 74ls163   
+|   |   
+Instrument operation performed   (2023, June 22, Thursday, 00:15:37)
+|   Instrument Analysis:Transient Analysis  
+|   |   Plot title: 
+|   |   Analysis settings 
+|   |   |   Initial Conditions:Automatically generate initial conditions
+|   |   |   Starting time (TSTART):0
+|   |   |   Stop time (TSTOP):1e+030
+|   |   |   Plotting increment (TSTEP):automatically calculated (less than:1e+030)  
+|   |   |   Maximum time step (TMAX):automatically calculated (less than:1e+030)
+|   |   Perform consistency check 
+|   |   Variables from analysis   
+|   |   |   Show device values at the end of the simulation   
+|   |   Representation as SPICE commands
+|   |   |   begin-scope page
+|   |   |   checknodes 3
+|   |   |   save all
+|   |   |   iplot all 
+|   |   |   set trtol = 7 
+|   |   |   set itl4 = 100  
+|   |   |   set convlimit 
+|   |   |   set rshunt = 1e+012   
+|   |   |   -param hrange 0 1e+030  
+|   |   |   save
+|   |   |   tran  -env-options 1e-005 1e+030 0 1e-005 auto_ic auto_tstep auto_tmax  
+|   |   |   if-error end-scope audit-log-show 
+|   |   |   show all
+|   |   |   showmod all   
+|   |   |   end-scope 
+|   |   Multisim Default Analysis Options 
+|   |   |   Truncation error overestimation factor: 7 
+|   |   |   Upper transient iteration limit: 100
+|   |   |   Enable convergence assistance for code models 
+|   |   |   Shunt resistance from analog nodes to ground: 1e+012
+|   Output from instrument analysis   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r4:xu3      r3:xu3      r2:xu3      r1:xu3      r4:xu4      r3:xu4
+|   |    model                R           R           R           R           R           R   
+|   |     resistance         500         500         500         500         500         500
+|   |              i        0.01           0           0        0.01        0.01           0
+|   |              p        0.05           0           0        0.05        0.05           0
+|   |   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r2:xu4      r1:xu4
+|   |    model                R           R   
+|   |     resistance         500         500
+|   |              i           0        0.01
+|   |              p           0        0.05
+|   |   
+|   |    Vsource: Independent voltage source
+|   |    device              vv1      vccvcc
+|   |             dc           0           5
+|   |          acmag           1           0
+|   |              i   1.08e-013     -5e-012
+|   |              p   1.17e-014    2.5e-011
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1
+|   |    model      adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2
+|   |    model       adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu2 aadc1in:xu5 aadc1in:xu5 aadc1in:xu5
+|   |    model       adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.   
+|   |   
+|   |    d_nand: digital n-input nand gate  
+|   |    device            au5_a
+|   |    model      74hc00_6__7   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu2.qb dac1:xu2.qa   
+|   |   
+|   |    d_chip: digital chip 
+|   |    device              au1         au2
+|   |    model      74ls163__74 74ls163__74   
+|   |   
+|   |    Resistor models (Simple linear resistor) 
+|   |    model                 R
+|   |   
+|   |            rsh           0
+|   |         narrow           0
+|   |            tc1           0
+|   |            tc2           0
+|   |           defw      1e-005
+|   |           tnom          27
+|   |            tce           0
+|   |          rmult           1
+|   |          t_abs        -273
+|   |   t_rel_global        -273
+|   |    t_rel_local        -273
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model       adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.
+|   |   
+|   |         in_low         2.5           3           3           3
+|   |        in_high         2.5           3           3           3
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    d_nand models (digital n-input nand gate)  
+|   |    model       74hc00_6__7
+|   |   
+|   |     rise_delay      2e-008
+|   |     fall_delay      2e-008
+|   |     input_load      1e-012
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc
+|   |   
+|   |        out_low           5           5           5           5           5           5
+|   |       out_high           0           0           0           0           0           0
+|   |      out_undef           0           0           0           0           0           0
+|   |     input_load      1e-012      1e-012      1e-012      1e-012      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu2.qb dac1:xu2.qa
+|   |   
+|   |        out_low           5           5
+|   |       out_high           0           0
+|   |      out_undef           0           0
+|   |     input_load      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009
+|   |   
+|   |    d_chip models (digital chip) 
+|   |    model       74ls163__74
+|   |   
+|   |      behaviour  
+|   |   ; 74ls163   
+|   |   
+Instrument operation performed   (2023, June 22, Thursday, 00:15:40)
+|   Instrument Analysis:Transient Analysis  
+|   |   Plot title: 
+|   |   Analysis settings 
+|   |   |   Initial Conditions:Automatically generate initial conditions
+|   |   |   Starting time (TSTART):0
+|   |   |   Stop time (TSTOP):1e+030
+|   |   |   Plotting increment (TSTEP):automatically calculated (less than:1e+030)  
+|   |   |   Maximum time step (TMAX):automatically calculated (less than:1e+030)
+|   |   Perform consistency check 
+|   |   Variables from analysis   
+|   |   |   Show device values at the end of the simulation   
+|   |   Representation as SPICE commands
+|   |   |   begin-scope page
+|   |   |   checknodes 3
+|   |   |   save all
+|   |   |   iplot all 
+|   |   |   set trtol = 7 
+|   |   |   set itl4 = 100  
+|   |   |   set convlimit 
+|   |   |   set rshunt = 1e+012   
+|   |   |   -param hrange 0 1e+030  
+|   |   |   save
+|   |   |   tran  -env-options 1e-005 1e+030 0 1e-005 auto_ic auto_tstep auto_tmax  
+|   |   |   if-error end-scope audit-log-show 
+|   |   |   show all
+|   |   |   showmod all   
+|   |   |   end-scope 
+|   |   Multisim Default Analysis Options 
+|   |   |   Truncation error overestimation factor: 7 
+|   |   |   Upper transient iteration limit: 100
+|   |   |   Enable convergence assistance for code models 
+|   |   |   Shunt resistance from analog nodes to ground: 1e+012
+|   Output from instrument analysis   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r4:xu3      r3:xu3      r2:xu3      r1:xu3      r4:xu4      r3:xu4
+|   |    model                R           R           R           R           R           R   
+|   |     resistance         500         500         500         500         500         500
+|   |              i           0           0           0           0           0           0
+|   |              p           0           0           0           0           0           0
+|   |   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r2:xu4      r1:xu4
+|   |    model                R           R   
+|   |     resistance         500         500
+|   |              i           0           0
+|   |              p           0           0
+|   |   
+|   |    Vsource: Independent voltage source
+|   |    device              vv1      vccvcc
+|   |             dc           0           5
+|   |          acmag           1           0
+|   |              i  -4.01e-013     -5e-012
+|   |              p   1.61e-013    2.5e-011
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1
+|   |    model      adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2
+|   |    model       adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu2 aadc1in:xu5 aadc1in:xu5 aadc1in:xu5
+|   |    model       adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.   
+|   |   
+|   |    d_nand: digital n-input nand gate  
+|   |    device            au5_a
+|   |    model      74hc00_6__7   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu2.qb dac1:xu2.qa   
+|   |   
+|   |    d_chip: digital chip 
+|   |    device              au1         au2
+|   |    model      74ls163__74 74ls163__74   
+|   |   
+|   |    Resistor models (Simple linear resistor) 
+|   |    model                 R
+|   |   
+|   |            rsh           0
+|   |         narrow           0
+|   |            tc1           0
+|   |            tc2           0
+|   |           defw      1e-005
+|   |           tnom          27
+|   |            tce           0
+|   |          rmult           1
+|   |          t_abs        -273
+|   |   t_rel_global        -273
+|   |    t_rel_local        -273
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model       adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.
+|   |   
+|   |         in_low         2.5           3           3           3
+|   |        in_high         2.5           3           3           3
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    d_nand models (digital n-input nand gate)  
+|   |    model       74hc00_6__7
+|   |   
+|   |     rise_delay      2e-008
+|   |     fall_delay      2e-008
+|   |     input_load      1e-012
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc
+|   |   
+|   |        out_low           5           5           5           5           5           5
+|   |       out_high           0           0           0           0           0           0
+|   |      out_undef           0           0           0           0           0           0
+|   |     input_load      1e-012      1e-012      1e-012      1e-012      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu2.qb dac1:xu2.qa
+|   |   
+|   |        out_low           5           5
+|   |       out_high           0           0
+|   |      out_undef           0           0
+|   |     input_load      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009
+|   |   
+|   |    d_chip models (digital chip) 
+|   |    model       74ls163__74
+|   |   
+|   |      behaviour  
+|   |   ; 74ls163   
+|   |   
+Instrument operation performed   (2023, June 22, Thursday, 00:15:42)
+|   Instrument Analysis:Transient Analysis  
+|   |   Plot title: 
+|   |   Analysis settings 
+|   |   |   Initial Conditions:Automatically generate initial conditions
+|   |   |   Starting time (TSTART):0
+|   |   |   Stop time (TSTOP):1e+030
+|   |   |   Plotting increment (TSTEP):automatically calculated (less than:1e+030)  
+|   |   |   Maximum time step (TMAX):automatically calculated (less than:1e+030)
+|   |   Perform consistency check 
+|   |   Variables from analysis   
+|   |   |   Show device values at the end of the simulation   
+|   |   Representation as SPICE commands
+|   |   |   begin-scope page
+|   |   |   checknodes 3
+|   |   |   save all
+|   |   |   iplot all 
+|   |   |   set trtol = 7 
+|   |   |   set itl4 = 100  
+|   |   |   set convlimit 
+|   |   |   set rshunt = 1e+012   
+|   |   |   -param hrange 0 1e+030  
+|   |   |   save
+|   |   |   tran  -env-options 1e-005 1e+030 0 1e-005 auto_ic auto_tstep auto_tmax  
+|   |   |   if-error end-scope audit-log-show 
+|   |   |   show all
+|   |   |   showmod all   
+|   |   |   end-scope 
+|   |   Multisim Default Analysis Options 
+|   |   |   Truncation error overestimation factor: 7 
+|   |   |   Upper transient iteration limit: 100
+|   |   |   Enable convergence assistance for code models 
+|   |   |   Shunt resistance from analog nodes to ground: 1e+012
+|   Output from instrument analysis   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r4:xu3      r3:xu3      r2:xu3      r1:xu3      r4:xu4      r3:xu4
+|   |    model                R           R           R           R           R           R   
+|   |     resistance         500         500         500         500         500         500
+|   |              i           0           0        0.01        0.01           0           0
+|   |              p           0           0        0.05        0.05           0           0
+|   |   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r2:xu4      r1:xu4
+|   |    model                R           R   
+|   |     resistance         500         500
+|   |              i        0.01        0.01
+|   |              p        0.05        0.05
+|   |   
+|   |    Vsource: Independent voltage source
+|   |    device              vv1      vccvcc
+|   |             dc           0           5
+|   |          acmag           1           0
+|   |              i  -9.91e-013     -5e-012
+|   |              p   9.82e-013    2.5e-011
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1
+|   |    model      adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2
+|   |    model       adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu2 aadc1in:xu5 aadc1in:xu5 aadc1in:xu5
+|   |    model       adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.   
+|   |   
+|   |    d_nand: digital n-input nand gate  
+|   |    device            au5_a
+|   |    model      74hc00_6__7   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu2.qb dac1:xu2.qa   
+|   |   
+|   |    d_chip: digital chip 
+|   |    device              au1         au2
+|   |    model      74ls163__74 74ls163__74   
+|   |   
+|   |    Resistor models (Simple linear resistor) 
+|   |    model                 R
+|   |   
+|   |            rsh           0
+|   |         narrow           0
+|   |            tc1           0
+|   |            tc2           0
+|   |           defw      1e-005
+|   |           tnom          27
+|   |            tce           0
+|   |          rmult           1
+|   |          t_abs        -273
+|   |   t_rel_global        -273
+|   |    t_rel_local        -273
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model       adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.
+|   |   
+|   |         in_low         2.5           3           3           3
+|   |        in_high         2.5           3           3           3
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    d_nand models (digital n-input nand gate)  
+|   |    model       74hc00_6__7
+|   |   
+|   |     rise_delay      2e-008
+|   |     fall_delay      2e-008
+|   |     input_load      1e-012
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc
+|   |   
+|   |        out_low           5           5           5           5           5           5
+|   |       out_high           0           0           0           0           0           0
+|   |      out_undef           0           0           0           0           0           0
+|   |     input_load      1e-012      1e-012      1e-012      1e-012      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu2.qb dac1:xu2.qa
+|   |   
+|   |        out_low           5           5
+|   |       out_high           0           0
+|   |      out_undef           0           0
+|   |     input_load      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009
+|   |   
+|   |    d_chip models (digital chip) 
+|   |    model       74ls163__74
+|   |   
+|   |      behaviour  
+|   |   ; 74ls163   
+|   |   
+Instrument operation performed   (2023, June 22, Thursday, 00:17:01)
+|   Instrument Analysis:Transient Analysis  
+|   |   Plot title: 
+|   |   Analysis settings 
+|   |   |   Initial Conditions:Automatically generate initial conditions
+|   |   |   Starting time (TSTART):0
+|   |   |   Stop time (TSTOP):1e+030
+|   |   |   Plotting increment (TSTEP):1e-005 
+|   |   |   Maximum time step (TMAX):1e-005   
+|   |   Perform consistency check 
+|   |   Variables from analysis   
+|   |   |   Show device values at the end of the simulation   
+|   |   Representation as SPICE commands
+|   |   |   begin-scope page
+|   |   |   checknodes 3
+|   |   |   save all
+|   |   |   iplot all 
+|   |   |   set trtol = 7 
+|   |   |   set itl4 = 100  
+|   |   |   set convlimit 
+|   |   |   set rshunt = 1e+012   
+|   |   |   -param hrange 0 1e+030  
+|   |   |   save
+|   |   |   tran  -env-options 1e-005 1e+030 0 1e-005 auto_ic 
+|   |   |   if-error end-scope audit-log-show 
+|   |   |   show all
+|   |   |   showmod all   
+|   |   |   end-scope 
+|   |   Multisim Default Analysis Options 
+|   |   |   Truncation error overestimation factor: 7 
+|   |   |   Upper transient iteration limit: 100
+|   |   |   Enable convergence assistance for code models 
+|   |   |   Shunt resistance from analog nodes to ground: 1e+012
+|   Output from instrument analysis   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r4:xu3      r3:xu3      r2:xu3      r1:xu3      r4:xu4      r3:xu4
+|   |    model                R           R           R           R           R           R   
+|   |     resistance         500         500         500         500         500         500
+|   |              i           0           0           0           0        0.01           0
+|   |              p           0           0           0           0        0.05           0
+|   |   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r2:xu4      r1:xu4
+|   |    model                R           R   
+|   |     resistance         500         500
+|   |              i        0.01        0.01
+|   |              p        0.05        0.05
+|   |   
+|   |    Vsource: Independent voltage source
+|   |    device           vccvcc vfgen_src_n vfgen_src_p
+|   |             dc           5           0           0
+|   |          acmag           0           1           1
+|   |              i     -5e-012      1e-011     -1e-011
+|   |              p    2.5e-011      1e-010      1e-010
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1
+|   |    model      adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2
+|   |    model       adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu2 aadc1in:xu5 aadc1in:xu5 aadc1in:xu5
+|   |    model       adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.   
+|   |   
+|   |    d_nand: digital n-input nand gate  
+|   |    device            au5_a
+|   |    model      74hc00_6__7   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu2.qb dac1:xu2.qa   
+|   |   
+|   |    d_chip: digital chip 
+|   |    device              au1         au2
+|   |    model      74ls163__74 74ls163__74   
+|   |   
+|   |    Resistor models (Simple linear resistor) 
+|   |    model                 R
+|   |   
+|   |            rsh           0
+|   |         narrow           0
+|   |            tc1           0
+|   |            tc2           0
+|   |           defw      1e-005
+|   |           tnom          27
+|   |            tce           0
+|   |          rmult           1
+|   |          t_abs        -273
+|   |   t_rel_global        -273
+|   |    t_rel_local        -273
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model       adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.
+|   |   
+|   |         in_low         2.5           3           3           3
+|   |        in_high         2.5           3           3           3
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    d_nand models (digital n-input nand gate)  
+|   |    model       74hc00_6__7
+|   |   
+|   |     rise_delay      2e-008
+|   |     fall_delay      2e-008
+|   |     input_load      1e-012
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc
+|   |   
+|   |        out_low           5           5           5           5           5           5
+|   |       out_high           0           0           0           0           0           0
+|   |      out_undef           0           0           0           0           0           0
+|   |     input_load      1e-012      1e-012      1e-012      1e-012      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu2.qb dac1:xu2.qa
+|   |   
+|   |        out_low           5           5
+|   |       out_high           0           0
+|   |      out_undef           0           0
+|   |     input_load      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009
+|   |   
+|   |    d_chip models (digital chip) 
+|   |    model       74ls163__74
+|   |   
+|   |      behaviour  
+|   |   ; 74ls163   
+|   |   
+Instrument operation performed   (2023, June 22, Thursday, 00:19:23)
+|   Instrument Analysis:Transient Analysis  
+|   |   Plot title: 
+|   |   Analysis settings 
+|   |   |   Initial Conditions:Automatically generate initial conditions
+|   |   |   Starting time (TSTART):0
+|   |   |   Stop time (TSTOP):1e+030
+|   |   |   Plotting increment (TSTEP):1e-005 
+|   |   |   Maximum time step (TMAX):1e-005   
+|   |   Perform consistency check 
+|   |   Variables from analysis   
+|   |   |   Show device values at the end of the simulation   
+|   |   Representation as SPICE commands
+|   |   |   begin-scope page
+|   |   |   checknodes 3
+|   |   |   save all
+|   |   |   iplot all 
+|   |   |   set trtol = 7 
+|   |   |   set itl4 = 100  
+|   |   |   set convlimit 
+|   |   |   set rshunt = 1e+012   
+|   |   |   -param hrange 0 1e+030  
+|   |   |   save
+|   |   |   tran  -env-options 1e-005 1e+030 0 1e-005 auto_ic 
+|   |   |   if-error end-scope audit-log-show 
+|   |   |   show all
+|   |   |   showmod all   
+|   |   |   end-scope 
+|   |   Multisim Default Analysis Options 
+|   |   |   Truncation error overestimation factor: 7 
+|   |   |   Upper transient iteration limit: 100
+|   |   |   Enable convergence assistance for code models 
+|   |   |   Shunt resistance from analog nodes to ground: 1e+012
+|   Output from instrument analysis   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r4:xu3      r3:xu3      r2:xu3      r1:xu3      r4:xu4      r3:xu4
+|   |    model                R           R           R           R           R           R   
+|   |     resistance         500         500         500         500         500         500
+|   |              i           0           0           0           0        0.01        0.01
+|   |              p           0           0           0           0        0.05        0.05
+|   |   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r2:xu4      r1:xu4
+|   |    model                R           R   
+|   |     resistance         500         500
+|   |              i           0        0.01
+|   |              p           0        0.05
+|   |   
+|   |    Vsource: Independent voltage source
+|   |    device           vccvcc vfgen_src_n vfgen_src_p
+|   |             dc           5           0           0
+|   |          acmag           0           1           1
+|   |              i     -5e-012     -1e-011      1e-011
+|   |              p    2.5e-011      1e-010      1e-010
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1
+|   |    model      adc1:xu1.cl adc1:xu1.no adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu1 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2
+|   |    model       adc1:xu1.b  adc1:xu1.a adc1:xu2.cl adc1:xu2.no adc1:xu2.en  adc1:xu2.d   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu5 aadc1in:xu5 aadc1in:xu5
+|   |    model       adc1:xu2.c  adc1:xu2.b  adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.   
+|   |   
+|   |    d_nand: digital n-input nand gate  
+|   |    device            au5_a
+|   |    model      74hc00_6__7   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu2.qb dac1:xu2.qa   
+|   |   
+|   |    d_chip: digital chip 
+|   |    device              au1         au2
+|   |    model      74ls163__74 74ls163__74   
+|   |   
+|   |    Resistor models (Simple linear resistor) 
+|   |    model                 R
+|   |   
+|   |            rsh           0
+|   |         narrow           0
+|   |            tc1           0
+|   |            tc2           0
+|   |           defw      1e-005
+|   |           tnom          27
+|   |            tce           0
+|   |          rmult           1
+|   |          t_abs        -273
+|   |   t_rel_global        -273
+|   |    t_rel_local        -273
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model       adc1:xu1.cl adc1:xu1.no adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu1.b  adc1:xu1.a adc1:xu2.cl adc1:xu2.no adc1:xu2.en  adc1:xu2.d
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu2.c  adc1:xu2.b  adc1:xu2.a adc1:xu5_a. adc1:xu5_a. adc1:xu5_a.
+|   |   
+|   |         in_low         2.5         2.5         2.5           3           3           3
+|   |        in_high         2.5         2.5         2.5           3           3           3
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    d_nand models (digital n-input nand gate)  
+|   |    model       74hc00_6__7
+|   |   
+|   |     rise_delay      2e-008
+|   |     fall_delay      2e-008
+|   |     input_load      1e-012
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qd dac1:xu2.qc
+|   |   
+|   |        out_low           5           5           5           5           5           5
+|   |       out_high           0           0           0           0           0           0
+|   |      out_undef           0           0           0           0           0           0
+|   |     input_load      1e-012      1e-012      1e-012      1e-012      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu2.qb dac1:xu2.qa
+|   |   
+|   |        out_low           5           5
+|   |       out_high           0           0
+|   |      out_undef           0           0
+|   |     input_load      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009
+|   |   
+|   |    d_chip models (digital chip) 
+|   |    model       74ls163__74
+|   |   
+|   |      behaviour  
+|   |   ; 74ls163   
+|   |   
+Instrument operation performed   (2023, June 22, Thursday, 00:23:41)
+|   Instrument Analysis:Transient Analysis  
+|   |   Plot title: 
+|   |   Analysis settings 
+|   |   |   Initial Conditions:Automatically generate initial conditions
+|   |   |   Starting time (TSTART):0
+|   |   |   Stop time (TSTOP):1e+030
+|   |   |   Plotting increment (TSTEP):1e-005 
+|   |   |   Maximum time step (TMAX):1e-005   
+|   |   Perform consistency check 
+|   |   Variables from analysis   
+|   |   |   Show device values at the end of the simulation   
+|   |   Representation as SPICE commands
+|   |   |   begin-scope page
+|   |   |   checknodes 3
+|   |   |   save all
+|   |   |   iplot all 
+|   |   |   set trtol = 7 
+|   |   |   set itl4 = 100  
+|   |   |   set convlimit 
+|   |   |   set rshunt = 1e+012   
+|   |   |   -param hrange 0 1e+030  
+|   |   |   save
+|   |   |   tran  -env-options 1e-005 1e+030 0 1e-005 auto_ic 
+|   |   |   if-error end-scope audit-log-show 
+|   |   |   show all
+|   |   |   showmod all   
+|   |   |   end-scope 
+|   |   Multisim Default Analysis Options 
+|   |   |   Truncation error overestimation factor: 7 
+|   |   |   Upper transient iteration limit: 100
+|   |   |   Enable convergence assistance for code models 
+|   |   |   Shunt resistance from analog nodes to ground: 1e+012
+|   Output from instrument analysis   
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |    starting Gmin stepping   
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |    Gmin step failed 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |    Gmin stepping failed 
+|   |    starting source stepping 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |    source stepping failed   
+|   |    DC operating point failed. Resimulating with UIC.  
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |    TRAN:  Timestep too small; initial timepoint:cause unrecorded.   
+|   |    doAnalyses: timestep too small   
+|   |   
+|   |   
+|   |   tran simulation(s) aborted  
+Instrument operation performed   (2023, June 22, Thursday, 00:24:01)
+|   Instrument Analysis:Transient Analysis  
+|   |   Plot title: 
+|   |   Analysis settings 
+|   |   |   Initial Conditions:Automatically generate initial conditions
+|   |   |   Starting time (TSTART):0
+|   |   |   Stop time (TSTOP):1e+030
+|   |   |   Plotting increment (TSTEP):1e-005 
+|   |   |   Maximum time step (TMAX):1e-005   
+|   |   Perform consistency check 
+|   |   Variables from analysis   
+|   |   |   Show device values at the end of the simulation   
+|   |   Representation as SPICE commands
+|   |   |   begin-scope page
+|   |   |   checknodes 3
+|   |   |   save all
+|   |   |   iplot all 
+|   |   |   set trtol = 7 
+|   |   |   set itl4 = 100  
+|   |   |   set convlimit 
+|   |   |   set rshunt = 1e+012   
+|   |   |   -param hrange 0 1e+030  
+|   |   |   save
+|   |   |   tran  -env-options 1e-005 1e+030 0 1e-005 auto_ic 
+|   |   |   if-error end-scope audit-log-show 
+|   |   |   show all
+|   |   |   showmod all   
+|   |   |   end-scope 
+|   |   Multisim Default Analysis Options 
+|   |   |   Truncation error overestimation factor: 7 
+|   |   |   Upper transient iteration limit: 100
+|   |   |   Enable convergence assistance for code models 
+|   |   |   Shunt resistance from analog nodes to ground: 1e+012
+|   Output from instrument analysis   
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |    starting Gmin stepping   
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |    Gmin step failed 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |    Gmin stepping failed 
+|   |    starting source stepping 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |    source stepping failed   
+|   |    DC operating point failed. Resimulating with UIC.  
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |    TRAN:  Timestep too small; initial timepoint:cause unrecorded.   
+|   |    doAnalyses: timestep too small   
+|   |   
+|   |   
+|   |   tran simulation(s) aborted  
+Instrument operation performed   (2023, June 22, Thursday, 00:24:40)
+|   Instrument Analysis:Transient Analysis  
+|   |   Plot title: 
+|   |   Analysis settings 
+|   |   |   Initial Conditions:Automatically generate initial conditions
+|   |   |   Starting time (TSTART):0
+|   |   |   Stop time (TSTOP):1e+030
+|   |   |   Plotting increment (TSTEP):1e-005 
+|   |   |   Maximum time step (TMAX):1e-005   
+|   |   Perform consistency check 
+|   |   Variables from analysis   
+|   |   |   Show device values at the end of the simulation   
+|   |   Representation as SPICE commands
+|   |   |   begin-scope page
+|   |   |   checknodes 3
+|   |   |   save all
+|   |   |   iplot all 
+|   |   |   set trtol = 7 
+|   |   |   set itl4 = 100  
+|   |   |   set convlimit 
+|   |   |   set rshunt = 1e+012   
+|   |   |   -param hrange 0 1e+030  
+|   |   |   save
+|   |   |   tran  -env-options 1e-005 1e+030 0 1e-005 auto_ic 
+|   |   |   if-error end-scope audit-log-show 
+|   |   |   show all
+|   |   |   showmod all   
+|   |   |   end-scope 
+|   |   Multisim Default Analysis Options 
+|   |   |   Truncation error overestimation factor: 7 
+|   |   |   Upper transient iteration limit: 100
+|   |   |   Enable convergence assistance for code models 
+|   |   |   Shunt resistance from analog nodes to ground: 1e+012
+|   Output from instrument analysis   
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |    starting Gmin stepping   
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |    Gmin step failed 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |    Gmin stepping failed 
+|   |    starting source stepping 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |    source stepping failed   
+|   |    DC operating point failed. Resimulating with UIC.  
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |    TRAN:  Timestep too small; initial timepoint:cause unrecorded.   
+|   |    doAnalyses: timestep too small   
+|   |   
+|   |   
+|   |   tran simulation(s) aborted  
+Instrument operation performed   (2023, June 22, Thursday, 00:25:06)
+|   Instrument Analysis:Transient Analysis  
+|   |   Plot title: 
+|   |   Analysis settings 
+|   |   |   Initial Conditions:Automatically generate initial conditions
+|   |   |   Starting time (TSTART):0
+|   |   |   Stop time (TSTOP):1e+030
+|   |   |   Plotting increment (TSTEP):1e-005 
+|   |   |   Maximum time step (TMAX):1e-005   
+|   |   Perform consistency check 
+|   |   Variables from analysis   
+|   |   |   Show device values at the end of the simulation   
+|   |   Representation as SPICE commands
+|   |   |   begin-scope page
+|   |   |   checknodes 3
+|   |   |   save all
+|   |   |   iplot all 
+|   |   |   set trtol = 7 
+|   |   |   set itl4 = 100  
+|   |   |   set convlimit 
+|   |   |   set rshunt = 1e+012   
+|   |   |   -param hrange 0 1e+030  
+|   |   |   save
+|   |   |   tran  -env-options 1e-005 1e+030 0 1e-005 auto_ic 
+|   |   |   if-error end-scope audit-log-show 
+|   |   |   show all
+|   |   |   showmod all   
+|   |   |   end-scope 
+|   |   Multisim Default Analysis Options 
+|   |   |   Truncation error overestimation factor: 7 
+|   |   |   Upper transient iteration limit: 100
+|   |   |   Enable convergence assistance for code models 
+|   |   |   Shunt resistance from analog nodes to ground: 1e+012
+|   Output from instrument analysis   
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |    starting Gmin stepping   
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |    Gmin step failed 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |    Gmin stepping failed 
+|   |    starting source stepping 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |    source stepping failed   
+|   |    DC operating point failed. Resimulating with UIC.  
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |    TRAN:  Timestep too small; initial timepoint:cause unrecorded.   
+|   |    doAnalyses: timestep too small   
+|   |   
+|   |   
+|   |   tran simulation(s) aborted  
+Instrument operation performed   (2023, June 22, Thursday, 00:25:33)
+|   Instrument Analysis:Transient Analysis  
+|   |   Plot title: 
+|   |   Analysis settings 
+|   |   |   Initial Conditions:Automatically generate initial conditions
+|   |   |   Starting time (TSTART):0
+|   |   |   Stop time (TSTOP):1e+030
+|   |   |   Plotting increment (TSTEP):1e-005 
+|   |   |   Maximum time step (TMAX):1e-005   
+|   |   Perform consistency check 
+|   |   Variables from analysis   
+|   |   |   Show device values at the end of the simulation   
+|   |   Representation as SPICE commands
+|   |   |   begin-scope page
+|   |   |   checknodes 3
+|   |   |   save all
+|   |   |   iplot all 
+|   |   |   set trtol = 7 
+|   |   |   set itl4 = 100  
+|   |   |   set convlimit 
+|   |   |   set rshunt = 1e+012   
+|   |   |   -param hrange 0 1e+030  
+|   |   |   save
+|   |   |   tran  -env-options 1e-005 1e+030 0 1e-005 auto_ic 
+|   |   |   if-error end-scope audit-log-show 
+|   |   |   show all
+|   |   |   showmod all   
+|   |   |   end-scope 
+|   |   Multisim Default Analysis Options 
+|   |   |   Truncation error overestimation factor: 7 
+|   |   |   Upper transient iteration limit: 100
+|   |   |   Enable convergence assistance for code models 
+|   |   |   Shunt resistance from analog nodes to ground: 1e+012
+|   Output from instrument analysis   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r4:xu3      r3:xu3      r2:xu3      r1:xu3      r4:xu4      r3:xu4
+|   |    model                R           R           R           R           R           R   
+|   |     resistance         500         500         500         500         500         500
+|   |              i           0        0.01           0        0.01           0           0
+|   |              p           0        0.05           0        0.05           0           0
+|   |   
+|   |    Resistor: Simple linear resistor 
+|   |    device           r2:xu4      r1:xu4
+|   |    model                R           R   
+|   |     resistance         500         500
+|   |              i           0           0
+|   |              p           0           0
+|   |   
+|   |    Vsource: Independent voltage source
+|   |    device      vfgen_src_n vfgen_src_p      vccvcc
+|   |             dc           0           0           5
+|   |          acmag           1           1           0
+|   |              i     -1e-011      1e-011     -5e-012
+|   |              p      1e-010      1e-010    2.5e-011
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1 aadc1in:xu1
+|   |    model      adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu1 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2 aadc1in:xu2
+|   |    model       adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b   
+|   |   
+|   |    adc_bridge: analog-to-digital converter node bridge
+|   |    device      aadc1in:xu2 aadc1in:xu6 aadc1in:xu6 aadc1in:xu6
+|   |    model       adc1:xu2.a adc1:xu6_a. adc1:xu6_a. adc1:xu6_a.   
+|   |   
+|   |    d_and: digital n-input and gate
+|   |    device            au6_a
+|   |    model      74hc08_4__7   
+|   |   
+|   |    d_inverter: digital one-bit-wide inverter  
+|   |    device            au5_a
+|   |    model      74hc04_2__7   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu1 adac1in:xu2 adac1in:xu2
+|   |    model      dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qc dac1:xu2.qb   
+|   |   
+|   |    dac_bridge: digital-to-analog converter node bridge
+|   |    device      adac1in:xu2
+|   |    model      dac1:xu2.qa   
+|   |   
+|   |    d_chip: digital chip 
+|   |    device              au1         au2
+|   |    model      74ls163__74 74ls163__74   
+|   |   
+|   |    Resistor models (Simple linear resistor) 
+|   |    model                 R
+|   |   
+|   |            rsh           0
+|   |         narrow           0
+|   |            tc1           0
+|   |            tc2           0
+|   |           defw      1e-005
+|   |           tnom          27
+|   |            tce           0
+|   |          rmult           1
+|   |          t_abs        -273
+|   |   t_rel_global        -273
+|   |    t_rel_local        -273
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model       adc1:xu1.cl adc1:xu1.en adc1:xu1.en  adc1:xu1.d  adc1:xu1.c  adc1:xu1.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu1.a adc1:xu2.cl adc1:xu2.en  adc1:xu2.d  adc1:xu2.c  adc1:xu2.b
+|   |   
+|   |         in_low         2.5         2.5         2.5         2.5         2.5         2.5
+|   |        in_high         2.5         2.5         2.5         2.5         2.5         2.5
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    adc_bridge models (analog-to-digital converter node bridge)
+|   |    model        adc1:xu2.a adc1:xu6_a. adc1:xu6_a. adc1:xu6_a.
+|   |   
+|   |         in_low         2.5           2           2           2
+|   |        in_high         2.5           2           2           2
+|   |     rise_delay      1e-009      1e-009      1e-009      1e-009
+|   |     fall_delay      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    d_and models (digital n-input and gate)
+|   |    model       74hc08_4__7
+|   |   
+|   |     rise_delay    2.5e-008
+|   |     fall_delay    2.5e-008
+|   |     input_load      1e-012
+|   |   
+|   |    d_inverter models (digital one-bit-wide inverter)  
+|   |    model       74hc04_2__7
+|   |   
+|   |     rise_delay    1.2e-007
+|   |     fall_delay    1.2e-007
+|   |     input_load      1e-012
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu1.qd dac1:xu1.qc dac1:xu1.qb dac1:xu1.qa dac1:xu2.qc dac1:xu2.qb
+|   |   
+|   |        out_low           5           5           5           5           5           5
+|   |       out_high           0           0           0           0           0           0
+|   |      out_undef           0           0           0           0           0           0
+|   |     input_load      1e-012      1e-012      1e-012      1e-012      1e-012      1e-012
+|   |         t_rise      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |         t_fall      1e-009      1e-009      1e-009      1e-009      1e-009      1e-009
+|   |   
+|   |    dac_bridge models (digital-to-analog converter node bridge)
+|   |    model       dac1:xu2.qa
+|   |   
+|   |        out_low           5
+|   |       out_high           0
+|   |      out_undef           0
+|   |     input_load      1e-012
+|   |         t_rise      1e-009
+|   |         t_fall      1e-009
+|   |   
+|   |    d_chip models (digital chip) 
+|   |    model       74ls163__74
+|   |   
+|   |      behaviour  
+|   |   ; 74ls163   
+|   |   
+Instrument operation performed   (2023, June 22, Thursday, 00:25:51)
+|   Instrument Analysis:Transient Analysis  
+|   |   Plot title: 
+|   |   Analysis settings 
+|   |   |   Initial Conditions:Automatically generate initial conditions
+|   |   |   Starting time (TSTART):0
+|   |   |   Stop time (TSTOP):1e+030
+|   |   |   Plotting increment (TSTEP):1e-005 
+|   |   |   Maximum time step (TMAX):1e-005   
+|   |   Perform consistency check 
+|   |   Variables from analysis   
+|   |   |   Show device values at the end of the simulation   
+|   |   Representation as SPICE commands
+|   |   |   begin-scope page
+|   |   |   checknodes 3
+|   |   |   save all
+|   |   |   iplot all 
+|   |   |   set trtol = 7 
+|   |   |   set itl4 = 100  
+|   |   |   set convlimit 
+|   |   |   set rshunt = 1e+012   
+|   |   |   -param hrange 0 1e+030  
+|   |   |   save
+|   |   |   tran  -env-options 1e-005 1e+030 0 1e-005 auto_ic 
+|   |   |   if-error end-scope audit-log-show 
+|   |   |   show all
+|   |   |   showmod all   
+|   |   |   end-scope 
+|   |   Multisim Default Analysis Options 
+|   |   |   Truncation error overestimation factor: 7 
+|   |   |   Upper transient iteration limit: 100
+|   |   |   Enable convergence assistance for code models 
+|   |   |   Shunt resistance from analog nodes to ground: 1e+012
+|   Output from instrument analysis   
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |    starting Gmin stepping   
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |    Gmin step failed 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |    Gmin stepping failed 
+|   |    starting source stepping 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |    source stepping failed   
+|   |    DC operating point failed. Resimulating with UIC.  
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |   singular matrix:  check nodes adac1in:xu2.qc#branch_1_0 and adac1in:xu2.qc#branch_1_0 
+|   |    TRAN:  Timestep too small; initial timepoint:cause unrecorded.   
+|   |    doAnalyses: timestep too small   
+|   |   
+|   |   
+|   |   tran simulation(s) aborted  

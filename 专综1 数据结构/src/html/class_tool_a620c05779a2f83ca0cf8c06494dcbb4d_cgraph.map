@@ -1,0 +1,8 @@
+<map id="Tool::clearBus" name="Tool::clearBus">
+<area shape="rect" id="node1" title=" " alt="" coords="5,29,111,55"/>
+<area shape="rect" id="node2" href="$class_public_transport.html#a84c6f84ec1531a111d3fd4c133f5cae2" title=" " alt="" coords="312,5,449,31"/>
+<area shape="rect" id="node4" href="$class_tool.html#a6840d3b123c12e7169cee7319db8bc79" title=" " alt="" coords="159,55,253,80"/>
+<area shape="rect" id="node3" href="$class_public_transport.html#a9f0f499787be68176da4499798709ecb" title=" " alt="" coords="508,5,719,31"/>
+<area shape="rect" id="node5" href="$class_public_transport.html#aa8468bb3e9a726a2ff03ac62c3c3be58" title=" " alt="" coords="301,55,460,80"/>
+<area shape="rect" id="node6" href="$class_public_transport.html#a2581aa812dc0e266a11df4ee35d1fc10" title=" " alt="" coords="515,55,711,80"/>
+</map>
