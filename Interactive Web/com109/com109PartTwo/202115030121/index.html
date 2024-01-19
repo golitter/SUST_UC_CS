@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/web_form_index.css">
+  <link rel="stylesheet" href="./css/web_form_resume_index.css">
+  <link rel="stylesheet" href="./css/web_form_resume_watch.css">
+  <link rel="stylesheet" href="./css/web_form_resume_submit.css">
+  <link rel="stylesheet" href="./node_modules/layui/dist/css/layui.css">
+  <script src="./node_modules/layui/dist/layui.js"></script>
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+  <title>web_form</title>
+</head>
+
+<body>
+
+  <div class="layui-container">
+    <ul class="nav layui-row">
+      <li class="back"><a style="text-decoration:none; color:#1E9FFF;" href="image_map.html">
+          <i class=" back_button layui-icon layui-icon-return" style="font-size: 30px; color: #1E9FFF;"></i>
+          back
+        </a></li>
+      <li class="first">
+        resume
+      </li>
+      <li class="second">submit</li>
+      <li class="third">watch</li>
+    </ul>
+  </div>
+  <!-- One -->
+  <div id="page01" class="layui-container page " style="display:block">
+    <!-- <h1>resume</h1> -->
+    <div class="layui-row " style="padding-top: 20px;">
+      <div class="profile layui-col-md2 ">
+        <img id="pfl" src="./images/pro.jpg" alt="profile">
+      </div>
+      <div class="layui-col-md10 layui-font-18">
+        <div class="layui-row resume_header " style="text-align:center;">
+          <div class="layui-col-md3 shallowbord">
+            Name: Golitter
+          </div>
+          <div class="layui-col-md3 shallowbord clear_leftBorder">
+            Gender: Male
+          </div>
+          <div class="layui-col-md3 shallowbord">
+            Nationality: Chinese
+          </div>
+          <div class="layui-col-md3 minz shallowbord">
+            Date of birth: 2002/11/11
+          </div>
+          <div class="layui-col-md12">
+            <div class="layui-col-md5 shallowbord_long clear_leftBorder">
+              Graduated from: Shaanxi University of Science and Technology
+            </div>
+            <div class="layui-col-md4 shallowbord">
+              Major: Computer Science and Technology
+            </div>
+            <div class="layui-col-md3 shallowbord">
+              Salary expectation: -- 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="layui-row separation_header layui-font-18 ">
+      <div class="info_header ">
+        <span class="iconfont">&#xe624;</span> <span class="info_title">Educational Information</span>
+        <div class="layui-row">
+          <div class="layui-col-md10 layui-col-md-offset1 info_box ">
+            <p>&nbsp;&nbsp;Now, I am a sophomore majoring in computer science and technology at Ulster College of Shaanxi University of Science and Technology. Current GPA is 3.78/5.0 Advanced MathematicsI: 5.0/5.0, Linear Algebra: 4.9/5.0, 
+              Advanced MathematicsII: 4.8/5.0, C language programming: 4.6/5.0 .</p>
+            <p>&nbsp;&nbsp;I participated in the "Innovation and Entrepreneurship Plan for College Students" and 
+              got the national project. Second prize in the Programming Competition.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="layui-row separation_header layui-font-18  ">
+      <div class="info_header ">
+        <button type="button" class="layui-btn layui-btn-primary layui-border-green btn_itlong">More</button>
+      </div>
+    </div>
+
+    <div class="layui-row separation_header layui-font-18  displayer">
+      <div class="info_header ">
+        <span class="iconfont">&#xe975;</span> <span class="info_title">Work Experience</span>
+        <div class="layui-row">
+          <div class="layui-col-md10 layui-col-md-offset1 info_box">
+            <p>&nbsp;&nbsp;Familiar with C/C++, Java, Know python. Can use Linux.</p>
+            <p>&nbsp;&nbsp;At present, I have completed several course designs related to my major, and I have some small tools I usually make in <a href="https://github.com/golitter?tab=repositories" style="color:#01AAED" target="_blank">https://github.com/golitter</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="layui-row separation_header layui-font-18 displayer">
+      <div class="info_header ">
+        <span class="iconfont">&#xe626;</span> <span class="info_title">Self-evaluation</span>
+        <div class="layui-row ">
+          <div class="layui-col-md10 layui-col-md-offset1 info_box">
+            <p>&nbsp;&nbsp;Have a strong self-motivated, sense of responsibility.</p>
+            <p>&nbsp;&nbsp;Have a strong self-motivated, sense of responsibility. Have a strong curiosity about things, 
+              passion for the software industry can be maintained.</p>
+            <p>&nbsp;&nbsp;Have strong learning ability.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="layui-row separation_header layui-font-18 displayer">
+      <div class="info_header ">
+        <span class="iconfont">&#xe643;</span> <span class="info_title">Other Description</span>
+        <div class="layui-row ">
+          <div class="layui-col-md10 layui-col-md-offset1 info_box">
+            <p>&nbsp;&nbsp;Willing to work overtime</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+
+  </div>
+
+
+  <!-- Two -->
+  <div id="page02" class="layui-container page" style="display:none">
+    <div>
+      <form action="" class="layui-form layui-form-pane top_lengthPer">
+        <div class="layui-form-item justnt layui-col-md4 layui-col-md-offset4">
+          <label class="layui-form-label">Name</label>
+          <div class="layui-input-block">
+            <input type="text" name="cmpname" required lay-verify="required" placeholder="company name or personal name" lay-reqText="Can not be empty"
+              autocomplete="off" class="layui-input">
+          </div>
+        </div>
+
+        <div class="layui-form-item justnt layui-col-md4 layui-col-md-offset4">
+          <label class="layui-form-label">Email</label>
+          <div class="layui-input-block">
+            <input type="text" name="email" required lay-verify="self_email" placeholder="username@domain.com" autocomplete="off" class="layui-input">
+          </div>
+        </div>
+
+        <div class="layui-form-item justnt layui-col-md4 layui-col-md-offset4">
+          <label class="layui-form-label">Contact way</label>
+          <div class="layui-input-block">
+            <input type="text" name="phone" required lay-verify="self_phone" placeholder="a valid phone number" autocomplete="off" class="layui-input">
+          </div>
+        </div>
+
+        <div class="layui-form-item justnt layui-col-md4 layui-col-md-offset4">
+          <label class="layui-form-label">Other</label>
+          <div class="layui-input-block">
+            <input type="text" name="other_info" lay-verify="other_info" placeholder="other Supplementary Information" autocomplete="off"
+              class="layui-input">
+          </div>
+        </div>
+
+        <div class="layui-form-item layui-col-md4 layui-col-md-offset4">
+          <div class="layui-input-block">
+            <button class="layui-btn" lay-submit lay-filter="getInfo">submit</button>
+            <button type="reset" class="layui-btn layui-btn-primary">reset</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="page03" class="layui-container page" style="display:none">
+    <h1>watch: </h1>
+    <table class="layui-table table_box " lay-even lay-skin="line" lay-size="lg">
+      <colgroup>
+        <col width="200">
+        <col width="200">
+        <col width="200">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Company Name</th>
+          <th>Email</th>
+          <th>Cell-phone Number</th>
+          <th>Other</th>
+        </tr>
+      </thead>
+      <tbody class="watch_table">
+      </tbody>
+    </table>
+
+  </div>
+
+  <script type="module"></script>
+  <script src="./javascript/web_form_index.js"></script>
+  <script src="./javascript/web_form_resume.js"></script>
+  <script src="./javascript/web_form_submit.js"></script>
+</body>
+
+</html>

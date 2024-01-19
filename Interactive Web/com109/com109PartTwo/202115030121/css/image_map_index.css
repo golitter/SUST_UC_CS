@@ -1,0 +1,33 @@
+body {
+    background-image:url("../images/body.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color:#1E9FFF;
+}
+h1 {
+    color:#FF5722;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.profile {
+    width:50px;
+    height: 50px;
+    position: sticky;
+    top:70px;
+    left:95%;
+    background-image: url("../images/pro.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius:50%;
+}
+
+.content_box {
+    height: 100px;
+}
+.all_box {
+    margin-top: 5%;
+    text-align: center;
+}

@@ -1,0 +1,19 @@
+.justnt {
+    text-align: center;
+}
+
+.layui-form-label{
+    width: 100px;
+}
+.layui-input-block {
+    margin-left: 130px;
+    min-height: 36px
+}
+
+#page02 {
+    height:400px;
+    background-color: rgba(234, 234, 234, 0.1);
+}
+.top_lengthPer {
+    margin-top: 5%;
+}

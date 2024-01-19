@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login Verification</title>
+    <style>
+        body {
+            background-image: url('./2.png');
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        div {
+            margin-top: 20%;
+            margin-left: 40%;
+            width: 400px;
+            height: 400px;
+            text-align: center;
+        }
+        .emptyp, .difp {
+            color: red;
+        }
+        .left1 {
+            margin-left: -75px;
+        }
+        .left2 {
+            margin-left: -10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="">
+            <p>
+                <label for="account">account: </label>
+                <input type="text" required id="account" name="account">
+            </p>
+            <p class="left2">
+                <label for="password">password: </label>
+                <input type="password"  id="password" name="password">
+            </p>
+            <p class="emptyp"></p>
+            <p class="left1">
+                <label for="repass">Confirm Password: </label>
+                <input type="password" required id="repass" name="repass">
+            </p>
+            <p class="difp"></p>
+            <button class="sub">sumbit</button>
+        </form>
+    </div>
+    <script>
+        let emptyp = document.querySelector(".emptyp");
+        let difp = document.querySelector(".difp");
+
+        let func = () => {
+            let f = document.forms[0];
+            f.onsubmit = () => {
+                let pwd = f.password.value;
+                let repwd = f.repass.value;
+                
+                if(pwd == '') {
+                    emptyp.innerHTML = `Password cannot be empty!`;
+                    return false;
+                }
+                if(repwd != pwd) {
+                    difp.innerHTML =   `The two passwords are different. Please enter them again.`;
+                    return false;
+                }
+                alert(`Successful submission`);
+            }
+        }
+        window.onload = func();
+    </script>
+</body onload="func()">
+</html>

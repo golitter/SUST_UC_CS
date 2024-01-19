@@ -1,0 +1,37 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1396128",
+      "name": "其他",
+      "font_class": "qita",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "3826851",
+      "name": "学历",
+      "font_class": "xueli",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "3826856",
+      "name": "自我评价",
+      "font_class": "ziwopingjia",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "26454204",
+      "name": "工作台、工作桌-02",
+      "font_class": "a-gongzuotaigongzuozhuo-02",
+      "unicode": "e975",
+      "unicode_decimal": 59765
+    }
+  ]
+}

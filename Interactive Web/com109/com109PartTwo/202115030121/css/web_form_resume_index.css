@@ -1,0 +1,97 @@
+.out {
+    box-shadow: 0px 0px 10px 5px #aaa;
+}
+
+#pfl {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+
+}
+
+.profile {
+    text-align: center;
+}
+
+.back_button {
+    margin-right: 5px;
+}
+.shallowbord {
+    border: 1px solid #000;
+    margin: 0px -1px -1px 0px;
+    height: 100px;
+    line-height: 100px;
+}
+
+
+.shallowbord_long {
+    border: 1px solid #000;
+    margin: 0px -1px -1px 0px;
+    height: 100px;
+    line-height: 50px;
+}
+
+.clear_leftBorder {
+    border-right: 0px;
+}
+.minz {
+    margin-left: 1px;
+    border-left: 0;
+}
+
+.separation_header {
+    margin-top: 10px;
+}
+
+@font-face {
+    font-family: "iconfont";
+    /* Project id  */
+    src: url('../font-family/font_37ue05iz2df/iconfont.ttf') format('truetype');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 50px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-qita:before {
+    content: "\e643";
+}
+
+.icon-xueli:before {
+    content: "\e624";
+}
+
+.icon-ziwopingjia:before {
+    content: "\e626";
+}
+
+.icon-a-gongzuotaigongzuozhuo-02:before {
+    content: "\e975";
+}
+
+.info_header {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.info_box {
+    height:170px;
+    /* text-align: center; */
+    text-align: left;
+    border: 1px solid #000;
+    margin: 0px -1px -1px 0px;
+    padding: 10px;
+}
+
+.info_title {
+    font-size: 2em;
+}
+
+.displayer {
+    display: none;
+}
